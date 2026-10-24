@@ -1,0 +1,147 @@
+{
+ "schema": "radar-brief-index/1",
+ "run": "2026-10",
+ "run_label": "October 2026",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "ogl_line": "Contains public sector information licensed under the Open Government Licence v3.0.",
+ "series": [
+  {
+   "series": "India 851762",
+   "slug": "india-851762",
+   "status": "lead",
+   "file": "india-851762.json"
+  },
+  {
+   "series": "Thailand 851762",
+   "slug": "thailand-851762",
+   "status": "lead",
+   "file": "thailand-851762.json"
+  },
+  {
+   "series": "Kazakhstan 851762",
+   "slug": "kazakhstan-851762",
+   "status": "lead",
+   "file": "kazakhstan-851762.json"
+  },
+  {
+   "series": "India 854231",
+   "slug": "india-854231",
+   "status": "lead",
+   "file": "india-854231.json"
+  },
+  {
+   "series": "China 853221",
+   "slug": "china-853221",
+   "status": "lead",
+   "file": "china-853221.json"
+  },
+  {
+   "series": "United Arab Emirates 854232",
+   "slug": "united-arab-emirates-854232",
+   "status": "lead",
+   "file": "united-arab-emirates-854232.json"
+  },
+  {
+   "series": "United Arab Emirates 854239",
+   "slug": "united-arab-emirates-854239",
+   "status": "lead",
+   "file": "united-arab-emirates-854239.json"
+  },
+  {
+   "series": "Hong Kong 854232",
+   "slug": "hong-kong-854232",
+   "status": "watch",
+   "file": "hong-kong-854232.json"
+  },
+  {
+   "series": "Israel 851762",
+   "slug": "israel-851762",
+   "status": "watch",
+   "file": "israel-851762.json"
+  },
+  {
+   "series": "China 854239",
+   "slug": "china-854239",
+   "status": "watch",
+   "file": "china-854239.json"
+  },
+  {
+   "series": "Israel 854232",
+   "slug": "israel-854232",
+   "status": "watch",
+   "file": "israel-854232.json"
+  },
+  {
+   "series": "Malaysia 851762",
+   "slug": "malaysia-851762",
+   "status": "watch",
+   "file": "malaysia-851762.json"
+  },
+  {
+   "series": "Israel 854239",
+   "slug": "israel-854239",
+   "status": "watch",
+   "file": "israel-854239.json"
+  },
+  {
+   "series": "India 852691",
+   "slug": "india-852691",
+   "status": "watch",
+   "file": "india-852691.json"
+  },
+  {
+   "series": "Vietnam 851762",
+   "slug": "vietnam-851762",
+   "status": "watch",
+   "file": "vietnam-851762.json"
+  },
+  {
+   "series": "Hong Kong 853221",
+   "slug": "hong-kong-853221",
+   "status": "watch",
+   "file": "hong-kong-853221.json"
+  },
+  {
+   "series": "Hong Kong 852691",
+   "slug": "hong-kong-852691",
+   "status": "watch",
+   "file": "hong-kong-852691.json"
+  },
+  {
+   "series": "India 854232",
+   "slug": "india-854232",
+   "status": "watch",
+   "file": "india-854232.json"
+  },
+  {
+   "series": "Turkey 854232",
+   "slug": "turkey-854232",
+   "status": "watch",
+   "file": "turkey-854232.json"
+  },
+  {
+   "series": "Uzbekistan 851762",
+   "slug": "uzbekistan-851762",
+   "status": "watch",
+   "file": "uzbekistan-851762.json"
+  },
+  {
+   "series": "Israel 854233",
+   "slug": "israel-854233",
+   "status": "watch",
+   "file": "israel-854233.json"
+  },
+  {
+   "series": "Vietnam 852691",
+   "slug": "vietnam-852691",
+   "status": "watch",
+   "file": "vietnam-852691.json"
+  },
+  {
+   "series": "Turkey 853221",
+   "slug": "turkey-853221",
+   "status": "watch",
+   "file": "turkey-853221.json"
+  }
+ ]
+}

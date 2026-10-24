@@ -1,0 +1,647 @@
+{
+ "notice": "SYNTHETIC RECORDS. Made up by radar/declarations/generate.py from a seed, to show what the radar's restricted layer would do with export declarations. No record is or describes a real declaration, exporter, consignee, forwarder or agent; the ids are made up and look nothing like EORI numbers; there are no names, addresses or postcodes.",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "label": "Performance on synthetic data. The patterns were put in by the same people who wrote the detectors, so these figures show how the machinery behaves, not how well it would find anything in real declarations. They say nothing about real-world performance [Certain].",
+ "detectors": [
+  {
+   "detector": "D1",
+   "name": "new-corridor-consignee",
+   "fired": 13,
+   "truth": 7,
+   "true_positives": 6,
+   "false_positives": 7,
+   "misses": 1,
+   "precision": 0.462,
+   "recall": 0.857,
+   "false_positives_by_source": {"look-alike":4,"touches another pattern or look-alike":0,"ordinary background":3},
+   "units": {
+    "true_positive": ["C:CON-2765","C:CON-2766","C:CON-2767","C:CON-2773","C:CON-2777","C:CON-2817"],
+    "false_positive": {"look-alike":["C:CON-2787","C:CON-2790","C:CON-2795","C:CON-2798"],"touches another pattern or look-alike":[],"ordinary background":["C:CON-2774","C:CON-2806","C:CON-2843"]},
+    "missed": ["C:CON-2782"],
+    "missed_by_design": ["C:CON-2782"]
+   },
+   "cases": ["SYN-CASE-001","SYN-CASE-024","SYN-CASE-025","SYN-CASE-026","SYN-CASE-027","SYN-CASE-028","SYN-CASE-029","SYN-CASE-030","SYN-CASE-031","SYN-CASE-032","SYN-CASE-033","SYN-CASE-034","SYN-CASE-035"]
+  },
+  {
+   "detector": "D2",
+   "name": "route-volume-jump",
+   "fired": 7,
+   "truth": 3,
+   "true_positives": 3,
+   "false_positives": 4,
+   "misses": 0,
+   "precision": 0.429,
+   "recall": 1.0,
+   "false_positives_by_source": {"look-alike":3,"touches another pattern or look-alike":0,"ordinary background":1},
+   "units": {
+    "true_positive": ["R:EXP-0080|TR|853221","R:EXP-0234|KZ|851762","R:EXP-0268|AE|854232"],
+    "false_positive": {"look-alike":["R:EXP-0003|AE|854239","R:EXP-0122|TR|854232","R:EXP-0186|UZ|851762"],"touches another pattern or look-alike":[],"ordinary background":["R:EXP-0121|TR|854232"]},
+    "missed": [],
+    "missed_by_design": []
+   },
+   "cases": ["SYN-CASE-001","SYN-CASE-003","SYN-CASE-004","SYN-CASE-005","SYN-CASE-006","SYN-CASE-007","SYN-CASE-008"]
+  },
+  {
+   "detector": "D3",
+   "name": "shared-party",
+   "fired": 8,
+   "truth": 3,
+   "true_positives": 3,
+   "false_positives": 5,
+   "misses": 0,
+   "precision": 0.375,
+   "recall": 1.0,
+   "false_positives_by_source": {"look-alike":5,"touches another pattern or look-alike":0,"ordinary background":0},
+   "units": {
+    "true_positive": ["C:CON-2458","C:CON-2500","F:FWD-0007"],
+    "false_positive": {"look-alike":["C:CON-0166","C:CON-0475","C:CON-0537","F:FWD-0033","F:FWD-0038"],"touches another pattern or look-alike":[],"ordinary background":[]},
+    "missed": [],
+    "missed_by_design": []
+   },
+   "cases": ["SYN-CASE-036","SYN-CASE-037","SYN-CASE-038","SYN-CASE-039","SYN-CASE-040","SYN-CASE-046","SYN-CASE-047","SYN-CASE-048"]
+  },
+  {
+   "detector": "D4",
+   "name": "unit-value",
+   "fired": 6,
+   "truth": 4,
+   "true_positives": 3,
+   "false_positives": 3,
+   "misses": 1,
+   "precision": 0.5,
+   "recall": 0.75,
+   "false_positives_by_source": {"look-alike":3,"touches another pattern or look-alike":0,"ordinary background":0},
+   "units": {
+    "true_positive": ["P:EXP-0068|CON-1645|85322100","P:EXP-0193|CON-1957|85423200","P:EXP-0235|CON-2219|85176200"],
+    "false_positive": {"look-alike":["P:EXP-0070|CON-0808|85423300","P:EXP-0133|CON-0763|85423100","P:EXP-0149|CON-0782|85269100"],"touches another pattern or look-alike":[],"ordinary background":[]},
+    "missed": ["P:EXP-0020|CON-2140|85423900"],
+    "missed_by_design": ["P:EXP-0020|CON-2140|85423900"]
+   },
+   "cases": ["SYN-CASE-009","SYN-CASE-010","SYN-CASE-011","SYN-CASE-012","SYN-CASE-013","SYN-CASE-014"]
+  },
+  {
+   "detector": "D5",
+   "name": "code-switch",
+   "fired": 4,
+   "truth": 3,
+   "true_positives": 3,
+   "false_positives": 1,
+   "misses": 0,
+   "precision": 0.75,
+   "recall": 1.0,
+   "false_positives_by_source": {"look-alike":1,"touches another pattern or look-alike":0,"ordinary background":0},
+   "units": {
+    "true_positive": ["S:EXP-0067|CON-1602|85423100|85429000","S:EXP-0146|CON-1482|85322400|85322200","S:EXP-0168|CON-1734|85176200|85177900"],
+    "false_positive": {"look-alike":["S:EXP-0063|CON-0974|85423900|85429000"],"touches another pattern or look-alike":[],"ordinary background":[]},
+    "missed": [],
+    "missed_by_design": []
+   },
+   "cases": ["SYN-CASE-015","SYN-CASE-016","SYN-CASE-017","SYN-CASE-018"]
+  },
+  {
+   "detector": "D6",
+   "name": "russia-switch",
+   "fired": 6,
+   "truth": 4,
+   "true_positives": 3,
+   "false_positives": 3,
+   "misses": 1,
+   "precision": 0.5,
+   "recall": 0.75,
+   "false_positives_by_source": {"look-alike":3,"touches another pattern or look-alike":0,"ordinary background":0},
+   "units": {
+    "true_positive": ["E:EXP-0094","E:EXP-0097","E:EXP-0101"],
+    "false_positive": {"look-alike":["E:EXP-0069","E:EXP-0114","E:EXP-0115"],"touches another pattern or look-alike":[],"ordinary background":[]},
+    "missed": ["E:EXP-0093"],
+    "missed_by_design": ["E:EXP-0093"]
+   },
+   "cases": ["SYN-CASE-002","SYN-CASE-019","SYN-CASE-020","SYN-CASE-021","SYN-CASE-022","SYN-CASE-023"]
+  },
+  {
+   "detector": "D7",
+   "name": "small-frequent",
+   "fired": 6,
+   "truth": 4,
+   "true_positives": 3,
+   "false_positives": 3,
+   "misses": 1,
+   "precision": 0.5,
+   "recall": 0.75,
+   "false_positives_by_source": {"look-alike":3,"touches another pattern or look-alike":0,"ordinary background":0},
+   "units": {
+    "true_positive": ["C:CON-1557","C:CON-2227","C:CON-2305"],
+    "false_positive": {"look-alike":["C:CON-1352","C:CON-1365","C:CON-1366"],"touches another pattern or look-alike":[],"ordinary background":[]},
+    "missed": ["C:CON-2448"],
+    "missed_by_design": ["C:CON-2448"]
+   },
+   "cases": ["SYN-CASE-002","SYN-CASE-041","SYN-CASE-042","SYN-CASE-043","SYN-CASE-044","SYN-CASE-045"]
+  }
+ ],
+ "overall": {
+  "signals": 50,
+  "true_positives": 24,
+  "false_positives": 26,
+  "misses": 4,
+  "precision": 0.48,
+  "recall": 0.857
+ },
+ "injections": [
+  {
+   "id": "G1-1",
+   "kind": "injected",
+   "pattern": "G1",
+   "detector": "D1",
+   "about": "A consignee in Kazakhstan, first seen in the review window, buying the radar's goods",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-024"],
+   "near_miss": null
+  },
+  {
+   "id": "G1-2",
+   "kind": "injected",
+   "pattern": "G1",
+   "detector": "D1",
+   "about": "A consignee in the Kyrgyz Republic, first seen in the review window, buying the radar's goods",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-027"],
+   "near_miss": null
+  },
+  {
+   "id": "G1-3",
+   "kind": "injected",
+   "pattern": "G1",
+   "detector": "D1",
+   "about": "A consignee in Armenia, first seen in the review window, buying the radar's goods",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-029"],
+   "near_miss": null
+  },
+  {
+   "id": "G1-4",
+   "kind": "injected",
+   "pattern": "G1",
+   "detector": "D1",
+   "about": "A consignee in the United Arab Emirates, first seen in the review window, buying the radar's goods",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-026"],
+   "near_miss": null
+  },
+  {
+   "id": "G1-5",
+   "kind": "injected",
+   "pattern": "G1",
+   "detector": "D1",
+   "about": "A consignee in Uzbekistan, first seen in the review window, buying the radar's goods",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-025"],
+   "near_miss": null
+  },
+  {
+   "id": "G1-6",
+   "kind": "injected",
+   "pattern": "G1",
+   "detector": "D1",
+   "about": "A consignee in Georgia, first seen in the review window, buying the radar's goods",
+   "fired": {"D1":false},
+   "cases": [],
+   "near_miss": "built to stay under D1's floor of 50,000 pounds in the window"
+  },
+  {
+   "id": "G2-1",
+   "kind": "injected",
+   "pattern": "G2",
+   "detector": "D2",
+   "about": "One exporter's exports of 851762 to Kazakhstan jumping in the review window",
+   "fired": {"D2":true,"D1":true},
+   "cases": ["SYN-CASE-001"],
+   "near_miss": null
+  },
+  {
+   "id": "G2-2",
+   "kind": "injected",
+   "pattern": "G2",
+   "detector": "D2",
+   "about": "One exporter's exports of 854232 to the United Arab Emirates jumping in the review window",
+   "fired": {"D2":true},
+   "cases": ["SYN-CASE-008"],
+   "near_miss": null
+  },
+  {
+   "id": "G2-3",
+   "kind": "injected",
+   "pattern": "G2",
+   "detector": "D2",
+   "about": "One exporter's exports of 853221 to Turkey jumping in the review window",
+   "fired": {"D2":true},
+   "cases": ["SYN-CASE-004"],
+   "near_miss": null
+  },
+  {
+   "id": "G3-1",
+   "kind": "injected",
+   "pattern": "G3",
+   "detector": "D3",
+   "about": "A consignee in the United Arab Emirates receiving the radar's goods from 6 unrelated exporters",
+   "fired": {"D3":true},
+   "cases": ["SYN-CASE-039"],
+   "near_miss": null
+  },
+  {
+   "id": "G3-2",
+   "kind": "injected",
+   "pattern": "G3",
+   "detector": "D3",
+   "about": "A consignee in Turkey receiving the radar's goods from 5 unrelated exporters",
+   "fired": {"D3":true},
+   "cases": ["SYN-CASE-040"],
+   "near_miss": null
+  },
+  {
+   "id": "G3-3",
+   "kind": "injected",
+   "pattern": "G3",
+   "detector": "D3",
+   "about": "A small forwarder that seven unrelated exporters use for the radar's goods to corridor countries",
+   "fired": {"D3":true},
+   "cases": ["SYN-CASE-046"],
+   "near_miss": null
+  },
+  {
+   "id": "G4-1",
+   "kind": "injected",
+   "pattern": "G4",
+   "detector": "D4",
+   "about": "Shipments of 85423200 to the United Arab Emirates at about 10 times the code's value per kilogram",
+   "fired": {"D4":true},
+   "cases": ["SYN-CASE-013"],
+   "near_miss": null
+  },
+  {
+   "id": "G4-2",
+   "kind": "injected",
+   "pattern": "G4",
+   "detector": "D4",
+   "about": "Shipments of 85176200 to Kazakhstan at about 10% of the code's value per kilogram",
+   "fired": {"D4":true},
+   "cases": ["SYN-CASE-014"],
+   "near_miss": null
+  },
+  {
+   "id": "G4-3",
+   "kind": "injected",
+   "pattern": "G4",
+   "detector": "D4",
+   "about": "Shipments of 85322100 to Turkey at about 9 times the code's value per kilogram",
+   "fired": {"D4":true},
+   "cases": ["SYN-CASE-009"],
+   "near_miss": null
+  },
+  {
+   "id": "G4-4",
+   "kind": "injected",
+   "pattern": "G4",
+   "detector": "D4",
+   "about": "Shipments of 85423900 to Armenia at about 12% of the code's value per kilogram",
+   "fired": {"D4":false},
+   "cases": [],
+   "near_miss": "built with only two shipments out of line, under D4's minimum of three"
+  },
+  {
+   "id": "G5-1",
+   "kind": "injected",
+   "pattern": "G5",
+   "detector": "D5",
+   "about": "Shipments to the United Arab Emirates moving from 85423100 to 85429000 at the same value per kilogram",
+   "fired": {"D5":true},
+   "cases": ["SYN-CASE-016"],
+   "near_miss": null
+  },
+  {
+   "id": "G5-2",
+   "kind": "injected",
+   "pattern": "G5",
+   "detector": "D5",
+   "about": "Shipments to Kazakhstan moving from 85176200 to 85177900 at the same value per kilogram",
+   "fired": {"D5":true},
+   "cases": ["SYN-CASE-018"],
+   "near_miss": null
+  },
+  {
+   "id": "G5-3",
+   "kind": "injected",
+   "pattern": "G5",
+   "detector": "D5",
+   "about": "Shipments to Turkey moving from 85322400 to 85322200 at the same value per kilogram",
+   "fired": {"D5":true},
+   "cases": ["SYN-CASE-017"],
+   "near_miss": null
+  },
+  {
+   "id": "G6-1",
+   "kind": "injected",
+   "pattern": "G6",
+   "detector": "D6",
+   "about": "Shipments to Russia stopping by 24 February 2022 and moving to a consignee in Kazakhstan",
+   "fired": {"D6":true},
+   "cases": ["SYN-CASE-020"],
+   "near_miss": null
+  },
+  {
+   "id": "G6-2",
+   "kind": "injected",
+   "pattern": "G6",
+   "detector": "D6",
+   "about": "Shipments to Russia stopping by 24 February 2022 and moving to a consignee in the Kyrgyz Republic",
+   "fired": {"D6":true,"D7":true},
+   "cases": ["SYN-CASE-002"],
+   "near_miss": null
+  },
+  {
+   "id": "G6-3",
+   "kind": "injected",
+   "pattern": "G6",
+   "detector": "D6",
+   "about": "Shipments to Russia stopping by 24 February 2022 and moving to a consignee in Armenia",
+   "fired": {"D6":true},
+   "cases": ["SYN-CASE-021"],
+   "near_miss": null
+  },
+  {
+   "id": "G6-4",
+   "kind": "injected",
+   "pattern": "G6",
+   "detector": "D6",
+   "about": "Shipments to Russia stopping by 24 February 2022 and moving to a consignee in Turkey",
+   "fired": {"D6":false},
+   "cases": [],
+   "near_miss": "built so the Russia volume moves to a consignee first seen before 2022, which D6 does not count"
+  },
+  {
+   "id": "G7-1",
+   "kind": "injected",
+   "pattern": "G7",
+   "detector": "D7",
+   "about": "Small, frequent shipments of the radar's goods to a consignee in the Kyrgyz Republic",
+   "fired": {"D7":true},
+   "cases": ["SYN-CASE-045"],
+   "near_miss": null
+  },
+  {
+   "id": "G7-2",
+   "kind": "injected",
+   "pattern": "G7",
+   "detector": "D7",
+   "about": "Small, frequent shipments of the radar's goods to a consignee in Armenia",
+   "fired": {"D7":true},
+   "cases": ["SYN-CASE-044"],
+   "near_miss": null
+  },
+  {
+   "id": "G7-3",
+   "kind": "injected",
+   "pattern": "G7",
+   "detector": "D7",
+   "about": "Small, frequent shipments of the radar's goods to a consignee in Kazakhstan",
+   "fired": {"D7":false},
+   "cases": [],
+   "near_miss": "built with the shipments spread over 21 months, so fewer than 20 fall in the window"
+  },
+  {
+   "id": "L1-1",
+   "kind": "look-alike",
+   "pattern": "L1",
+   "detector": "D1",
+   "about": "An ordinary new distributor in Turkey",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-030"],
+   "near_miss": null
+  },
+  {
+   "id": "L1-2",
+   "kind": "look-alike",
+   "pattern": "L1",
+   "detector": "D1",
+   "about": "An ordinary new distributor in the United Arab Emirates",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-033"],
+   "near_miss": null
+  },
+  {
+   "id": "L1-3",
+   "kind": "look-alike",
+   "pattern": "L1",
+   "detector": "D1",
+   "about": "An ordinary new distributor in Kazakhstan",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-032"],
+   "near_miss": null
+  },
+  {
+   "id": "L1-4",
+   "kind": "look-alike",
+   "pattern": "L1",
+   "detector": "D1",
+   "about": "An ordinary new distributor in Azerbaijan",
+   "fired": {"D1":true},
+   "cases": ["SYN-CASE-031"],
+   "near_miss": null
+  },
+  {
+   "id": "L2-1",
+   "kind": "look-alike",
+   "pattern": "L2",
+   "detector": "D2",
+   "about": "Ordinary growth of 854239 to the United Arab Emirates from a new contract",
+   "fired": {"D2":true},
+   "cases": ["SYN-CASE-003"],
+   "near_miss": null
+  },
+  {
+   "id": "L2-2",
+   "kind": "look-alike",
+   "pattern": "L2",
+   "detector": "D2",
+   "about": "Ordinary growth of 854232 to Turkey from a new contract",
+   "fired": {"D2":true},
+   "cases": ["SYN-CASE-006"],
+   "near_miss": null
+  },
+  {
+   "id": "L2-3",
+   "kind": "look-alike",
+   "pattern": "L2",
+   "detector": "D2",
+   "about": "Ordinary growth of 851762 to Uzbekistan from a new contract",
+   "fired": {"D2":true},
+   "cases": ["SYN-CASE-007"],
+   "near_miss": null
+  },
+  {
+   "id": "L3-1",
+   "kind": "look-alike",
+   "pattern": "L3",
+   "detector": "D3",
+   "about": "An established distributor in the United Arab Emirates with several unrelated suppliers since 2021",
+   "fired": {"D3":true},
+   "cases": ["SYN-CASE-038"],
+   "near_miss": null
+  },
+  {
+   "id": "L3-2",
+   "kind": "look-alike",
+   "pattern": "L3",
+   "detector": "D3",
+   "about": "An established distributor in Turkey with several unrelated suppliers since 2021",
+   "fired": {"D3":true},
+   "cases": ["SYN-CASE-036"],
+   "near_miss": null
+  },
+  {
+   "id": "L3-3",
+   "kind": "look-alike",
+   "pattern": "L3",
+   "detector": "D3",
+   "about": "An established distributor in Kazakhstan with several unrelated suppliers since 2021",
+   "fired": {"D3":true},
+   "cases": ["SYN-CASE-037"],
+   "near_miss": null
+  },
+  {
+   "id": "L3-4",
+   "kind": "look-alike",
+   "pattern": "L3",
+   "detector": "D3",
+   "about": "A forwarder specialising in corridor routes",
+   "fired": {"D3":true},
+   "cases": ["SYN-CASE-047"],
+   "near_miss": null
+  },
+  {
+   "id": "L3-5",
+   "kind": "look-alike",
+   "pattern": "L3",
+   "detector": "D3",
+   "about": "A forwarder specialising in corridor routes",
+   "fired": {"D3":true},
+   "cases": ["SYN-CASE-048"],
+   "near_miss": null
+  },
+  {
+   "id": "L4-1",
+   "kind": "look-alike",
+   "pattern": "L4",
+   "detector": "D4",
+   "about": "A premium product line of 85423100 to Turkey",
+   "fired": {"D4":true},
+   "cases": ["SYN-CASE-011"],
+   "near_miss": null
+  },
+  {
+   "id": "L4-2",
+   "kind": "look-alike",
+   "pattern": "L4",
+   "detector": "D4",
+   "about": "A premium product line of 85423300 to the United Arab Emirates",
+   "fired": {"D4":true},
+   "cases": ["SYN-CASE-010"],
+   "near_miss": null
+  },
+  {
+   "id": "L4-3",
+   "kind": "look-alike",
+   "pattern": "L4",
+   "detector": "D4",
+   "about": "A premium product line of 85269100 to Georgia",
+   "fired": {"D4":true},
+   "cases": ["SYN-CASE-012"],
+   "near_miss": null
+  },
+  {
+   "id": "L5-1",
+   "kind": "look-alike",
+   "pattern": "L5",
+   "detector": "D5",
+   "about": "A product to Georgia moving from 85423900 to 85429000 after a reclassification",
+   "fired": {"D5":true},
+   "cases": ["SYN-CASE-015"],
+   "near_miss": null
+  },
+  {
+   "id": "L5-2",
+   "kind": "look-alike",
+   "pattern": "L5",
+   "detector": "D5",
+   "about": "A product to Turkey moving from 85423100 to 85429000 after a reclassification, at a much lower value per kilogram",
+   "fired": {"D5":false},
+   "cases": [],
+   "near_miss": null
+  },
+  {
+   "id": "L6-1",
+   "kind": "look-alike",
+   "pattern": "L6",
+   "detector": "D6",
+   "about": "An exporter that lost its Russia customer and found an ordinary new customer in Turkey",
+   "fired": {"D6":true},
+   "cases": ["SYN-CASE-023"],
+   "near_miss": null
+  },
+  {
+   "id": "L6-2",
+   "kind": "look-alike",
+   "pattern": "L6",
+   "detector": "D6",
+   "about": "An exporter that lost its Russia customer and found an ordinary new customer in the United Arab Emirates",
+   "fired": {"D6":true},
+   "cases": ["SYN-CASE-022"],
+   "near_miss": null
+  },
+  {
+   "id": "L6-3",
+   "kind": "look-alike",
+   "pattern": "L6",
+   "detector": "D6",
+   "about": "An exporter that lost its Russia customer and found an ordinary new customer in Georgia",
+   "fired": {"D6":true},
+   "cases": ["SYN-CASE-019"],
+   "near_miss": null
+  },
+  {
+   "id": "L7-1",
+   "kind": "look-alike",
+   "pattern": "L7",
+   "detector": "D7",
+   "about": "A spare-parts subscription to a consignee in Turkey",
+   "fired": {"D7":true},
+   "cases": ["SYN-CASE-042"],
+   "near_miss": null
+  },
+  {
+   "id": "L7-2",
+   "kind": "look-alike",
+   "pattern": "L7",
+   "detector": "D7",
+   "about": "A spare-parts subscription to a consignee in the United Arab Emirates",
+   "fired": {"D7":true},
+   "cases": ["SYN-CASE-043"],
+   "near_miss": null
+  },
+  {
+   "id": "L7-3",
+   "kind": "look-alike",
+   "pattern": "L7",
+   "detector": "D7",
+   "about": "A spare-parts subscription to a consignee in Georgia",
+   "fired": {"D7":true},
+   "cases": ["SYN-CASE-041"],
+   "near_miss": null
+  }
+ ],
+ "cases": {
+  "total": 48,
+  "with an injected pattern": 22,
+  "look-alikes only": 22,
+  "ordinary background only": 4,
+  "check first": 2
+ }
+}

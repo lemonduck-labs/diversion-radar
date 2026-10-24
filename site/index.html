@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Diversion Radar and Move forward</title>
+<meta name="description" content="Four working demos on public trade and housing data: two dashboards and two tools, served as static pages.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-bar"><div class="site-bar-in"><span class="here">Working demos</span><span class="note">Static build of {{BUILT_ON}}</span></div></header>
+
+<main class="site-main home">
+  <section class="home-head">
+    <p class="eyebrow">Two builds, four demos</p>
+    <h1>Sanctions leads from public trade data, and the temporary accommodation market council by council</h1>
+    <p class="lede">Each build turns published statistics into a picture a team can act on, then puts a working tool on top, with its rules checked in code before anyone sees an output.</p>
+    <ul class="facts" aria-label="How these demos run">
+      <li>Static files, run in your browser</li>
+      <li>No sign-in</li>
+      <li>No AI calls</li>
+      <li>Nothing you type leaves your tab</li>
+    </ul>
+  </section>
+
+  <nav class="quick" aria-label="The four demos">
+    <div class="quick-group brand-radar">
+      <p class="quick-build"><img src="assets/radar-mark.svg" alt="">Diversion Radar</p>
+      <div class="quick-tiles">
+        <a class="tile" href="radar/"><span class="tile-kind">Dashboard</span><span class="tile-name">The radar</span><span class="tile-line">This run's leads, the track record and the method</span></a>
+        <a class="tile" href="workspace/"><span class="tile-kind">Working tool</span><span class="tile-name">Analyst workspace</span><span class="tile-line">Work a lead: its brief, its questions and, with four-eyes on, a second person's approval</span></a>
+      </div>
+    </div>
+    <div class="quick-group brand-moveon">
+      <p class="quick-build"><img src="assets/moveon-mark.svg" alt="">Move forward</p>
+      <div class="quick-tiles">
+        <a class="tile" href="ta/"><span class="tile-kind">Dashboard</span><span class="tile-name">The market picture</span><span class="tile-line">One council against councils like it, none named</span></a>
+        <a class="tile" href="planner/"><span class="tile-kind">Working tool</span><span class="tile-name">Move forward planner</span><span class="tile-line">A plan for each household, approved by a second officer</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="build brand-radar" aria-labelledby="radar-h">
+    <div class="build-head">
+      <h2 id="radar-h" class="build-name"><img src="assets/radar-mark.svg" alt="">Diversion Radar</h2>
+      <p>Monthly leads where UK exports of high-priority goods to a third country rose and that country's own exports of the same goods to Russia rose too, with a backtest against published enforcement cases.</p>
+      <p><a class="guide-link" href="workspace/#guide">How it works: who uses it, a typical month, what is demo data</a></p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <p class="kind">Dashboard</p>
+        <h3>The radar</h3>
+        <p>The {{RUN_LABEL}} run, on HMRC data to {{UK_DATA_TO}}: {{LEADS}} leads and {{WATCH}} watch items among {{SERIES}} series, {{CORRIDORS}} corridors by {{CODES}} goods codes. {{LEADS_SHOWN}} of the leads are shown. The display rule holds back the other {{LEADS_HELD}}, as their UK exports over the 12 months are under £{{DISPLAY_MIN_GBP}} or came in fewer than {{DISPLAY_MIN_MONTHS}} of them, so a small flow is less likely to point at one exporter [Likely]; it cannot rule that out.</p>
+        <p>Track record: with the monthly check, a lead before the first public action in {{CASES_HIT}} of {{CASES}} published cases, and {{CASES_HIT_RUN1}} with the annual check alone, though in {{CASES_STOPPED}} of them the lead shown had stopped before the action. Four cases is a small test, and not a blind one [Likely]. The monthly check's price is more leads: on the backtest's corridors it made {{EVER_LEAD}} of {{EVER_OF}} series a lead at some run since January 2022, against {{EVER_LEAD_RUN1}} with the annual check alone.</p>
+        <dl>
+          <dt>Data</dt><dd>HMRC overseas trade statistics and UN Comtrade, aggregates only</dd>
+          <dt>Try</dt><dd>Track record for the backtest; Method and sources for the rules</dd>
+        </dl>
+        <p class="open"><a class="btn" href="radar/">Open the radar</a><a href="radar/#guide">How it works</a><!--watch:radar--></p>
+      </article>
+      <article class="card">
+        <p class="kind">Working tool</p>
+        <h3>Analyst workspace</h3>
+        <p>Where the leads are worked: an overview of what changed since the last run and what waits for a decision, a corridor map, what a lead is worth and what it costs to work, an inbox of this run's leads and watch items, a file for each with an analyst brief that a second person approves while four-eyes is on (the default), a checklist of questions from official guidance, an exporter screen that checks an exporter's own shipments against the corridor signals, a restricted layer on export declarations, an audit log and the track record.</p>
+        <dl>
+          <dt>Data</dt><dd>The radar's aggregates; the declarations and the exporter's shipments are synthetic</dd>
+          <dt>In this demo</dt><dd>Briefs start from the template, as drafting with Claude needs the page inside Claude. Changes stay in your tab and go when you reload or close it.</dd>
+          <dt>Try</dt><dd>Open a lead, start its brief from the template and submit it, then read the audit log</dd>
+        </dl>
+        <p class="open"><a class="btn" href="workspace/">Open the workspace</a><!--watch:workspace--></p>
+      </article>
+    </div>
+    <p class="house">A rise in exports is a lead, not evidence of a breach. Nothing here names an exporter, and a lead never means a UK party was involved.</p>
+  </section>
+
+  <section class="build brand-moveon" aria-labelledby="ta-h">
+    <div class="build-head">
+      <h2 id="ta-h" class="build-name"><img src="assets/moveon-mark.svg" alt="">Move forward</h2>
+      <p>What councils in England spend on temporary accommodation and on what kind, each set against councils like it without a name; then move-forward plans for a housing officer to approve.</p>
+      <p><a class="guide-link" href="planner/#guide">How it works: who uses it, a typical week, what is demo data</a></p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <p class="kind">Dashboard</p>
+        <h3>The market picture</h3>
+        <p>One council set against the others in its group, London boroughs or the rest of England: spend per household, the accommodation mix, where it sits in the spread and the questions that raises. No council is named, but none is anonymous either, as each shows its own published figures. A council far from its peers is a question to ask, not a finding.</p>
+        <dl>
+          <dt>Data</dt><dd>MHCLG's homelessness statistics (table TA1) and revenue outturn (RO4), aggregates only</dd>
+          <dt>Try</dt><dd>Switch the example council, then set the price gap in the savings illustration: it is an input, never a fact</dd>
+        </dl>
+        <p class="open"><a class="btn" href="ta/">Open the market picture</a><a href="ta/#guide">How it works</a><!--watch:ta--></p>
+      </article>
+      <article class="card">
+        <p class="kind">Working tool</p>
+        <h3>Move forward planner</h3>
+        <p>A caseload of {{CASELOAD}} made-up households, with an overview of plans waiting, time in temporary accommodation and the caseload's weekly cost range, and a board of every plan by stage. A file for each, with its routes out and a selection of the checks legislation and MHCLG guidance set; a move-forward plan, screened before it is saved and approved by a second officer (four-eyes, on by default); the checks worked through, progress, a scenario calculator and the audit log.</p>
+        <dl>
+          <dt>Data</dt><dd>Synthetic records only: every household is made up from a seed</dd>
+          <dt>In this demo</dt><dd>Plans start from the template, as drafting with Claude needs the page inside Claude (a hosted version is built, not deployed). Changes stay in your tab and go when you reload or close it.</dd>
+          <dt>Try</dt><dd>Open a household, make a plan from the template, then edit its summary to say "the duty has been discharged": the screen stops it</dd>
+        </dl>
+        <p class="open"><a class="btn" href="planner/">Open the planner</a><!--watch:planner--></p>
+      </article>
+    </div>
+    <p class="house">Plans are suggestions for an officer to approve, never decisions. Each statutory decision is made and recorded outside the planner.</p>
+  </section>
+
+  <div class="columns">
+    <section aria-labelledby="rules-h">
+      <h2 id="rules-h">What the code enforces</h2>
+      <ul class="plain small">
+        <li>No names of people or firms in what is drafted or shared. A screen runs over every draft and edit for figures not in the evidence, firm names by their legal-form endings, capitalised words that may be names, email addresses, postcodes and accusing language; another runs over the shared copies and the demo site as they are built, and over every tracked file and commit message when run on a repository, with a private deny list of names kept outside git (for the radar, the parties named in its case sources). Both are nets, not guarantees: a person reads every draft.</li>
+        <li>Outputs are leads and suggestions for a person, never findings or decisions.</li>
+        <li>With four-eyes on, as it is by default, a second person approves each brief and each plan; with it off, one person may approve, and the file says so. An approval counts only while the text still matches the fingerprint the approver saw.</li>
+        <li>Aggregates only, and small flows held back by the display rule. The households, declarations and shipments are synthetic; the real enforcement cases appear by reference, enforcing body, outcome, date and the route tested, with no names; for three of the four tested cases no case number was found.</li>
+        <li>Every figure traces to a published table and a logged release. Inferences in the method notes and the briefs carry [Certain], [Likely] or [Guessing], and the brief screen refuses a claim without one.</li>
+      </ul>
+    </section>
+    <section aria-labelledby="src-h">
+      <h2 id="src-h">Sources and licences</h2>
+      <ul class="plain small">
+        <li>HMRC overseas trade statistics, through the uktradeinfo API.</li>
+        <li>UN Comtrade, the corridors' own exports to Russia, as a few tables and charts under its re-dissemination guidance, which on our reading needs no permission for this use [Likely].</li>
+        <li>MHCLG statutory homelessness tables and revenue outturn.</li>
+        <li>The Common High Priority List of goods codes; enforcement cases by reference, from the official records or, for the two European cases tested, from published reports, as no official judgment was found.</li>
+        <li>d3 v7.9.0, served from this site under its ISC licence (<a href="vendor/d3-LICENSE.txt">vendor/d3-LICENSE.txt</a>).</li>
+        <li>Aldrich, IBM Plex Sans and IBM Plex Mono, Poppins and Source Sans 3, under the SIL Open Font License 1.1 (<a href="assets/fonts/OFL.txt">assets/fonts/OFL.txt</a>). The two logos are original to these demos.</li>
+      </ul>
+      <p class="small">Contains public sector information licensed under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="noopener">Open Government Licence v3.0</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-foot"><div class="site-foot-in">
+  <span>Built from diversion-radar <code>{{RADAR_COMMIT}}</code>, ta-market <code>{{TA_COMMIT}}</code> and fd-core <code>{{FDCORE_COMMIT}}</code>. Every file's SHA-256 is in <a href="site.json">site.json</a>.</span>
+  <span>A rise in exports is a lead, not evidence of a breach.</span>
+</div></footer>
+</body>
+</html>

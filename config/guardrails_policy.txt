@@ -1,0 +1,31 @@
+# Per-path switches for: python -m fdcore.guardrails --git . --policy config/guardrails_policy.txt
+# Only "accusing" and "phone" can be switched off, and only for the paths named here.
+backtest/data/cases.csv accusing                 # records the official outcome of concluded cases
+share/cases.csv accusing                         # the shared copy of the same register, official references only
+backtest/notes/case_research.md accusing         # private research notes on the same cases
+.claude/agents/* accusing                        # agent instructions name what the screen blocks
+.claude/commands/* accusing
+data/raw/comtrade_* phone                        # release timestamps and values, not phone numbers
+backtest/data/comtrade_release_dates.csv phone
+backtest/data/comtrade_monthly_* phone
+demo/radar/cases.json accusing                    # the official outcomes of the tested cases, from the register
+app/data/cases.json accusing                      # the same official outcomes, copied unchanged for the workspace
+radar/brief/redflags.py accusing                 # titles of the official guidance behind the analyst checklist
+radar/triage/match.py accusing                   # the title of OTSI's guidance on how reports are assessed
+demo/radar/triage/spec.json accusing             # the same title, generated for the triage view
+app/data/triage/spec.json accusing               # an unchanged copy for the workspace
+radar/brief/spec/redflags.json accusing          # the same checklist and titles, generated for the page
+radar/brief/spec/screen_rules.json accusing      # the brief screen's own word lists, as fd-core's screen
+data/brief_sources.csv accusing                  # private: the official URLs of that guidance
+demo/radar/briefs/*.json accusing                # case-level outcomes from the register and guidance titles
+app/spec/redflags.json accusing                  # unchanged copies for the workspace page
+app/spec/screen_rules.json accusing
+radar/brief/spec/references.json accusing         # titles and URLs of the official guidance in the workspace's References panel
+app/spec/references.json accusing                 # an unchanged copy for the workspace page
+app/data/briefs/*.json accusing
+data/raw/hmrc_monthly_run3_browser_2026-10-21.txt phone   # run 3 HMRC snapshot: its header holds the sum of values, a checksum
+backtest/data/comtrade_release_dates_run3.csv phone       # UN Comtrade dataset checksums, as in comtrade_release_dates.csv
+tests/browser/flow.mjs accusing                   # a negative test: the flow types an accusing word to check the screen blocks it
+app/data/manifest.json phone                     # SHA-256 checksums of the published files, not phone numbers
+site/vendor/d3-7.9.0.min.js accusing,phone      # third-party library pinned by SHA-256: colour tables and its own error text
+docs/phase6_platform.md phone                    # a G-Cloud service id in a source URL, not a phone number

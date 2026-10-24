@@ -1,0 +1,10 @@
+code,tier,cn8_from,cn8_to,description,note
+854231,1,85423100,85423199,"Electronic integrated circuits: processors and controllers",
+854232,1,85423200,85423299,"Electronic integrated circuits: memories",
+854233,1,85423300,85423399,"Electronic integrated circuits: amplifiers",
+854239,1,85423900,85423999,"Electronic integrated circuits: other",
+851762,2,85176200,85176299,"Machines for the reception, conversion and transmission of voice, images or other data",
+852691,2,85269100,85269199,"Radio navigational aid apparatus",
+853221,2,85322100,85322199,"Fixed capacitors: tantalum",
+853224,2,85322400,85322499,"Fixed capacitors: ceramic dielectric, multilayer",
+8548,2,85480000,85489999,"Electrical parts of machinery or apparatus not elsewhere specified","CHPL lists 8548.00 (HS 2022). Before 2022 this was 8548.10 and 8548.90, so the whole of heading 8548 is used for a consistent series."

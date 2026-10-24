@@ -1,0 +1,38 @@
+[
+ {
+  "measure": "Cases with a lead before the first public action",
+  "run1": 3,
+  "run2": 4,
+  "of": 4
+ },
+ {
+  "measure": "Primary tests shown, with a lead before the first public action",
+  "run1": 3,
+  "run2": 4,
+  "of": 4
+ },
+ {
+  "measure": "Sensitivity tests shown, with a lead before the first public action",
+  "run1": 0,
+  "run2": 1,
+  "of": 2
+ },
+ {
+  "measure": "Tests listed with no route or result, under the display rule",
+  "run1": 2,
+  "run2": 2,
+  "of": 8
+ },
+ {
+  "measure": "Series a lead at some run, Jan 2022 to Aug 2026",
+  "run1": 19,
+  "run2": 20,
+  "of": 81
+ },
+ {
+  "measure": "Monthly runs as a lead, all series",
+  "run1": 257,
+  "run2": 300,
+  "of": 4536
+ }
+]

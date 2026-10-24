@@ -1,0 +1,18 @@
+[
+ {
+  "period": "Peacetime, 2019-21",
+  "baseline": "2016-18",
+  "runs": 36,
+  "rule": "annual check alone",
+  "series_ever_lead": 2,
+  "series": 81
+ },
+ {
+  "period": "War-time, 2022-24",
+  "baseline": "2019-21",
+  "runs": 36,
+  "rule": "annual check alone",
+  "series_ever_lead": 18,
+  "series": 81
+ }
+]

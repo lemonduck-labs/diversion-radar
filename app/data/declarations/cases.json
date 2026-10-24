@@ -1,0 +1,1522 @@
+{
+ "notice": "SYNTHETIC RECORDS. Made up by radar/declarations/generate.py from a seed, to show what the radar's restricted layer would do with export declarations. No record is or describes a real declaration, exporter, consignee, forwarder or agent; the ids are made up and look nothing like EORI numbers; there are no names, addresses or postcodes.",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "about": "Signals grouped into cases around an exporter-route or a consignee cluster. Every line is a question for a person to check, with the facts from the declarations that raised it; none is a finding, and most will have an ordinary explanation. Cases carry no score.",
+ "data_cannot_show": "Declarations show who sent what to whom, through whom, and when. They do not show who paid, who ends up with the goods, where the goods go after the destination, or why [Certain].",
+ "cases": [
+  {
+   "id": "SYN-CASE-001",
+   "kind": "exporter-route",
+   "title": "EXP-0234 to Kazakhstan",
+   "check_order": "check first",
+   "detectors": ["D1","D2"],
+   "focus": {"exporters":["EXP-0234"],"consignees":["CON-1916","CON-2020","CON-2817"],"forwarders":[],"routes":["KZ-851762"]},
+   "parties": {"exporters":["EXP-0234"],"consignees":["CON-1916","CON-2020","CON-2817"],"forwarders":["FWD-0014"],"routes":["KZ-851762"]},
+   "signals": [
+    {
+     "id": "SIG-0012",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2817",
+     "keys": ["C:CON-2817"],
+     "entities": {"consignees":["CON-2817"],"exporters":["EXP-0234"],"forwarders":["FWD-0014"],"routes":["KZ-851762"]},
+     "question": "Is CON-2817 in Kazakhstan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 6 Oct 2025. In the last 12 months: £93,622 of the radar's goods in 6 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-10-06","value_gbp":93622,"shipments":6,"exporters":["EXP-0234"],"codes":["851762"],"country":"KZ"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    },
+    {
+     "id": "SIG-0019",
+     "detector": "D2",
+     "name": "route-volume-jump",
+     "unit": "R:EXP-0234|KZ|851762",
+     "keys": ["ED:EXP-0234|KZ","C:CON-2020","C:CON-1916","C:CON-2817"],
+     "entities": {"exporters":["EXP-0234"],"consignees":["CON-1916","CON-2020","CON-2817"],"forwarders":["FWD-0014"],"routes":["KZ-851762"]},
+     "question": "Have EXP-0234's exports of 851762 (machines for the reception, conversion and transmission of voice, images or other data) to Kazakhstan risen beyond their usual pattern, and is there a business reason for the rise?",
+     "basis": "£656,494 in the last 12 months against £85,023 in the 12 before (7.7 times), on a route the public radar shows as a lead. 3 consignees behind the rise, 1 of them first seen in the last 12 months.",
+     "facts": {"value_window_gbp":656494,"value_prior_gbp":85023,"ratio":7.7,"public_status":"lead","rising_consignees":["CON-2020","CON-1916","CON-2817"],"new_consignees":["CON-2817"]},
+     "implements": ["order-volume-rise"],
+     "then_check": ["chpl-end-destination","end-use-details","line-of-business","destination-clear"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0012","detector":"D1","question":"Is CON-2817 in Kazakhstan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 6 Oct 2025. In the last 12 months: £93,622 of the radar's goods in 6 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"SIG-0019","detector":"D2","question":"Have EXP-0234's exports of 851762 (machines for the reception, conversion and transmission of voice, images or other data) to Kazakhstan risen beyond their usual pattern, and is there a business reason for the rise?","basis":"£656,494 in the last 12 months against £85,023 in the 12 before (7.7 times), on a route the public radar shows as a lead. 3 consignees behind the rise, 1 of them first seen in the last 12 months.","red_flags":["order-volume-rise"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"destination-clear","question":"Is the customer open about where the goods will end up and what they are for?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-002",
+   "kind": "exporter-route",
+   "title": "EXP-0101 to the Kyrgyz Republic",
+   "check_order": "check first",
+   "detectors": ["D6","D7"],
+   "focus": {"exporters":["EXP-0101"],"consignees":["CON-1557"],"forwarders":[],"routes":["KG-851762","KG-854231","KG-8548"]},
+   "parties": {"exporters":["EXP-0101"],"consignees":["CON-1557"],"forwarders":["FWD-0032","FWD-0038"],"routes":["KG-851762","KG-854231","KG-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0042",
+     "detector": "D6",
+     "name": "russia-switch",
+     "unit": "E:EXP-0101",
+     "keys": ["ED:EXP-0101|KG","C:CON-1557"],
+     "entities": {"exporters":["EXP-0101"],"consignees":["CON-1557"],"forwarders":["FWD-0032","FWD-0038"],"routes":["KG-851762","KG-8548"]},
+     "question": "Did EXP-0101's customers in the Kyrgyz Republic start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?",
+     "basis": "£514,115 of the radar's goods to Russia from January 2021 to 23 February 2022; £695,373 in the two years from March 2022 to 1 consignee in the Kyrgyz Republic first seen after 24 February 2022. Codes in common: 851762, 8548.",
+     "facts": {"russia_value_gbp":514115,"corridor_value_gbp":695373,"replaced_share":0.78,"new_consignees":["CON-1557"],"countries":["KG"],"codes_in_common":["851762","8548"]},
+     "implements": ["chpl-orders-since-2022","transit-edd-country"],
+     "then_check": ["transport-changed","russia-ties","chpl-end-destination","end-user-certificate"]
+    },
+    {
+     "id": "SIG-0048",
+     "detector": "D7",
+     "name": "small-frequent",
+     "unit": "C:CON-1557",
+     "keys": ["C:CON-1557"],
+     "entities": {"consignees":["CON-1557"],"exporters":["EXP-0101"],"forwarders":["FWD-0032","FWD-0038"],"routes":["KG-851762","KG-854231","KG-8548"]},
+     "question": "Are the goods going to CON-1557 in the Kyrgyz Republic in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?",
+     "basis": "32 shipments of the radar's goods in the last 12 months, median £1,012 and 0.5 kg, from 1 exporter.",
+     "facts": {"shipments":32,"median_value_gbp":1012,"median_net_mass_kg":0.5,"exporters":["EXP-0101"],"country":"KG"},
+     "implements": ["small-frequent-shipments"],
+     "then_check": ["price-and-invoices","consignee-uses-goods","delivery-vague"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0042","detector":"D6","question":"Did EXP-0101's customers in the Kyrgyz Republic start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?","basis":"£514,115 of the radar's goods to Russia from January 2021 to 23 February 2022; £695,373 in the two years from March 2022 to 1 consignee in the Kyrgyz Republic first seen after 24 February 2022. Codes in common: 851762, 8548.","red_flags":["chpl-orders-since-2022","transit-edd-country"]},
+    {"from":"SIG-0048","detector":"D7","question":"Are the goods going to CON-1557 in the Kyrgyz Republic in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?","basis":"32 shipments of the radar's goods in the last 12 months, median £1,012 and 0.5 kg, from 1 exporter.","red_flags":["small-frequent-shipments"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"consignee-uses-goods","question":"Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?"},
+    {"from":"red-flag list","red_flag":"price-and-invoices","question":"Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?"},
+    {"from":"red-flag list","red_flag":"transport-changed","question":"Has the way these goods are shipped to this customer changed since sanctions were imposed?"},
+    {"from":"red-flag list","red_flag":"delivery-vague","question":"Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?"},
+    {"from":"red-flag list","red_flag":"russia-ties","question":"Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-003",
+   "kind": "exporter-route",
+   "title": "EXP-0003 to the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D2"],
+   "focus": {"exporters":["EXP-0003"],"consignees":["CON-1546"],"forwarders":[],"routes":["AE-854239"]},
+   "parties": {"exporters":["EXP-0003"],"consignees":["CON-1546"],"forwarders":["FWD-0040"],"routes":["AE-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0014",
+     "detector": "D2",
+     "name": "route-volume-jump",
+     "unit": "R:EXP-0003|AE|854239",
+     "keys": ["ED:EXP-0003|AE","C:CON-1546"],
+     "entities": {"exporters":["EXP-0003"],"consignees":["CON-1546"],"forwarders":["FWD-0040"],"routes":["AE-854239"]},
+     "question": "Have EXP-0003's exports of 854239 (electronic integrated circuits: other) to the United Arab Emirates risen beyond their usual pattern, and is there a business reason for the rise?",
+     "basis": "£256,771 in the last 12 months against £47,599 in the 12 before (5.4 times), on a route the public radar shows as a lead. 1 consignee behind the rise, 0 of them first seen in the last 12 months.",
+     "facts": {"value_window_gbp":256771,"value_prior_gbp":47599,"ratio":5.4,"public_status":"lead","rising_consignees":["CON-1546"],"new_consignees":[]},
+     "implements": ["order-volume-rise"],
+     "then_check": ["chpl-end-destination","end-use-details","line-of-business","destination-clear"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0014","detector":"D2","question":"Have EXP-0003's exports of 854239 (electronic integrated circuits: other) to the United Arab Emirates risen beyond their usual pattern, and is there a business reason for the rise?","basis":"£256,771 in the last 12 months against £47,599 in the 12 before (5.4 times), on a route the public radar shows as a lead. 1 consignee behind the rise, 0 of them first seen in the last 12 months.","red_flags":["order-volume-rise"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"from":"red-flag list","red_flag":"destination-clear","question":"Is the customer open about where the goods will end up and what they are for?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-004",
+   "kind": "exporter-route",
+   "title": "EXP-0080 to Turkey",
+   "check_order": "check",
+   "detectors": ["D2"],
+   "focus": {"exporters":["EXP-0080"],"consignees":["CON-2041","CON-2053"],"forwarders":[],"routes":["TR-853221"]},
+   "parties": {"exporters":["EXP-0080"],"consignees":["CON-2041","CON-2053"],"forwarders":["FWD-0016"],"routes":["TR-853221"]},
+   "signals": [
+    {
+     "id": "SIG-0015",
+     "detector": "D2",
+     "name": "route-volume-jump",
+     "unit": "R:EXP-0080|TR|853221",
+     "keys": ["ED:EXP-0080|TR","C:CON-2041","C:CON-2053"],
+     "entities": {"exporters":["EXP-0080"],"consignees":["CON-2041","CON-2053"],"forwarders":["FWD-0016"],"routes":["TR-853221"]},
+     "question": "Have EXP-0080's exports of 853221 (fixed capacitors: tantalum) to Turkey risen beyond their usual pattern, and is there a business reason for the rise?",
+     "basis": "£501,395 in the last 12 months against £110,929 in the 12 before (4.5 times), on a route the public radar shows as a watch item. 2 consignees behind the rise, 0 of them first seen in the last 12 months.",
+     "facts": {"value_window_gbp":501395,"value_prior_gbp":110929,"ratio":4.5,"public_status":"watch","rising_consignees":["CON-2041","CON-2053"],"new_consignees":[]},
+     "implements": ["order-volume-rise"],
+     "then_check": ["chpl-end-destination","end-use-details","line-of-business","destination-clear"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0015","detector":"D2","question":"Have EXP-0080's exports of 853221 (fixed capacitors: tantalum) to Turkey risen beyond their usual pattern, and is there a business reason for the rise?","basis":"£501,395 in the last 12 months against £110,929 in the 12 before (4.5 times), on a route the public radar shows as a watch item. 2 consignees behind the rise, 0 of them first seen in the last 12 months.","red_flags":["order-volume-rise"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"from":"red-flag list","red_flag":"destination-clear","question":"Is the customer open about where the goods will end up and what they are for?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-005",
+   "kind": "exporter-route",
+   "title": "EXP-0121 to Turkey",
+   "check_order": "check",
+   "detectors": ["D2"],
+   "focus": {"exporters":["EXP-0121"],"consignees":["CON-1688"],"forwarders":[],"routes":["TR-854232"]},
+   "parties": {"exporters":["EXP-0121"],"consignees":["CON-1688"],"forwarders":["FWD-0014","FWD-0033"],"routes":["TR-854232"]},
+   "signals": [
+    {
+     "id": "SIG-0016",
+     "detector": "D2",
+     "name": "route-volume-jump",
+     "unit": "R:EXP-0121|TR|854232",
+     "keys": ["ED:EXP-0121|TR","C:CON-1688"],
+     "entities": {"exporters":["EXP-0121"],"consignees":["CON-1688"],"forwarders":["FWD-0014","FWD-0033"],"routes":["TR-854232"]},
+     "question": "Have EXP-0121's exports of 854232 (electronic integrated circuits: memories) to Turkey risen beyond their usual pattern, and is there a business reason for the rise?",
+     "basis": "£203,102 in the last 12 months against £43,777 in the 12 before (4.6 times), on a route the public radar shows as a watch item. 1 consignee behind the rise, 0 of them first seen in the last 12 months.",
+     "facts": {"value_window_gbp":203102,"value_prior_gbp":43777,"ratio":4.6,"public_status":"watch","rising_consignees":["CON-1688"],"new_consignees":[]},
+     "implements": ["order-volume-rise"],
+     "then_check": ["chpl-end-destination","end-use-details","line-of-business","destination-clear"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0016","detector":"D2","question":"Have EXP-0121's exports of 854232 (electronic integrated circuits: memories) to Turkey risen beyond their usual pattern, and is there a business reason for the rise?","basis":"£203,102 in the last 12 months against £43,777 in the 12 before (4.6 times), on a route the public radar shows as a watch item. 1 consignee behind the rise, 0 of them first seen in the last 12 months.","red_flags":["order-volume-rise"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"from":"red-flag list","red_flag":"destination-clear","question":"Is the customer open about where the goods will end up and what they are for?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-006",
+   "kind": "exporter-route",
+   "title": "EXP-0122 to Turkey",
+   "check_order": "check",
+   "detectors": ["D2"],
+   "focus": {"exporters":["EXP-0122"],"consignees":["CON-1555"],"forwarders":[],"routes":["TR-854232"]},
+   "parties": {"exporters":["EXP-0122"],"consignees":["CON-1555"],"forwarders":["FWD-0009","FWD-0038"],"routes":["TR-854232"]},
+   "signals": [
+    {
+     "id": "SIG-0017",
+     "detector": "D2",
+     "name": "route-volume-jump",
+     "unit": "R:EXP-0122|TR|854232",
+     "keys": ["ED:EXP-0122|TR","C:CON-1555"],
+     "entities": {"exporters":["EXP-0122"],"consignees":["CON-1555"],"forwarders":["FWD-0009","FWD-0038"],"routes":["TR-854232"]},
+     "question": "Have EXP-0122's exports of 854232 (electronic integrated circuits: memories) to Turkey risen beyond their usual pattern, and is there a business reason for the rise?",
+     "basis": "£271,478 in the last 12 months against £43,845 in the 12 before (6.2 times), on a route the public radar shows as a watch item. 1 consignee behind the rise, 0 of them first seen in the last 12 months.",
+     "facts": {"value_window_gbp":271478,"value_prior_gbp":43845,"ratio":6.2,"public_status":"watch","rising_consignees":["CON-1555"],"new_consignees":[]},
+     "implements": ["order-volume-rise"],
+     "then_check": ["chpl-end-destination","end-use-details","line-of-business","destination-clear"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0017","detector":"D2","question":"Have EXP-0122's exports of 854232 (electronic integrated circuits: memories) to Turkey risen beyond their usual pattern, and is there a business reason for the rise?","basis":"£271,478 in the last 12 months against £43,845 in the 12 before (6.2 times), on a route the public radar shows as a watch item. 1 consignee behind the rise, 0 of them first seen in the last 12 months.","red_flags":["order-volume-rise"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"from":"red-flag list","red_flag":"destination-clear","question":"Is the customer open about where the goods will end up and what they are for?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-007",
+   "kind": "exporter-route",
+   "title": "EXP-0186 to Uzbekistan",
+   "check_order": "check",
+   "detectors": ["D2"],
+   "focus": {"exporters":["EXP-0186"],"consignees":["CON-1560"],"forwarders":[],"routes":["UZ-851762"]},
+   "parties": {"exporters":["EXP-0186"],"consignees":["CON-1560"],"forwarders":["FWD-0039"],"routes":["UZ-851762"]},
+   "signals": [
+    {
+     "id": "SIG-0018",
+     "detector": "D2",
+     "name": "route-volume-jump",
+     "unit": "R:EXP-0186|UZ|851762",
+     "keys": ["ED:EXP-0186|UZ","C:CON-1560"],
+     "entities": {"exporters":["EXP-0186"],"consignees":["CON-1560"],"forwarders":["FWD-0039"],"routes":["UZ-851762"]},
+     "question": "Have EXP-0186's exports of 851762 (machines for the reception, conversion and transmission of voice, images or other data) to Uzbekistan risen beyond their usual pattern, and is there a business reason for the rise?",
+     "basis": "£255,390 in the last 12 months against £55,437 in the 12 before (4.6 times), on a route the public radar shows as a watch item. 1 consignee behind the rise, 0 of them first seen in the last 12 months.",
+     "facts": {"value_window_gbp":255390,"value_prior_gbp":55437,"ratio":4.6,"public_status":"watch","rising_consignees":["CON-1560"],"new_consignees":[]},
+     "implements": ["order-volume-rise"],
+     "then_check": ["chpl-end-destination","end-use-details","line-of-business","destination-clear"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0018","detector":"D2","question":"Have EXP-0186's exports of 851762 (machines for the reception, conversion and transmission of voice, images or other data) to Uzbekistan risen beyond their usual pattern, and is there a business reason for the rise?","basis":"£255,390 in the last 12 months against £55,437 in the 12 before (4.6 times), on a route the public radar shows as a watch item. 1 consignee behind the rise, 0 of them first seen in the last 12 months.","red_flags":["order-volume-rise"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"from":"red-flag list","red_flag":"destination-clear","question":"Is the customer open about where the goods will end up and what they are for?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-008",
+   "kind": "exporter-route",
+   "title": "EXP-0268 to the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D2"],
+   "focus": {"exporters":["EXP-0268"],"consignees":["CON-1961","CON-2016"],"forwarders":[],"routes":["AE-854232"]},
+   "parties": {"exporters":["EXP-0268"],"consignees":["CON-1961","CON-2016"],"forwarders":["FWD-0013"],"routes":["AE-854232"]},
+   "signals": [
+    {
+     "id": "SIG-0020",
+     "detector": "D2",
+     "name": "route-volume-jump",
+     "unit": "R:EXP-0268|AE|854232",
+     "keys": ["ED:EXP-0268|AE","C:CON-1961","C:CON-2016"],
+     "entities": {"exporters":["EXP-0268"],"consignees":["CON-1961","CON-2016"],"forwarders":["FWD-0013"],"routes":["AE-854232"]},
+     "question": "Have EXP-0268's exports of 854232 (electronic integrated circuits: memories) to the United Arab Emirates risen beyond their usual pattern, and is there a business reason for the rise?",
+     "basis": "£523,830 in the last 12 months against £81,430 in the 12 before (6.4 times), on a route the public radar shows as a lead. 2 consignees behind the rise, 0 of them first seen in the last 12 months.",
+     "facts": {"value_window_gbp":523830,"value_prior_gbp":81430,"ratio":6.4,"public_status":"lead","rising_consignees":["CON-1961","CON-2016"],"new_consignees":[]},
+     "implements": ["order-volume-rise"],
+     "then_check": ["chpl-end-destination","end-use-details","line-of-business","destination-clear"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0020","detector":"D2","question":"Have EXP-0268's exports of 854232 (electronic integrated circuits: memories) to the United Arab Emirates risen beyond their usual pattern, and is there a business reason for the rise?","basis":"£523,830 in the last 12 months against £81,430 in the 12 before (6.4 times), on a route the public radar shows as a lead. 2 consignees behind the rise, 0 of them first seen in the last 12 months.","red_flags":["order-volume-rise"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"from":"red-flag list","red_flag":"destination-clear","question":"Is the customer open about where the goods will end up and what they are for?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-009",
+   "kind": "exporter-route",
+   "title": "EXP-0068 to Turkey",
+   "check_order": "check",
+   "detectors": ["D4"],
+   "focus": {"exporters":["EXP-0068"],"consignees":["CON-1645"],"forwarders":[],"routes":["TR-853221"]},
+   "parties": {"exporters":["EXP-0068"],"consignees":["CON-1645"],"forwarders":["FWD-0014"],"routes":["TR-853221"]},
+   "signals": [
+    {
+     "id": "SIG-0029",
+     "detector": "D4",
+     "name": "unit-value",
+     "unit": "P:EXP-0068|CON-1645|85322100",
+     "keys": ["ED:EXP-0068|TR","C:CON-1645"],
+     "entities": {"exporters":["EXP-0068"],"consignees":["CON-1645"],"forwarders":["FWD-0014"],"routes":["TR-853221"]},
+     "question": "Why is the declared value per kilogram of 85322100 (fixed capacitors: tantalum) from EXP-0068 to CON-1645 in Turkey about 9 times the usual for the code, and are the goods recorded under the correct code and at the market price?",
+     "basis": "4 of 13 goods items are more than 3.5 robust deviations from the code's median of £412 per kg; this pair's median is £430 per kg.",
+     "facts": {"items":13,"outliers":4,"code_median_gbp_per_kg":412.27,"pair_median_gbp_per_kg":430.17,"outlier_ratio":9.08,"direction":"above","country":"TR"},
+     "implements": ["price-and-invoices","hs-code-check"],
+     "then_check": ["end-use-details","line-of-business"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0029","detector":"D4","question":"Why is the declared value per kilogram of 85322100 (fixed capacitors: tantalum) from EXP-0068 to CON-1645 in Turkey about 9 times the usual for the code, and are the goods recorded under the correct code and at the market price?","basis":"4 of 13 goods items are more than 3.5 robust deviations from the code's median of £412 per kg; this pair's median is £430 per kg.","red_flags":["price-and-invoices","hs-code-check"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-010",
+   "kind": "exporter-route",
+   "title": "EXP-0070 to the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D4"],
+   "focus": {"exporters":["EXP-0070"],"consignees":["CON-0808"],"forwarders":[],"routes":["AE-854233"]},
+   "parties": {"exporters":["EXP-0070"],"consignees":["CON-0808"],"forwarders":["FWD-0033"],"routes":["AE-854233"]},
+   "signals": [
+    {
+     "id": "SIG-0030",
+     "detector": "D4",
+     "name": "unit-value",
+     "unit": "P:EXP-0070|CON-0808|85423300",
+     "keys": ["ED:EXP-0070|AE","C:CON-0808"],
+     "entities": {"exporters":["EXP-0070"],"consignees":["CON-0808"],"forwarders":["FWD-0033"],"routes":["AE-854233"]},
+     "question": "Why is the declared value per kilogram of 85423300 (electronic integrated circuits: amplifiers) from EXP-0070 to CON-0808 in the United Arab Emirates about 6 times the usual for the code, and are the goods recorded under the correct code and at the market price?",
+     "basis": "7 of 12 goods items are more than 3.5 robust deviations from the code's median of £1,448 per kg; this pair's median is £7,583 per kg.",
+     "facts": {"items":12,"outliers":7,"code_median_gbp_per_kg":1448.34,"pair_median_gbp_per_kg":7583.29,"outlier_ratio":5.77,"direction":"above","country":"AE"},
+     "implements": ["price-and-invoices","hs-code-check"],
+     "then_check": ["end-use-details","line-of-business"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0030","detector":"D4","question":"Why is the declared value per kilogram of 85423300 (electronic integrated circuits: amplifiers) from EXP-0070 to CON-0808 in the United Arab Emirates about 6 times the usual for the code, and are the goods recorded under the correct code and at the market price?","basis":"7 of 12 goods items are more than 3.5 robust deviations from the code's median of £1,448 per kg; this pair's median is £7,583 per kg.","red_flags":["price-and-invoices","hs-code-check"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-011",
+   "kind": "exporter-route",
+   "title": "EXP-0133 to Turkey",
+   "check_order": "check",
+   "detectors": ["D4"],
+   "focus": {"exporters":["EXP-0133"],"consignees":["CON-0763"],"forwarders":[],"routes":["TR-854231"]},
+   "parties": {"exporters":["EXP-0133"],"consignees":["CON-0763"],"forwarders":["FWD-0022","FWD-0033"],"routes":["TR-854231"]},
+   "signals": [
+    {
+     "id": "SIG-0031",
+     "detector": "D4",
+     "name": "unit-value",
+     "unit": "P:EXP-0133|CON-0763|85423100",
+     "keys": ["ED:EXP-0133|TR","C:CON-0763"],
+     "entities": {"exporters":["EXP-0133"],"consignees":["CON-0763"],"forwarders":["FWD-0022","FWD-0033"],"routes":["TR-854231"]},
+     "question": "Why is the declared value per kilogram of 85423100 (electronic integrated circuits: processors and controllers) from EXP-0133 to CON-0763 in Turkey about 10 times the usual for the code, and are the goods recorded under the correct code and at the market price?",
+     "basis": "12 of 14 goods items are more than 3.5 robust deviations from the code's median of £2,265 per kg; this pair's median is £22,908 per kg.",
+     "facts": {"items":14,"outliers":12,"code_median_gbp_per_kg":2264.61,"pair_median_gbp_per_kg":22907.6,"outlier_ratio":10.43,"direction":"above","country":"TR"},
+     "implements": ["price-and-invoices","hs-code-check"],
+     "then_check": ["end-use-details","line-of-business"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0031","detector":"D4","question":"Why is the declared value per kilogram of 85423100 (electronic integrated circuits: processors and controllers) from EXP-0133 to CON-0763 in Turkey about 10 times the usual for the code, and are the goods recorded under the correct code and at the market price?","basis":"12 of 14 goods items are more than 3.5 robust deviations from the code's median of £2,265 per kg; this pair's median is £22,908 per kg.","red_flags":["price-and-invoices","hs-code-check"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-012",
+   "kind": "exporter-route",
+   "title": "EXP-0149 to Georgia",
+   "check_order": "check",
+   "detectors": ["D4"],
+   "focus": {"exporters":["EXP-0149"],"consignees":["CON-0782"],"forwarders":[],"routes":["GE-852691"]},
+   "parties": {"exporters":["EXP-0149"],"consignees":["CON-0782"],"forwarders":["FWD-0003","FWD-0038"],"routes":["GE-852691"]},
+   "signals": [
+    {
+     "id": "SIG-0032",
+     "detector": "D4",
+     "name": "unit-value",
+     "unit": "P:EXP-0149|CON-0782|85269100",
+     "keys": ["ED:EXP-0149|GE","C:CON-0782"],
+     "entities": {"exporters":["EXP-0149"],"consignees":["CON-0782"],"forwarders":["FWD-0003","FWD-0038"],"routes":["GE-852691"]},
+     "question": "Why is the declared value per kilogram of 85269100 (radio navigational aid apparatus) from EXP-0149 to CON-0782 in Georgia about 11 times the usual for the code, and are the goods recorded under the correct code and at the market price?",
+     "basis": "14 of 14 goods items are more than 3.5 robust deviations from the code's median of £326 per kg; this pair's median is £3,418 per kg.",
+     "facts": {"items":14,"outliers":14,"code_median_gbp_per_kg":325.54,"pair_median_gbp_per_kg":3418.5,"outlier_ratio":10.5,"direction":"above","country":"GE"},
+     "implements": ["price-and-invoices","hs-code-check"],
+     "then_check": ["end-use-details","line-of-business"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0032","detector":"D4","question":"Why is the declared value per kilogram of 85269100 (radio navigational aid apparatus) from EXP-0149 to CON-0782 in Georgia about 11 times the usual for the code, and are the goods recorded under the correct code and at the market price?","basis":"14 of 14 goods items are more than 3.5 robust deviations from the code's median of £326 per kg; this pair's median is £3,418 per kg.","red_flags":["price-and-invoices","hs-code-check"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-013",
+   "kind": "exporter-route",
+   "title": "EXP-0193 to the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D4"],
+   "focus": {"exporters":["EXP-0193"],"consignees":["CON-1957"],"forwarders":[],"routes":["AE-854232"]},
+   "parties": {"exporters":["EXP-0193"],"consignees":["CON-1957"],"forwarders":["FWD-0014"],"routes":["AE-854232"]},
+   "signals": [
+    {
+     "id": "SIG-0033",
+     "detector": "D4",
+     "name": "unit-value",
+     "unit": "P:EXP-0193|CON-1957|85423200",
+     "keys": ["ED:EXP-0193|AE","C:CON-1957"],
+     "entities": {"exporters":["EXP-0193"],"consignees":["CON-1957"],"forwarders":["FWD-0014"],"routes":["AE-854232"]},
+     "question": "Why is the declared value per kilogram of 85423200 (electronic integrated circuits: memories) from EXP-0193 to CON-1957 in the United Arab Emirates about 10 times the usual for the code, and are the goods recorded under the correct code and at the market price?",
+     "basis": "4 of 11 goods items are more than 3.5 robust deviations from the code's median of £1,877 per kg; this pair's median is £2,458 per kg.",
+     "facts": {"items":11,"outliers":4,"code_median_gbp_per_kg":1876.91,"pair_median_gbp_per_kg":2457.5,"outlier_ratio":9.89,"direction":"above","country":"AE"},
+     "implements": ["price-and-invoices","hs-code-check"],
+     "then_check": ["end-use-details","line-of-business"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0033","detector":"D4","question":"Why is the declared value per kilogram of 85423200 (electronic integrated circuits: memories) from EXP-0193 to CON-1957 in the United Arab Emirates about 10 times the usual for the code, and are the goods recorded under the correct code and at the market price?","basis":"4 of 11 goods items are more than 3.5 robust deviations from the code's median of £1,877 per kg; this pair's median is £2,458 per kg.","red_flags":["price-and-invoices","hs-code-check"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-014",
+   "kind": "exporter-route",
+   "title": "EXP-0235 to Kazakhstan",
+   "check_order": "check",
+   "detectors": ["D4"],
+   "focus": {"exporters":["EXP-0235"],"consignees":["CON-2219"],"forwarders":[],"routes":["KZ-851762"]},
+   "parties": {"exporters":["EXP-0235"],"consignees":["CON-2219"],"forwarders":["FWD-0028","FWD-0033"],"routes":["KZ-851762"]},
+   "signals": [
+    {
+     "id": "SIG-0034",
+     "detector": "D4",
+     "name": "unit-value",
+     "unit": "P:EXP-0235|CON-2219|85176200",
+     "keys": ["ED:EXP-0235|KZ","C:CON-2219"],
+     "entities": {"exporters":["EXP-0235"],"consignees":["CON-2219"],"forwarders":["FWD-0028","FWD-0033"],"routes":["KZ-851762"]},
+     "question": "Why is the declared value per kilogram of 85176200 (machines for the reception, conversion and transmission of voice, images or other data) from EXP-0235 to CON-2219 in Kazakhstan about 6% of the usual for the code, and are the goods recorded under the correct code and at the market price?",
+     "basis": "5 of 11 goods items are more than 3.5 robust deviations from the code's median of £162 per kg; this pair's median is £126 per kg.",
+     "facts": {"items":11,"outliers":5,"code_median_gbp_per_kg":161.54,"pair_median_gbp_per_kg":126.34,"outlier_ratio":0.06,"direction":"below","country":"KZ"},
+     "implements": ["price-and-invoices","hs-code-check"],
+     "then_check": ["end-use-details","line-of-business"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0034","detector":"D4","question":"Why is the declared value per kilogram of 85176200 (machines for the reception, conversion and transmission of voice, images or other data) from EXP-0235 to CON-2219 in Kazakhstan about 6% of the usual for the code, and are the goods recorded under the correct code and at the market price?","basis":"5 of 11 goods items are more than 3.5 robust deviations from the code's median of £162 per kg; this pair's median is £126 per kg.","red_flags":["price-and-invoices","hs-code-check"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-015",
+   "kind": "exporter-route",
+   "title": "EXP-0063 to Georgia",
+   "check_order": "check",
+   "detectors": ["D5"],
+   "focus": {"exporters":["EXP-0063"],"consignees":["CON-0974"],"forwarders":[],"routes":["GE-854239"]},
+   "parties": {"exporters":["EXP-0063"],"consignees":["CON-0974"],"forwarders":["FWD-0004","FWD-0038"],"routes":["GE-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0035",
+     "detector": "D5",
+     "name": "code-switch",
+     "unit": "S:EXP-0063|CON-0974|85423900|85429000",
+     "keys": ["ED:EXP-0063|GE","C:CON-0974"],
+     "entities": {"exporters":["EXP-0063"],"consignees":["CON-0974"],"forwarders":["FWD-0004","FWD-0038"],"routes":["GE-854239"]},
+     "question": "Why did EXP-0063's shipments to CON-0974 in Georgia move from 85423900 to 85429000 at a similar value per kilogram, and are the goods recorded under the correct code on every document?",
+     "basis": "11 goods items under 85423900 (electronic integrated circuits: other) up to 11 Jun 2024; 11 under 85429000 (electronic integrated circuits: parts) from 30 Sep 2024. Median value per kg £1,273, then £1,748.",
+     "facts": {"code_a":"85423900","code_b":"85429000","items_a":11,"items_b":11,"last_a":"2024-06-11","first_b":"2024-09-30","median_gbp_per_kg_a":1273.27,"median_gbp_per_kg_b":1748.0,"country":"GE"},
+     "implements": ["hs-code-check"],
+     "then_check": ["line-of-business","end-use-details","chpl-end-destination"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0035","detector":"D5","question":"Why did EXP-0063's shipments to CON-0974 in Georgia move from 85423900 to 85429000 at a similar value per kilogram, and are the goods recorded under the correct code on every document?","basis":"11 goods items under 85423900 (electronic integrated circuits: other) up to 11 Jun 2024; 11 under 85429000 (electronic integrated circuits: parts) from 30 Sep 2024. Median value per kg £1,273, then £1,748.","red_flags":["hs-code-check"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-016",
+   "kind": "exporter-route",
+   "title": "EXP-0067 to the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D5"],
+   "focus": {"exporters":["EXP-0067"],"consignees":["CON-1602"],"forwarders":[],"routes":["AE-854231"]},
+   "parties": {"exporters":["EXP-0067"],"consignees":["CON-1602"],"forwarders":["FWD-0028"],"routes":["AE-854231"]},
+   "signals": [
+    {
+     "id": "SIG-0036",
+     "detector": "D5",
+     "name": "code-switch",
+     "unit": "S:EXP-0067|CON-1602|85423100|85429000",
+     "keys": ["ED:EXP-0067|AE","C:CON-1602"],
+     "entities": {"exporters":["EXP-0067"],"consignees":["CON-1602"],"forwarders":["FWD-0028"],"routes":["AE-854231"]},
+     "question": "Why did EXP-0067's shipments to CON-1602 in the United Arab Emirates move from 85423100 to 85429000 at a similar value per kilogram, and are the goods recorded under the correct code on every document?",
+     "basis": "10 goods items under 85423100 (electronic integrated circuits: processors and controllers) up to 15 Dec 2023; 14 under 85429000 (electronic integrated circuits: parts) from 28 Feb 2024. Median value per kg £2,406, then £1,871.",
+     "facts": {"code_a":"85423100","code_b":"85429000","items_a":10,"items_b":14,"last_a":"2023-12-15","first_b":"2024-02-28","median_gbp_per_kg_a":2406.04,"median_gbp_per_kg_b":1871.3,"country":"AE"},
+     "implements": ["hs-code-check"],
+     "then_check": ["line-of-business","end-use-details","chpl-end-destination"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0036","detector":"D5","question":"Why did EXP-0067's shipments to CON-1602 in the United Arab Emirates move from 85423100 to 85429000 at a similar value per kilogram, and are the goods recorded under the correct code on every document?","basis":"10 goods items under 85423100 (electronic integrated circuits: processors and controllers) up to 15 Dec 2023; 14 under 85429000 (electronic integrated circuits: parts) from 28 Feb 2024. Median value per kg £2,406, then £1,871.","red_flags":["hs-code-check"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-017",
+   "kind": "exporter-route",
+   "title": "EXP-0146 to Turkey",
+   "check_order": "check",
+   "detectors": ["D5"],
+   "focus": {"exporters":["EXP-0146"],"consignees":["CON-1482"],"forwarders":[],"routes":["TR-853224"]},
+   "parties": {"exporters":["EXP-0146"],"consignees":["CON-1482"],"forwarders":["FWD-0009","FWD-0034"],"routes":["TR-853224"]},
+   "signals": [
+    {
+     "id": "SIG-0037",
+     "detector": "D5",
+     "name": "code-switch",
+     "unit": "S:EXP-0146|CON-1482|85322400|85322200",
+     "keys": ["ED:EXP-0146|TR","C:CON-1482"],
+     "entities": {"exporters":["EXP-0146"],"consignees":["CON-1482"],"forwarders":["FWD-0009","FWD-0034"],"routes":["TR-853224"]},
+     "question": "Why did EXP-0146's shipments to CON-1482 in Turkey move from 85322400 to 85322200 at a similar value per kilogram, and are the goods recorded under the correct code on every document?",
+     "basis": "12 goods items under 85322400 (fixed capacitors: ceramic dielectric, multilayer) up to 9 Mar 2024; 13 under 85322200 (fixed capacitors: aluminium electrolytic) from 6 Jun 2024. Median value per kg £145, then £136.",
+     "facts": {"code_a":"85322400","code_b":"85322200","items_a":12,"items_b":13,"last_a":"2024-03-09","first_b":"2024-06-06","median_gbp_per_kg_a":145.02,"median_gbp_per_kg_b":136.12,"country":"TR"},
+     "implements": ["hs-code-check"],
+     "then_check": ["line-of-business","end-use-details","chpl-end-destination"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0037","detector":"D5","question":"Why did EXP-0146's shipments to CON-1482 in Turkey move from 85322400 to 85322200 at a similar value per kilogram, and are the goods recorded under the correct code on every document?","basis":"12 goods items under 85322400 (fixed capacitors: ceramic dielectric, multilayer) up to 9 Mar 2024; 13 under 85322200 (fixed capacitors: aluminium electrolytic) from 6 Jun 2024. Median value per kg £145, then £136.","red_flags":["hs-code-check"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-018",
+   "kind": "exporter-route",
+   "title": "EXP-0168 to Kazakhstan",
+   "check_order": "check",
+   "detectors": ["D5"],
+   "focus": {"exporters":["EXP-0168"],"consignees":["CON-1734"],"forwarders":[],"routes":["KZ-851762"]},
+   "parties": {"exporters":["EXP-0168"],"consignees":["CON-1734"],"forwarders":["FWD-0028","FWD-0030"],"routes":["KZ-851762"]},
+   "signals": [
+    {
+     "id": "SIG-0038",
+     "detector": "D5",
+     "name": "code-switch",
+     "unit": "S:EXP-0168|CON-1734|85176200|85177900",
+     "keys": ["ED:EXP-0168|KZ","C:CON-1734"],
+     "entities": {"exporters":["EXP-0168"],"consignees":["CON-1734"],"forwarders":["FWD-0028","FWD-0030"],"routes":["KZ-851762"]},
+     "question": "Why did EXP-0168's shipments to CON-1734 in Kazakhstan move from 85176200 to 85177900 at a similar value per kilogram, and are the goods recorded under the correct code on every document?",
+     "basis": "10 goods items under 85176200 (machines for the reception, conversion and transmission of voice, images or other data) up to 26 Jul 2023; 18 under 85177900 (parts of apparatus for the transmission or reception of voice, images or other data) from 23 Sep 2023. Median value per kg £208, then £160.",
+     "facts": {"code_a":"85176200","code_b":"85177900","items_a":10,"items_b":18,"last_a":"2023-07-26","first_b":"2023-09-23","median_gbp_per_kg_a":207.73,"median_gbp_per_kg_b":160.44,"country":"KZ"},
+     "implements": ["hs-code-check"],
+     "then_check": ["line-of-business","end-use-details","chpl-end-destination"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0038","detector":"D5","question":"Why did EXP-0168's shipments to CON-1734 in Kazakhstan move from 85176200 to 85177900 at a similar value per kilogram, and are the goods recorded under the correct code on every document?","basis":"10 goods items under 85176200 (machines for the reception, conversion and transmission of voice, images or other data) up to 26 Jul 2023; 18 under 85177900 (parts of apparatus for the transmission or reception of voice, images or other data) from 23 Sep 2023. Median value per kg £208, then £160.","red_flags":["hs-code-check"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-019",
+   "kind": "exporter-route",
+   "title": "EXP-0069 to Georgia",
+   "check_order": "check",
+   "detectors": ["D6"],
+   "focus": {"exporters":["EXP-0069"],"consignees":["CON-1547"],"forwarders":[],"routes":["GE-854233","GE-854239"]},
+   "parties": {"exporters":["EXP-0069"],"consignees":["CON-1547"],"forwarders":["FWD-0006"],"routes":["GE-854233","GE-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0039",
+     "detector": "D6",
+     "name": "russia-switch",
+     "unit": "E:EXP-0069",
+     "keys": ["ED:EXP-0069|GE","C:CON-1547"],
+     "entities": {"exporters":["EXP-0069"],"consignees":["CON-1547"],"forwarders":["FWD-0006"],"routes":["GE-854233","GE-854239"]},
+     "question": "Did EXP-0069's customers in Georgia start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?",
+     "basis": "£280,132 of the radar's goods to Russia from January 2021 to 23 February 2022; £313,043 in the two years from March 2022 to 1 consignee in Georgia first seen after 24 February 2022. Codes in common: 854233, 854239.",
+     "facts": {"russia_value_gbp":280132,"corridor_value_gbp":313043,"replaced_share":0.64,"new_consignees":["CON-1547"],"countries":["GE"],"codes_in_common":["854233","854239"]},
+     "implements": ["chpl-orders-since-2022"],
+     "then_check": ["transport-changed","russia-ties","chpl-end-destination","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0039","detector":"D6","question":"Did EXP-0069's customers in Georgia start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?","basis":"£280,132 of the radar's goods to Russia from January 2021 to 23 February 2022; £313,043 in the two years from March 2022 to 1 consignee in Georgia first seen after 24 February 2022. Codes in common: 854233, 854239.","red_flags":["chpl-orders-since-2022"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"transport-changed","question":"Has the way these goods are shipped to this customer changed since sanctions were imposed?"},
+    {"from":"red-flag list","red_flag":"russia-ties","question":"Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-020",
+   "kind": "exporter-route",
+   "title": "EXP-0094 to Kazakhstan",
+   "check_order": "check",
+   "detectors": ["D6"],
+   "focus": {"exporters":["EXP-0094"],"consignees":["CON-1505"],"forwarders":[],"routes":["KZ-851762","KZ-852691"]},
+   "parties": {"exporters":["EXP-0094"],"consignees":["CON-1505"],"forwarders":["FWD-0014"],"routes":["KZ-851762","KZ-852691"]},
+   "signals": [
+    {
+     "id": "SIG-0040",
+     "detector": "D6",
+     "name": "russia-switch",
+     "unit": "E:EXP-0094",
+     "keys": ["ED:EXP-0094|KZ","C:CON-1505"],
+     "entities": {"exporters":["EXP-0094"],"consignees":["CON-1505"],"forwarders":["FWD-0014"],"routes":["KZ-851762","KZ-852691"]},
+     "question": "Did EXP-0094's customers in Kazakhstan start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?",
+     "basis": "£506,460 of the radar's goods to Russia from January 2021 to 23 February 2022; £634,050 in the two years from March 2022 to 1 consignee in Kazakhstan first seen after 24 February 2022. Codes in common: 851762, 852691.",
+     "facts": {"russia_value_gbp":506460,"corridor_value_gbp":634050,"replaced_share":0.72,"new_consignees":["CON-1505"],"countries":["KZ"],"codes_in_common":["851762","852691"]},
+     "implements": ["chpl-orders-since-2022","transit-edd-country"],
+     "then_check": ["transport-changed","russia-ties","chpl-end-destination","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0040","detector":"D6","question":"Did EXP-0094's customers in Kazakhstan start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?","basis":"£506,460 of the radar's goods to Russia from January 2021 to 23 February 2022; £634,050 in the two years from March 2022 to 1 consignee in Kazakhstan first seen after 24 February 2022. Codes in common: 851762, 852691.","red_flags":["chpl-orders-since-2022","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"transport-changed","question":"Has the way these goods are shipped to this customer changed since sanctions were imposed?"},
+    {"from":"red-flag list","red_flag":"russia-ties","question":"Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-021",
+   "kind": "exporter-route",
+   "title": "EXP-0097 to Armenia",
+   "check_order": "check",
+   "detectors": ["D6"],
+   "focus": {"exporters":["EXP-0097"],"consignees":["CON-1571"],"forwarders":[],"routes":["AM-854239"]},
+   "parties": {"exporters":["EXP-0097"],"consignees":["CON-1571"],"forwarders":["FWD-0014","FWD-0015"],"routes":["AM-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0041",
+     "detector": "D6",
+     "name": "russia-switch",
+     "unit": "E:EXP-0097",
+     "keys": ["ED:EXP-0097|AM","C:CON-1571"],
+     "entities": {"exporters":["EXP-0097"],"consignees":["CON-1571"],"forwarders":["FWD-0014","FWD-0015"],"routes":["AM-854239"]},
+     "question": "Did EXP-0097's customers in Armenia start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?",
+     "basis": "£520,292 of the radar's goods to Russia from January 2021 to 23 February 2022; £646,938 in the two years from March 2022 to 1 consignee in Armenia first seen after 24 February 2022. Codes in common: 854239.",
+     "facts": {"russia_value_gbp":520292,"corridor_value_gbp":646938,"replaced_share":0.71,"new_consignees":["CON-1571"],"countries":["AM"],"codes_in_common":["854239"]},
+     "implements": ["chpl-orders-since-2022","transit-edd-country"],
+     "then_check": ["transport-changed","russia-ties","chpl-end-destination","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0041","detector":"D6","question":"Did EXP-0097's customers in Armenia start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?","basis":"£520,292 of the radar's goods to Russia from January 2021 to 23 February 2022; £646,938 in the two years from March 2022 to 1 consignee in Armenia first seen after 24 February 2022. Codes in common: 854239.","red_flags":["chpl-orders-since-2022","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"transport-changed","question":"Has the way these goods are shipped to this customer changed since sanctions were imposed?"},
+    {"from":"red-flag list","red_flag":"russia-ties","question":"Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-022",
+   "kind": "exporter-route",
+   "title": "EXP-0114 to the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D6"],
+   "focus": {"exporters":["EXP-0114"],"consignees":["CON-1542"],"forwarders":[],"routes":["AE-8548"]},
+   "parties": {"exporters":["EXP-0114"],"consignees":["CON-1542"],"forwarders":["FWD-0006","FWD-0033"],"routes":["AE-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0043",
+     "detector": "D6",
+     "name": "russia-switch",
+     "unit": "E:EXP-0114",
+     "keys": ["ED:EXP-0114|AE","C:CON-1542"],
+     "entities": {"exporters":["EXP-0114"],"consignees":["CON-1542"],"forwarders":["FWD-0006","FWD-0033"],"routes":["AE-8548"]},
+     "question": "Did EXP-0114's customers in the United Arab Emirates start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?",
+     "basis": "£243,195 of the radar's goods to Russia from January 2021 to 23 February 2022; £318,945 in the two years from March 2022 to 1 consignee in the United Arab Emirates first seen after 24 February 2022. Codes in common: 8548.",
+     "facts": {"russia_value_gbp":243195,"corridor_value_gbp":318945,"replaced_share":0.75,"new_consignees":["CON-1542"],"countries":["AE"],"codes_in_common":["8548"]},
+     "implements": ["chpl-orders-since-2022","transit-edd-country"],
+     "then_check": ["transport-changed","russia-ties","chpl-end-destination","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0043","detector":"D6","question":"Did EXP-0114's customers in the United Arab Emirates start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?","basis":"£243,195 of the radar's goods to Russia from January 2021 to 23 February 2022; £318,945 in the two years from March 2022 to 1 consignee in the United Arab Emirates first seen after 24 February 2022. Codes in common: 8548.","red_flags":["chpl-orders-since-2022","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"transport-changed","question":"Has the way these goods are shipped to this customer changed since sanctions were imposed?"},
+    {"from":"red-flag list","red_flag":"russia-ties","question":"Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-023",
+   "kind": "exporter-route",
+   "title": "EXP-0115 to the United Arab Emirates and Turkey",
+   "check_order": "check",
+   "detectors": ["D6"],
+   "focus": {"exporters":["EXP-0115"],"consignees":["CON-1541","CON-1632"],"forwarders":[],"routes":["AE-853221","TR-853221"]},
+   "parties": {"exporters":["EXP-0115"],"consignees":["CON-1541","CON-1632"],"forwarders":["FWD-0039"],"routes":["AE-853221","TR-853221"]},
+   "signals": [
+    {
+     "id": "SIG-0044",
+     "detector": "D6",
+     "name": "russia-switch",
+     "unit": "E:EXP-0115",
+     "keys": ["ED:EXP-0115|AE","ED:EXP-0115|TR","C:CON-1541","C:CON-1632"],
+     "entities": {"exporters":["EXP-0115"],"consignees":["CON-1541","CON-1632"],"forwarders":["FWD-0039"],"routes":["AE-853221","TR-853221"]},
+     "question": "Did EXP-0115's customers in the United Arab Emirates and Turkey start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?",
+     "basis": "£315,838 of the radar's goods to Russia from January 2021 to 23 February 2022; £340,692 in the two years from March 2022 to 2 consignees in the United Arab Emirates and Turkey first seen after 24 February 2022. Codes in common: 853221.",
+     "facts": {"russia_value_gbp":315838,"corridor_value_gbp":340692,"replaced_share":0.62,"new_consignees":["CON-1541","CON-1632"],"countries":["AE","TR"],"codes_in_common":["853221"]},
+     "implements": ["chpl-orders-since-2022","transit-edd-country"],
+     "then_check": ["transport-changed","russia-ties","chpl-end-destination","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0044","detector":"D6","question":"Did EXP-0115's customers in the United Arab Emirates and Turkey start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?","basis":"£315,838 of the radar's goods to Russia from January 2021 to 23 February 2022; £340,692 in the two years from March 2022 to 2 consignees in the United Arab Emirates and Turkey first seen after 24 February 2022. Codes in common: 853221.","red_flags":["chpl-orders-since-2022","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"transport-changed","question":"Has the way these goods are shipped to this customer changed since sanctions were imposed?"},
+    {"from":"red-flag list","red_flag":"russia-ties","question":"Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-024",
+   "kind": "consignee cluster",
+   "title": "CON-2765 in Kazakhstan",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2765"],"forwarders":[],"routes":["KZ-853221","KZ-854232"]},
+   "parties": {"exporters":["EXP-0100"],"consignees":["CON-2765"],"forwarders":["FWD-0033"],"routes":["KZ-853221","KZ-854232"]},
+   "signals": [
+    {
+     "id": "SIG-0001",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2765",
+     "keys": ["C:CON-2765"],
+     "entities": {"consignees":["CON-2765"],"exporters":["EXP-0100"],"forwarders":["FWD-0033"],"routes":["KZ-853221","KZ-854232"]},
+     "question": "Is CON-2765 in Kazakhstan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 16 Aug 2025. In the last 12 months: £135,390 of the radar's goods in 10 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-08-16","value_gbp":135390,"shipments":10,"exporters":["EXP-0100"],"codes":["853221","854232"],"country":"KZ"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0001","detector":"D1","question":"Is CON-2765 in Kazakhstan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 16 Aug 2025. In the last 12 months: £135,390 of the radar's goods in 10 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-025",
+   "kind": "consignee cluster",
+   "title": "CON-2766 in Uzbekistan",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2766"],"forwarders":[],"routes":["UZ-851762"]},
+   "parties": {"exporters":["EXP-0138"],"consignees":["CON-2766"],"forwarders":["FWD-0039"],"routes":["UZ-851762"]},
+   "signals": [
+    {
+     "id": "SIG-0002",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2766",
+     "keys": ["C:CON-2766"],
+     "entities": {"consignees":["CON-2766"],"exporters":["EXP-0138"],"forwarders":["FWD-0039"],"routes":["UZ-851762"]},
+     "question": "Is CON-2766 in Uzbekistan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 16 Aug 2025. In the last 12 months: £126,870 of the radar's goods in 10 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-08-16","value_gbp":126870,"shipments":10,"exporters":["EXP-0138"],"codes":["851762"],"country":"UZ"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0002","detector":"D1","question":"Is CON-2766 in Uzbekistan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 16 Aug 2025. In the last 12 months: £126,870 of the radar's goods in 10 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-026",
+   "kind": "consignee cluster",
+   "title": "CON-2767 in the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2767"],"forwarders":[],"routes":["AE-851762","AE-852691","AE-854232","AE-854239"]},
+   "parties": {"exporters":["EXP-0098","EXP-0257"],"consignees":["CON-2767"],"forwarders":["FWD-0028","FWD-0038"],"routes":["AE-851762","AE-852691","AE-854232","AE-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0003",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2767",
+     "keys": ["C:CON-2767"],
+     "entities": {"consignees":["CON-2767"],"exporters":["EXP-0098","EXP-0257"],"forwarders":["FWD-0028","FWD-0038"],"routes":["AE-851762","AE-852691","AE-854232","AE-854239"]},
+     "question": "Is CON-2767 in the United Arab Emirates new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 17 Aug 2025. In the last 12 months: £143,039 of the radar's goods in 12 shipments from 2 exporters.",
+     "facts": {"first_seen":"2025-08-17","value_gbp":143039,"shipments":12,"exporters":["EXP-0098","EXP-0257"],"codes":["851762","852691","854232","854239"],"country":"AE"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0003","detector":"D1","question":"Is CON-2767 in the United Arab Emirates new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 17 Aug 2025. In the last 12 months: £143,039 of the radar's goods in 12 shipments from 2 exporters.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-027",
+   "kind": "consignee cluster",
+   "title": "CON-2773 in the Kyrgyz Republic",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2773"],"forwarders":[],"routes":["KG-854232","KG-854233","KG-8548"]},
+   "parties": {"exporters":["EXP-0048","EXP-0220"],"consignees":["CON-2773"],"forwarders":["FWD-0014","FWD-0039"],"routes":["KG-854232","KG-854233","KG-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0004",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2773",
+     "keys": ["C:CON-2773"],
+     "entities": {"consignees":["CON-2773"],"exporters":["EXP-0048","EXP-0220"],"forwarders":["FWD-0014","FWD-0039"],"routes":["KG-854232","KG-854233","KG-8548"]},
+     "question": "Is CON-2773 in the Kyrgyz Republic new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 20 Aug 2025. In the last 12 months: £132,391 of the radar's goods in 9 shipments from 2 exporters.",
+     "facts": {"first_seen":"2025-08-20","value_gbp":132391,"shipments":9,"exporters":["EXP-0048","EXP-0220"],"codes":["854232","854233","8548"],"country":"KG"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0004","detector":"D1","question":"Is CON-2773 in the Kyrgyz Republic new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 20 Aug 2025. In the last 12 months: £132,391 of the radar's goods in 9 shipments from 2 exporters.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-028",
+   "kind": "consignee cluster",
+   "title": "CON-2774 in Turkey",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2774"],"forwarders":[],"routes":["TR-853224","TR-8548"]},
+   "parties": {"exporters":["EXP-0122"],"consignees":["CON-2774"],"forwarders":["FWD-0038"],"routes":["TR-853224","TR-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0005",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2774",
+     "keys": ["C:CON-2774"],
+     "entities": {"consignees":["CON-2774"],"exporters":["EXP-0122"],"forwarders":["FWD-0038"],"routes":["TR-853224","TR-8548"]},
+     "question": "Is CON-2774 in Turkey new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 21 Aug 2025. In the last 12 months: £53,349 of the radar's goods in 3 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-08-21","value_gbp":53349,"shipments":3,"exporters":["EXP-0122"],"codes":["853224","8548"],"country":"TR"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0005","detector":"D1","question":"Is CON-2774 in Turkey new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 21 Aug 2025. In the last 12 months: £53,349 of the radar's goods in 3 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-029",
+   "kind": "consignee cluster",
+   "title": "CON-2777 in Armenia",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2777"],"forwarders":[],"routes":["AM-853224","AM-854231","AM-854239"]},
+   "parties": {"exporters":["EXP-0099"],"consignees":["CON-2777"],"forwarders":["FWD-0039"],"routes":["AM-853224","AM-854231","AM-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0006",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2777",
+     "keys": ["C:CON-2777"],
+     "entities": {"consignees":["CON-2777"],"exporters":["EXP-0099"],"forwarders":["FWD-0039"],"routes":["AM-853224","AM-854231","AM-854239"]},
+     "question": "Is CON-2777 in Armenia new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 23 Aug 2025. In the last 12 months: £124,692 of the radar's goods in 8 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-08-23","value_gbp":124692,"shipments":8,"exporters":["EXP-0099"],"codes":["853224","854231","854239"],"country":"AM"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0006","detector":"D1","question":"Is CON-2777 in Armenia new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 23 Aug 2025. In the last 12 months: £124,692 of the radar's goods in 8 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-030",
+   "kind": "consignee cluster",
+   "title": "CON-2787 in Turkey",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2787"],"forwarders":[],"routes":["TR-854232","TR-8548"]},
+   "parties": {"exporters":["EXP-0036"],"consignees":["CON-2787"],"forwarders":["FWD-0003","FWD-0033"],"routes":["TR-854232","TR-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0007",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2787",
+     "keys": ["C:CON-2787"],
+     "entities": {"consignees":["CON-2787"],"exporters":["EXP-0036"],"forwarders":["FWD-0003","FWD-0033"],"routes":["TR-854232","TR-8548"]},
+     "question": "Is CON-2787 in Turkey new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 5 Sep 2025. In the last 12 months: £91,560 of the radar's goods in 9 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-09-05","value_gbp":91560,"shipments":9,"exporters":["EXP-0036"],"codes":["854232","8548"],"country":"TR"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0007","detector":"D1","question":"Is CON-2787 in Turkey new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 5 Sep 2025. In the last 12 months: £91,560 of the radar's goods in 9 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-031",
+   "kind": "consignee cluster",
+   "title": "CON-2790 in Azerbaijan",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2790"],"forwarders":[],"routes":["AZ-854239"]},
+   "parties": {"exporters":["EXP-0212"],"consignees":["CON-2790"],"forwarders":["FWD-0039"],"routes":["AZ-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0008",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2790",
+     "keys": ["C:CON-2790"],
+     "entities": {"consignees":["CON-2790"],"exporters":["EXP-0212"],"forwarders":["FWD-0039"],"routes":["AZ-854239"]},
+     "question": "Is CON-2790 in Azerbaijan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 7 Sep 2025. In the last 12 months: £84,944 of the radar's goods in 8 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-09-07","value_gbp":84944,"shipments":8,"exporters":["EXP-0212"],"codes":["854239"],"country":"AZ"},
+     "implements": ["new-chpl-trader"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0008","detector":"D1","question":"Is CON-2790 in Azerbaijan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 7 Sep 2025. In the last 12 months: £84,944 of the radar's goods in 8 shipments from 1 exporter.","red_flags":["new-chpl-trader"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-032",
+   "kind": "consignee cluster",
+   "title": "CON-2795 in Kazakhstan",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2795"],"forwarders":[],"routes":["KZ-853224","KZ-854231"]},
+   "parties": {"exporters":["EXP-0145"],"consignees":["CON-2795"],"forwarders":["FWD-0028","FWD-0033"],"routes":["KZ-853224","KZ-854231"]},
+   "signals": [
+    {
+     "id": "SIG-0009",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2795",
+     "keys": ["C:CON-2795"],
+     "entities": {"consignees":["CON-2795"],"exporters":["EXP-0145"],"forwarders":["FWD-0028","FWD-0033"],"routes":["KZ-853224","KZ-854231"]},
+     "question": "Is CON-2795 in Kazakhstan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 12 Sep 2025. In the last 12 months: £72,973 of the radar's goods in 6 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-09-12","value_gbp":72973,"shipments":6,"exporters":["EXP-0145"],"codes":["853224","854231"],"country":"KZ"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0009","detector":"D1","question":"Is CON-2795 in Kazakhstan new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 12 Sep 2025. In the last 12 months: £72,973 of the radar's goods in 6 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-033",
+   "kind": "consignee cluster",
+   "title": "CON-2798 in the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2798"],"forwarders":[],"routes":["AE-851762"]},
+   "parties": {"exporters":["EXP-0245"],"consignees":["CON-2798"],"forwarders":["FWD-0040"],"routes":["AE-851762"]},
+   "signals": [
+    {
+     "id": "SIG-0010",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2798",
+     "keys": ["C:CON-2798"],
+     "entities": {"consignees":["CON-2798"],"exporters":["EXP-0245"],"forwarders":["FWD-0040"],"routes":["AE-851762"]},
+     "question": "Is CON-2798 in the United Arab Emirates new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 15 Sep 2025. In the last 12 months: £66,780 of the radar's goods in 6 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-09-15","value_gbp":66780,"shipments":6,"exporters":["EXP-0245"],"codes":["851762"],"country":"AE"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0010","detector":"D1","question":"Is CON-2798 in the United Arab Emirates new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 15 Sep 2025. In the last 12 months: £66,780 of the radar's goods in 6 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-034",
+   "kind": "consignee cluster",
+   "title": "CON-2806 in the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2806"],"forwarders":[],"routes":["AE-853224","AE-854239"]},
+   "parties": {"exporters":["EXP-0288"],"consignees":["CON-2806"],"forwarders":["FWD-0028","FWD-0037"],"routes":["AE-853224","AE-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0011",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2806",
+     "keys": ["C:CON-2806"],
+     "entities": {"consignees":["CON-2806"],"exporters":["EXP-0288"],"forwarders":["FWD-0028","FWD-0037"],"routes":["AE-853224","AE-854239"]},
+     "question": "Is CON-2806 in the United Arab Emirates new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 23 Sep 2025. In the last 12 months: £52,487 of the radar's goods in 3 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-09-23","value_gbp":52487,"shipments":3,"exporters":["EXP-0288"],"codes":["853224","854239"],"country":"AE"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0011","detector":"D1","question":"Is CON-2806 in the United Arab Emirates new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 23 Sep 2025. In the last 12 months: £52,487 of the radar's goods in 3 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-035",
+   "kind": "consignee cluster",
+   "title": "CON-2843 in the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D1"],
+   "focus": {"exporters":[],"consignees":["CON-2843"],"forwarders":[],"routes":["AE-851762","AE-852691"]},
+   "parties": {"exporters":["EXP-0203"],"consignees":["CON-2843"],"forwarders":["FWD-0038"],"routes":["AE-851762","AE-852691"]},
+   "signals": [
+    {
+     "id": "SIG-0013",
+     "detector": "D1",
+     "name": "new-corridor-consignee",
+     "unit": "C:CON-2843",
+     "keys": ["C:CON-2843"],
+     "entities": {"consignees":["CON-2843"],"exporters":["EXP-0203"],"forwarders":["FWD-0038"],"routes":["AE-851762","AE-852691"]},
+     "question": "Is CON-2843 in the United Arab Emirates new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+     "basis": "First seen in a UK export declaration on 31 Oct 2025. In the last 12 months: £271,820 of the radar's goods in 4 shipments from 1 exporter.",
+     "facts": {"first_seen":"2025-10-31","value_gbp":271820,"shipments":4,"exporters":["EXP-0203"],"codes":["851762","852691"],"country":"AE"},
+     "implements": ["new-chpl-trader","transit-edd-country"],
+     "then_check": ["chpl-end-destination","new-customer-dual-use","sanctions-list-check","web-presence","end-user-certificate"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0013","detector":"D1","question":"Is CON-2843 in the United Arab Emirates new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on 31 Oct 2025. In the last 12 months: £271,820 of the radar's goods in 4 shipments from 1 exporter.","red_flags":["new-chpl-trader","transit-edd-country"]},
+    {"from":"red-flag list","red_flag":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"from":"red-flag list","red_flag":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"from":"red-flag list","red_flag":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"from":"red-flag list","red_flag":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-036",
+   "kind": "consignee cluster",
+   "title": "CON-0166 in Turkey",
+   "check_order": "check",
+   "detectors": ["D3"],
+   "focus": {"exporters":[],"consignees":["CON-0166"],"forwarders":[],"routes":[]},
+   "parties": {"exporters":["EXP-0002","EXP-0049","EXP-0125","EXP-0131","EXP-0165","EXP-0229","EXP-0232"],"consignees":["CON-0166"],"forwarders":["FWD-0005","FWD-0018","FWD-0028","FWD-0032","FWD-0033","FWD-0038","FWD-0039"],"routes":["TR-851762","TR-852691","TR-854231","TR-854232","TR-854239","TR-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0021",
+     "detector": "D3",
+     "name": "shared-party",
+     "unit": "C:CON-0166",
+     "keys": ["C:CON-0166"],
+     "entities": {"consignees":["CON-0166"],"exporters":["EXP-0002","EXP-0049","EXP-0125","EXP-0131","EXP-0165","EXP-0229","EXP-0232"],"forwarders":["FWD-0005","FWD-0018","FWD-0028","FWD-0032","FWD-0033","FWD-0038","FWD-0039"],"routes":["TR-851762","TR-852691","TR-854231","TR-854232","TR-854239","TR-8548"]},
+     "question": "Is CON-0166 in Turkey a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 7 different ownership groups send it goods on the Common High Priority Items List?",
+     "basis": "In the last 24 months: 58 shipments of the radar's goods from 7 exporters in 7 ownership groups. First seen in a UK export declaration on 18 Jan 2021.",
+     "facts": {"shipments":58,"exporters":["EXP-0002","EXP-0049","EXP-0125","EXP-0131","EXP-0165","EXP-0229","EXP-0232"],"groups":7,"first_seen":"2021-01-18","country":"TR","party_type":"consignee"},
+     "implements": ["consignee-uses-goods","shared-address"],
+     "then_check": ["forwarder-as-destination","web-presence","line-of-business","route-complex"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0021","detector":"D3","question":"Is CON-0166 in Turkey a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 7 different ownership groups send it goods on the Common High Priority Items List?","basis":"In the last 24 months: 58 shipments of the radar's goods from 7 exporters in 7 ownership groups. First seen in a UK export declaration on 18 Jan 2021.","red_flags":["consignee-uses-goods","shared-address"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"from":"red-flag list","red_flag":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-037",
+   "kind": "consignee cluster",
+   "title": "CON-0475 in Kazakhstan",
+   "check_order": "check",
+   "detectors": ["D3"],
+   "focus": {"exporters":[],"consignees":["CON-0475"],"forwarders":[],"routes":[]},
+   "parties": {"exporters":["EXP-0012","EXP-0053","EXP-0086","EXP-0144","EXP-0208"],"consignees":["CON-0475"],"forwarders":["FWD-0002","FWD-0004","FWD-0014","FWD-0028","FWD-0029","FWD-0039","FWD-0040"],"routes":["KZ-851762","KZ-853221","KZ-853224","KZ-854232","KZ-854233","KZ-854239","KZ-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0022",
+     "detector": "D3",
+     "name": "shared-party",
+     "unit": "C:CON-0475",
+     "keys": ["C:CON-0475"],
+     "entities": {"consignees":["CON-0475"],"exporters":["EXP-0012","EXP-0053","EXP-0086","EXP-0144","EXP-0208"],"forwarders":["FWD-0002","FWD-0004","FWD-0014","FWD-0028","FWD-0029","FWD-0039","FWD-0040"],"routes":["KZ-851762","KZ-853221","KZ-853224","KZ-854232","KZ-854233","KZ-854239","KZ-8548"]},
+     "question": "Is CON-0475 in Kazakhstan a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 5 different ownership groups send it goods on the Common High Priority Items List?",
+     "basis": "In the last 24 months: 50 shipments of the radar's goods from 5 exporters in 5 ownership groups. First seen in a UK export declaration on 28 Feb 2021.",
+     "facts": {"shipments":50,"exporters":["EXP-0012","EXP-0053","EXP-0086","EXP-0144","EXP-0208"],"groups":5,"first_seen":"2021-02-28","country":"KZ","party_type":"consignee"},
+     "implements": ["consignee-uses-goods","shared-address"],
+     "then_check": ["forwarder-as-destination","web-presence","line-of-business","route-complex"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0022","detector":"D3","question":"Is CON-0475 in Kazakhstan a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 5 different ownership groups send it goods on the Common High Priority Items List?","basis":"In the last 24 months: 50 shipments of the radar's goods from 5 exporters in 5 ownership groups. First seen in a UK export declaration on 28 Feb 2021.","red_flags":["consignee-uses-goods","shared-address"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"from":"red-flag list","red_flag":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-038",
+   "kind": "consignee cluster",
+   "title": "CON-0537 in the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D3"],
+   "focus": {"exporters":[],"consignees":["CON-0537"],"forwarders":[],"routes":[]},
+   "parties": {"exporters":["EXP-0011","EXP-0064","EXP-0132","EXP-0213"],"consignees":["CON-0537"],"forwarders":["FWD-0014","FWD-0028","FWD-0029","FWD-0031","FWD-0038"],"routes":["AE-851762","AE-853221","AE-854231","AE-854232","AE-854239","AE-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0023",
+     "detector": "D3",
+     "name": "shared-party",
+     "unit": "C:CON-0537",
+     "keys": ["C:CON-0537"],
+     "entities": {"consignees":["CON-0537"],"exporters":["EXP-0011","EXP-0064","EXP-0132","EXP-0213"],"forwarders":["FWD-0014","FWD-0028","FWD-0029","FWD-0031","FWD-0038"],"routes":["AE-851762","AE-853221","AE-854231","AE-854232","AE-854239","AE-8548"]},
+     "question": "Is CON-0537 in the United Arab Emirates a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 4 different ownership groups send it goods on the Common High Priority Items List?",
+     "basis": "In the last 24 months: 34 shipments of the radar's goods from 4 exporters in 4 ownership groups. First seen in a UK export declaration on 11 Mar 2021.",
+     "facts": {"shipments":34,"exporters":["EXP-0011","EXP-0064","EXP-0132","EXP-0213"],"groups":4,"first_seen":"2021-03-11","country":"AE","party_type":"consignee"},
+     "implements": ["consignee-uses-goods","shared-address"],
+     "then_check": ["forwarder-as-destination","web-presence","line-of-business","route-complex"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0023","detector":"D3","question":"Is CON-0537 in the United Arab Emirates a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 4 different ownership groups send it goods on the Common High Priority Items List?","basis":"In the last 24 months: 34 shipments of the radar's goods from 4 exporters in 4 ownership groups. First seen in a UK export declaration on 11 Mar 2021.","red_flags":["consignee-uses-goods","shared-address"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"from":"red-flag list","red_flag":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-039",
+   "kind": "consignee cluster",
+   "title": "CON-2458 in the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D3"],
+   "focus": {"exporters":[],"consignees":["CON-2458"],"forwarders":[],"routes":[]},
+   "parties": {"exporters":["EXP-0024","EXP-0043","EXP-0081","EXP-0171","EXP-0210","EXP-0249"],"consignees":["CON-2458"],"forwarders":["FWD-0004","FWD-0009","FWD-0014","FWD-0025","FWD-0028","FWD-0033","FWD-0039"],"routes":["AE-851762","AE-852691","AE-853224","AE-854231"]},
+   "signals": [
+    {
+     "id": "SIG-0024",
+     "detector": "D3",
+     "name": "shared-party",
+     "unit": "C:CON-2458",
+     "keys": ["C:CON-2458"],
+     "entities": {"consignees":["CON-2458"],"exporters":["EXP-0024","EXP-0043","EXP-0081","EXP-0171","EXP-0210","EXP-0249"],"forwarders":["FWD-0004","FWD-0009","FWD-0014","FWD-0025","FWD-0028","FWD-0033","FWD-0039"],"routes":["AE-851762","AE-852691","AE-853224","AE-854231"]},
+     "question": "Is CON-2458 in the United Arab Emirates a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 6 different ownership groups send it goods on the Common High Priority Items List?",
+     "basis": "In the last 24 months: 18 shipments of the radar's goods from 6 exporters in 6 ownership groups. First seen in a UK export declaration on 13 Oct 2024.",
+     "facts": {"shipments":18,"exporters":["EXP-0024","EXP-0043","EXP-0081","EXP-0171","EXP-0210","EXP-0249"],"groups":6,"first_seen":"2024-10-13","country":"AE","party_type":"consignee"},
+     "implements": ["consignee-uses-goods","shared-address"],
+     "then_check": ["forwarder-as-destination","web-presence","line-of-business","route-complex"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0024","detector":"D3","question":"Is CON-2458 in the United Arab Emirates a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 6 different ownership groups send it goods on the Common High Priority Items List?","basis":"In the last 24 months: 18 shipments of the radar's goods from 6 exporters in 6 ownership groups. First seen in a UK export declaration on 13 Oct 2024.","red_flags":["consignee-uses-goods","shared-address"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"from":"red-flag list","red_flag":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-040",
+   "kind": "consignee cluster",
+   "title": "CON-2500 in Turkey",
+   "check_order": "check",
+   "detectors": ["D3"],
+   "focus": {"exporters":[],"consignees":["CON-2500"],"forwarders":[],"routes":[]},
+   "parties": {"exporters":["EXP-0049","EXP-0082","EXP-0120","EXP-0187","EXP-0209"],"consignees":["CON-2500"],"forwarders":["FWD-0001","FWD-0014","FWD-0028","FWD-0033","FWD-0038","FWD-0039"],"routes":["TR-851762","TR-853221","TR-854231","TR-854233","TR-854239","TR-8548"]},
+   "signals": [
+    {
+     "id": "SIG-0025",
+     "detector": "D3",
+     "name": "shared-party",
+     "unit": "C:CON-2500",
+     "keys": ["C:CON-2500"],
+     "entities": {"consignees":["CON-2500"],"exporters":["EXP-0049","EXP-0082","EXP-0120","EXP-0187","EXP-0209"],"forwarders":["FWD-0001","FWD-0014","FWD-0028","FWD-0033","FWD-0038","FWD-0039"],"routes":["TR-851762","TR-853221","TR-854231","TR-854233","TR-854239","TR-8548"]},
+     "question": "Is CON-2500 in Turkey a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 5 different ownership groups send it goods on the Common High Priority Items List?",
+     "basis": "In the last 24 months: 15 shipments of the radar's goods from 5 exporters in 5 ownership groups. First seen in a UK export declaration on 25 Nov 2024.",
+     "facts": {"shipments":15,"exporters":["EXP-0049","EXP-0082","EXP-0120","EXP-0187","EXP-0209"],"groups":5,"first_seen":"2024-11-25","country":"TR","party_type":"consignee"},
+     "implements": ["consignee-uses-goods","shared-address"],
+     "then_check": ["forwarder-as-destination","web-presence","line-of-business","route-complex"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0025","detector":"D3","question":"Is CON-2500 in Turkey a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in 5 different ownership groups send it goods on the Common High Priority Items List?","basis":"In the last 24 months: 15 shipments of the radar's goods from 5 exporters in 5 ownership groups. First seen in a UK export declaration on 25 Nov 2024.","red_flags":["consignee-uses-goods","shared-address"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"from":"red-flag list","red_flag":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-041",
+   "kind": "consignee cluster",
+   "title": "CON-1352 in Georgia",
+   "check_order": "check",
+   "detectors": ["D7"],
+   "focus": {"exporters":[],"consignees":["CON-1352"],"forwarders":[],"routes":["GE-854239"]},
+   "parties": {"exporters":["EXP-0264"],"consignees":["CON-1352"],"forwarders":["FWD-0014","FWD-0030"],"routes":["GE-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0045",
+     "detector": "D7",
+     "name": "small-frequent",
+     "unit": "C:CON-1352",
+     "keys": ["C:CON-1352"],
+     "entities": {"consignees":["CON-1352"],"exporters":["EXP-0264"],"forwarders":["FWD-0014","FWD-0030"],"routes":["GE-854239"]},
+     "question": "Are the goods going to CON-1352 in Georgia in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?",
+     "basis": "28 shipments of the radar's goods in the last 12 months, median £976 and 1.1 kg, from 1 exporter.",
+     "facts": {"shipments":28,"median_value_gbp":976,"median_net_mass_kg":1.1,"exporters":["EXP-0264"],"country":"GE"},
+     "implements": ["small-frequent-shipments"],
+     "then_check": ["price-and-invoices","consignee-uses-goods","delivery-vague"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0045","detector":"D7","question":"Are the goods going to CON-1352 in Georgia in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?","basis":"28 shipments of the radar's goods in the last 12 months, median £976 and 1.1 kg, from 1 exporter.","red_flags":["small-frequent-shipments"]},
+    {"from":"red-flag list","red_flag":"consignee-uses-goods","question":"Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?"},
+    {"from":"red-flag list","red_flag":"price-and-invoices","question":"Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?"},
+    {"from":"red-flag list","red_flag":"delivery-vague","question":"Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-042",
+   "kind": "consignee cluster",
+   "title": "CON-1365 in Turkey",
+   "check_order": "check",
+   "detectors": ["D7"],
+   "focus": {"exporters":[],"consignees":["CON-1365"],"forwarders":[],"routes":["TR-854233"]},
+   "parties": {"exporters":["EXP-0021"],"consignees":["CON-1365"],"forwarders":["FWD-0024"],"routes":["TR-854233"]},
+   "signals": [
+    {
+     "id": "SIG-0046",
+     "detector": "D7",
+     "name": "small-frequent",
+     "unit": "C:CON-1365",
+     "keys": ["C:CON-1365"],
+     "entities": {"consignees":["CON-1365"],"exporters":["EXP-0021"],"forwarders":["FWD-0024"],"routes":["TR-854233"]},
+     "question": "Are the goods going to CON-1365 in Turkey in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?",
+     "basis": "29 shipments of the radar's goods in the last 12 months, median £795 and 0.6 kg, from 1 exporter.",
+     "facts": {"shipments":29,"median_value_gbp":795,"median_net_mass_kg":0.6,"exporters":["EXP-0021"],"country":"TR"},
+     "implements": ["small-frequent-shipments"],
+     "then_check": ["price-and-invoices","consignee-uses-goods","delivery-vague"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0046","detector":"D7","question":"Are the goods going to CON-1365 in Turkey in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?","basis":"29 shipments of the radar's goods in the last 12 months, median £795 and 0.6 kg, from 1 exporter.","red_flags":["small-frequent-shipments"]},
+    {"from":"red-flag list","red_flag":"consignee-uses-goods","question":"Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?"},
+    {"from":"red-flag list","red_flag":"price-and-invoices","question":"Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?"},
+    {"from":"red-flag list","red_flag":"delivery-vague","question":"Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-043",
+   "kind": "consignee cluster",
+   "title": "CON-1366 in the United Arab Emirates",
+   "check_order": "check",
+   "detectors": ["D7"],
+   "focus": {"exporters":[],"consignees":["CON-1366"],"forwarders":[],"routes":["AE-853221"]},
+   "parties": {"exporters":["EXP-0051"],"consignees":["CON-1366"],"forwarders":["FWD-0005","FWD-0036"],"routes":["AE-853221"]},
+   "signals": [
+    {
+     "id": "SIG-0047",
+     "detector": "D7",
+     "name": "small-frequent",
+     "unit": "C:CON-1366",
+     "keys": ["C:CON-1366"],
+     "entities": {"consignees":["CON-1366"],"exporters":["EXP-0051"],"forwarders":["FWD-0005","FWD-0036"],"routes":["AE-853221"]},
+     "question": "Are the goods going to CON-1366 in the United Arab Emirates in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?",
+     "basis": "27 shipments of the radar's goods in the last 12 months, median £498 and 0.9 kg, from 1 exporter.",
+     "facts": {"shipments":27,"median_value_gbp":498,"median_net_mass_kg":0.9,"exporters":["EXP-0051"],"country":"AE"},
+     "implements": ["small-frequent-shipments"],
+     "then_check": ["price-and-invoices","consignee-uses-goods","delivery-vague"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0047","detector":"D7","question":"Are the goods going to CON-1366 in the United Arab Emirates in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?","basis":"27 shipments of the radar's goods in the last 12 months, median £498 and 0.9 kg, from 1 exporter.","red_flags":["small-frequent-shipments"]},
+    {"from":"red-flag list","red_flag":"consignee-uses-goods","question":"Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?"},
+    {"from":"red-flag list","red_flag":"price-and-invoices","question":"Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?"},
+    {"from":"red-flag list","red_flag":"delivery-vague","question":"Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-044",
+   "kind": "consignee cluster",
+   "title": "CON-2227 in Armenia",
+   "check_order": "check",
+   "detectors": ["D7"],
+   "focus": {"exporters":[],"consignees":["CON-2227"],"forwarders":[],"routes":["AM-854231","AM-854239"]},
+   "parties": {"exporters":["EXP-0037","EXP-0202"],"consignees":["CON-2227"],"forwarders":["FWD-0028","FWD-0039"],"routes":["AM-854231","AM-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0049",
+     "detector": "D7",
+     "name": "small-frequent",
+     "unit": "C:CON-2227",
+     "keys": ["C:CON-2227"],
+     "entities": {"consignees":["CON-2227"],"exporters":["EXP-0037","EXP-0202"],"forwarders":["FWD-0028","FWD-0039"],"routes":["AM-854231","AM-854239"]},
+     "question": "Are the goods going to CON-2227 in Armenia in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?",
+     "basis": "28 shipments of the radar's goods in the last 12 months, median £916 and 0.6 kg, from 2 exporters.",
+     "facts": {"shipments":28,"median_value_gbp":916,"median_net_mass_kg":0.6,"exporters":["EXP-0037","EXP-0202"],"country":"AM"},
+     "implements": ["small-frequent-shipments"],
+     "then_check": ["price-and-invoices","consignee-uses-goods","delivery-vague"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0049","detector":"D7","question":"Are the goods going to CON-2227 in Armenia in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?","basis":"28 shipments of the radar's goods in the last 12 months, median £916 and 0.6 kg, from 2 exporters.","red_flags":["small-frequent-shipments"]},
+    {"from":"red-flag list","red_flag":"consignee-uses-goods","question":"Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?"},
+    {"from":"red-flag list","red_flag":"price-and-invoices","question":"Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?"},
+    {"from":"red-flag list","red_flag":"delivery-vague","question":"Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-045",
+   "kind": "consignee cluster",
+   "title": "CON-2305 in the Kyrgyz Republic",
+   "check_order": "check",
+   "detectors": ["D7"],
+   "focus": {"exporters":[],"consignees":["CON-2305"],"forwarders":[],"routes":["KG-854231","KG-854239"]},
+   "parties": {"exporters":["EXP-0042"],"consignees":["CON-2305"],"forwarders":["FWD-0014"],"routes":["KG-854231","KG-854239"]},
+   "signals": [
+    {
+     "id": "SIG-0050",
+     "detector": "D7",
+     "name": "small-frequent",
+     "unit": "C:CON-2305",
+     "keys": ["C:CON-2305"],
+     "entities": {"consignees":["CON-2305"],"exporters":["EXP-0042"],"forwarders":["FWD-0014"],"routes":["KG-854231","KG-854239"]},
+     "question": "Are the goods going to CON-2305 in the Kyrgyz Republic in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?",
+     "basis": "29 shipments of the radar's goods in the last 12 months, median £1,084 and 0.5 kg, from 1 exporter.",
+     "facts": {"shipments":29,"median_value_gbp":1084,"median_net_mass_kg":0.5,"exporters":["EXP-0042"],"country":"KG"},
+     "implements": ["small-frequent-shipments"],
+     "then_check": ["price-and-invoices","consignee-uses-goods","delivery-vague"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0050","detector":"D7","question":"Are the goods going to CON-2305 in the Kyrgyz Republic in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?","basis":"29 shipments of the radar's goods in the last 12 months, median £1,084 and 0.5 kg, from 1 exporter.","red_flags":["small-frequent-shipments"]},
+    {"from":"red-flag list","red_flag":"consignee-uses-goods","question":"Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?"},
+    {"from":"red-flag list","red_flag":"price-and-invoices","question":"Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?"},
+    {"from":"red-flag list","red_flag":"delivery-vague","question":"Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-046",
+   "kind": "forwarder cluster",
+   "title": "FWD-0007, a forwarder",
+   "check_order": "check",
+   "detectors": ["D3"],
+   "focus": {"exporters":[],"consignees":[],"forwarders":["FWD-0007"],"routes":[]},
+   "parties": {"exporters":["EXP-0023","EXP-0078","EXP-0091","EXP-0125","EXP-0160","EXP-0203","EXP-0221"],"consignees":["CON-2422","CON-2442","CON-2472","CON-2475","CON-2493","CON-2525","CON-2572"],"forwarders":["FWD-0007"],"routes":[]},
+   "signals": [
+    {
+     "id": "SIG-0026",
+     "detector": "D3",
+     "name": "shared-party",
+     "unit": "F:FWD-0007",
+     "keys": ["F:FWD-0007"],
+     "entities": {"forwarders":["FWD-0007"],"exporters":["EXP-0023","EXP-0078","EXP-0091","EXP-0125","EXP-0160","EXP-0203","EXP-0221"],"consignees":["CON-2422","CON-2442","CON-2472","CON-2475","CON-2493","CON-2525","CON-2572"],"routes":[]},
+     "question": "Why do exporters in 7 different ownership groups send goods on the Common High Priority Items List to the United Arab Emirates, Armenia, Azerbaijan, Georgia, the Kyrgyz Republic, Kazakhstan and Uzbekistan through FWD-0007, and is a forwarder named as the final destination on any of these shipments?",
+     "basis": "In the last 24 months: 27 goods items of the radar's goods to corridor countries through FWD-0007, 100% of everything declared with it, from 7 exporters in 7 ownership groups. First declared on 8 Sep 2024.",
+     "facts": {"items":27,"items_all":27,"share":1.0,"exporters":["EXP-0023","EXP-0078","EXP-0091","EXP-0125","EXP-0160","EXP-0203","EXP-0221"],"groups":7,"countries":["AE","AM","AZ","GE","KG","KZ","UZ"],"first_seen":"2024-09-08","party_type":"forwarder"},
+     "implements": ["shared-address"],
+     "then_check": ["forwarder-as-destination","web-presence","line-of-business","route-complex"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0026","detector":"D3","question":"Why do exporters in 7 different ownership groups send goods on the Common High Priority Items List to the United Arab Emirates, Armenia, Azerbaijan, Georgia, the Kyrgyz Republic, Kazakhstan and Uzbekistan through FWD-0007, and is a forwarder named as the final destination on any of these shipments?","basis":"In the last 24 months: 27 goods items of the radar's goods to corridor countries through FWD-0007, 100% of everything declared with it, from 7 exporters in 7 ownership groups. First declared on 8 Sep 2024.","red_flags":["shared-address"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"from":"red-flag list","red_flag":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-047",
+   "kind": "forwarder cluster",
+   "title": "FWD-0033, a forwarder",
+   "check_order": "check",
+   "detectors": ["D3"],
+   "focus": {"exporters":[],"consignees":[],"forwarders":["FWD-0033"],"routes":[]},
+   "parties": {"exporters":["EXP-0036","EXP-0070","EXP-0091","EXP-0100","EXP-0114","EXP-0121","EXP-0130","EXP-0133","EXP-0145","EXP-0148","EXP-0165","EXP-0171","EXP-0187","EXP-0229","EXP-0235","EXP-0267"],"consignees":["CON-0166","CON-0278","CON-0709","CON-0763","CON-0808","CON-0868","CON-1183","CON-1329","CON-1349","CON-1383","CON-1399","CON-1413","CON-1416","CON-1542","CON-1684","CON-1688","CON-1819","CON-2219","CON-2416","CON-2444","CON-2458","CON-2500","CON-2591","CON-2765","CON-2787","CON-2795","CON-2902"],"forwarders":["FWD-0033"],"routes":[]},
+   "signals": [
+    {
+     "id": "SIG-0027",
+     "detector": "D3",
+     "name": "shared-party",
+     "unit": "F:FWD-0033",
+     "keys": ["F:FWD-0033"],
+     "entities": {"forwarders":["FWD-0033"],"exporters":["EXP-0036","EXP-0070","EXP-0091","EXP-0100","EXP-0114","EXP-0121","EXP-0130","EXP-0133","EXP-0145","EXP-0148","EXP-0165","EXP-0171","EXP-0187","EXP-0229","EXP-0235","EXP-0267"],"consignees":["CON-0166","CON-0278","CON-0709","CON-0763","CON-0808","CON-0868","CON-1183","CON-1329","CON-1349","CON-1383","CON-1399","CON-1413","CON-1416","CON-1542","CON-1684","CON-1688","CON-1819","CON-2219","CON-2416","CON-2444","CON-2458","CON-2500","CON-2591","CON-2765","CON-2787","CON-2795","CON-2902"],"routes":[]},
+     "question": "Why do exporters in 16 different ownership groups send goods on the Common High Priority Items List to the United Arab Emirates, Armenia, Azerbaijan, Georgia, the Kyrgyz Republic, Kazakhstan, Tajikistan, Turkey and Uzbekistan through FWD-0033, and is a forwarder named as the final destination on any of these shipments?",
+     "basis": "In the last 24 months: 107 goods items of the radar's goods to corridor countries through FWD-0033, 90% of everything declared with it, from 16 exporters in 16 ownership groups. First declared on 18 Jan 2021.",
+     "facts": {"items":107,"items_all":119,"share":0.899,"exporters":["EXP-0036","EXP-0070","EXP-0091","EXP-0100","EXP-0114","EXP-0121","EXP-0130","EXP-0133","EXP-0145","EXP-0148","EXP-0165","EXP-0171","EXP-0187","EXP-0229","EXP-0235","EXP-0267"],"groups":16,"countries":["AE","AM","AZ","GE","KG","KZ","TJ","TR","UZ"],"first_seen":"2021-01-18","party_type":"forwarder"},
+     "implements": ["shared-address"],
+     "then_check": ["forwarder-as-destination","web-presence","line-of-business","route-complex"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0027","detector":"D3","question":"Why do exporters in 16 different ownership groups send goods on the Common High Priority Items List to the United Arab Emirates, Armenia, Azerbaijan, Georgia, the Kyrgyz Republic, Kazakhstan, Tajikistan, Turkey and Uzbekistan through FWD-0033, and is a forwarder named as the final destination on any of these shipments?","basis":"In the last 24 months: 107 goods items of the radar's goods to corridor countries through FWD-0033, 90% of everything declared with it, from 16 exporters in 16 ownership groups. First declared on 18 Jan 2021.","red_flags":["shared-address"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"from":"red-flag list","red_flag":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"}
+   ]
+  },
+  {
+   "id": "SYN-CASE-048",
+   "kind": "forwarder cluster",
+   "title": "FWD-0038, a forwarder",
+   "check_order": "check",
+   "detectors": ["D3"],
+   "focus": {"exporters":[],"consignees":[],"forwarders":["FWD-0038"],"routes":[]},
+   "parties": {"exporters":["EXP-0011","EXP-0013","EXP-0082","EXP-0101","EXP-0122","EXP-0131","EXP-0149","EXP-0154","EXP-0203","EXP-0232","EXP-0257","EXP-0291","EXP-0295"],"consignees":["CON-0027","CON-0146","CON-0161","CON-0166","CON-0537","CON-0782","CON-0854","CON-1168","CON-1188","CON-1555","CON-1557","CON-1562","CON-1766","CON-1893","CON-1899","CON-2088","CON-2212","CON-2500","CON-2546","CON-2598","CON-2632","CON-2680","CON-2681","CON-2712","CON-2741","CON-2767","CON-2774","CON-2843","CON-2856"],"forwarders":["FWD-0038"],"routes":[]},
+   "signals": [
+    {
+     "id": "SIG-0028",
+     "detector": "D3",
+     "name": "shared-party",
+     "unit": "F:FWD-0038",
+     "keys": ["F:FWD-0038"],
+     "entities": {"forwarders":["FWD-0038"],"exporters":["EXP-0011","EXP-0013","EXP-0082","EXP-0101","EXP-0122","EXP-0131","EXP-0149","EXP-0154","EXP-0203","EXP-0232","EXP-0257","EXP-0291","EXP-0295"],"consignees":["CON-0027","CON-0146","CON-0161","CON-0166","CON-0537","CON-0782","CON-0854","CON-1168","CON-1188","CON-1555","CON-1557","CON-1562","CON-1766","CON-1893","CON-1899","CON-2088","CON-2212","CON-2500","CON-2546","CON-2598","CON-2632","CON-2680","CON-2681","CON-2712","CON-2741","CON-2767","CON-2774","CON-2843","CON-2856"],"routes":[]},
+     "question": "Why do exporters in 13 different ownership groups send goods on the Common High Priority Items List to the United Arab Emirates, Armenia, Azerbaijan, Georgia, the Kyrgyz Republic, Kazakhstan, Turkey and Uzbekistan through FWD-0038, and is a forwarder named as the final destination on any of these shipments?",
+     "basis": "In the last 24 months: 166 goods items of the radar's goods to corridor countries through FWD-0038, 78% of everything declared with it, from 13 exporters in 13 ownership groups. First declared on 11 Jan 2021.",
+     "facts": {"items":166,"items_all":214,"share":0.776,"exporters":["EXP-0011","EXP-0013","EXP-0082","EXP-0101","EXP-0122","EXP-0131","EXP-0149","EXP-0154","EXP-0203","EXP-0232","EXP-0257","EXP-0291","EXP-0295"],"groups":13,"countries":["AE","AM","AZ","GE","KG","KZ","TR","UZ"],"first_seen":"2021-01-11","party_type":"forwarder"},
+     "implements": ["shared-address"],
+     "then_check": ["forwarder-as-destination","web-presence","line-of-business","route-complex"]
+    }
+   ],
+   "questions": [
+    {"from":"SIG-0028","detector":"D3","question":"Why do exporters in 13 different ownership groups send goods on the Common High Priority Items List to the United Arab Emirates, Armenia, Azerbaijan, Georgia, the Kyrgyz Republic, Kazakhstan, Turkey and Uzbekistan through FWD-0038, and is a forwarder named as the final destination on any of these shipments?","basis":"In the last 24 months: 166 goods items of the radar's goods to corridor countries through FWD-0038, 78% of everything declared with it, from 13 exporters in 13 ownership groups. First declared on 11 Jan 2021.","red_flags":["shared-address"]},
+    {"from":"red-flag list","red_flag":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"from":"red-flag list","red_flag":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"from":"red-flag list","red_flag":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"},
+    {"from":"red-flag list","red_flag":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"}
+   ]
+  }
+ ]
+}

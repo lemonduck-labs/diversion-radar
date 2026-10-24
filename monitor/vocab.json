@@ -1,0 +1,49 @@
+{
+ "corridors": [
+  "AE",
+  "AM",
+  "AZ",
+  "CN",
+  "GE",
+  "HK",
+  "IL",
+  "IN",
+  "KG",
+  "KZ",
+  "MO",
+  "MY",
+  "RS",
+  "TH",
+  "TJ",
+  "TR",
+  "UZ",
+  "VN"
+ ],
+ "codes": [
+  "851762",
+  "852691",
+  "853221",
+  "853224",
+  "854231",
+  "854232",
+  "854233",
+  "854239",
+  "8548"
+ ],
+ "headings": [
+  "8517",
+  "8526",
+  "8532",
+  "8542",
+  "8548"
+ ],
+ "topics": [
+  "enforcement",
+  "licensing",
+  "reporting",
+  "designations",
+  "release",
+  "guidance",
+  "end_use"
+ ]
+}

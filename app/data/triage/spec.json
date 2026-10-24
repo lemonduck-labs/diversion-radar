@@ -1,0 +1,190 @@
+{
+ "schema": "radar-triage-spec/1",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "countries": {
+  "AE": "United Arab Emirates",
+  "AM": "Armenia",
+  "AZ": "Azerbaijan",
+  "BY": "Belarus",
+  "CN": "China",
+  "DE": "Germany",
+  "FR": "France",
+  "GB": "United Kingdom",
+  "GE": "Georgia",
+  "HK": "Hong Kong",
+  "IE": "Ireland",
+  "IL": "Israel",
+  "IN": "India",
+  "KG": "Kyrgyz Republic",
+  "KZ": "Kazakhstan",
+  "MO": "Macao",
+  "MY": "Malaysia",
+  "NL": "Netherlands",
+  "NO": "Norway",
+  "RS": "Serbia",
+  "RU": "Russia",
+  "TH": "Thailand",
+  "TJ": "Tajikistan",
+  "TR": "Turkey",
+  "US": "United States",
+  "UZ": "Uzbekistan",
+  "VN": "Vietnam"
+ },
+ "channels": {
+  "someone_else": "Online service: report someone else",
+  "self": "Online service: report yourself (voluntary disclosure)",
+  "mandatory_financial": "Mandatory report: a financial services firm",
+  "mandatory_legal": "Mandatory report: a legal services firm",
+  "whistleblower": "Whistleblowing report (anonymous)",
+  "referral": "Referral from another public body"
+ },
+ "relationships": {
+  "customer": "A customer of the business",
+  "supplier": "A supplier to the business",
+  "competitor": "A competitor",
+  "employee": "An employee or former employee",
+  "bank": "Its bank or payment provider",
+  "adviser": "Its legal or compliance adviser",
+  "self": "The business itself",
+  "none": "No relationship given",
+  "public_body": "A public body"
+ },
+ "nexus": {
+  "uk_export": "Goods exported from the UK",
+  "uk_technology": "Technology transferred from the UK",
+  "outside_uk_goods": "Goods moved, made available or acquired outside the UK by a UK business",
+  "services": "Services: brokering, technical help, finance or other services from a UK business",
+  "payments": "Payments or funds",
+  "oil_cap": "Shipping or other services for oil above the price cap",
+  "internet": "Internet services"
+ },
+ "statements": {
+  "third_country_payer": "Payment came from a business in another country that is not otherwise part of the deal.",
+  "forwarder_destination": "A freight forwarder is named as the final destination of the goods.",
+  "documents_no_end_user": "The documents do not name the end user.",
+  "route_complex": "The goods went by a long route through several countries.",
+  "new_buyer_since_2022": "The buyer is new and was set up after February 2022.",
+  "orders_rose": "The buyer's orders rose sharply over the year.",
+  "price_above_market": "The buyer paid well above the usual price.",
+  "split_invoices": "Invoices were split into smaller amounts.",
+  "different_code": "The invoice gives the goods a different commodity code from the one the reporter expected.",
+  "buyer_russia_office": "The buyer has an office in Russia.",
+  "no_checks_made": "No checks were made on the buyer before the goods were sent.",
+  "earlier_warning_letter": "The business had a warning letter about earlier shipments.",
+  "found_in_own_checks": "The business found the shipments in its own checks and is reporting them itself.",
+  "stopped_and_fixed": "The business has stopped the shipments and changed its checks."
+ },
+ "bodies": {
+  "uk_export": {
+   "name": "HMRC",
+   "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+  },
+  "uk_technology": {
+   "name": "HMRC",
+   "why": "The transfer of technology to or from the UK goes to HMRC."
+  },
+  "outside_uk_goods": {
+   "name": "OTSI",
+   "why": "Moving, making available or acquiring sanctioned goods or technology outside the UK goes to OTSI."
+  },
+  "services": {
+   "name": "OTSI",
+   "why": "Providing or procuring sanctioned services, and services ancillary to moving goods outside the UK, go to OTSI."
+  },
+  "payments": {
+   "name": "OFSI",
+   "why": "Financial sanctions are reported to the Office of Financial Sanctions Implementation, in addition to any report to OTSI."
+  },
+  "oil_cap": {
+   "name": "HM Treasury",
+   "why": "The oil price cap is enforced by HM Treasury."
+  },
+  "internet": {
+   "name": "Ofcom",
+   "why": "Internet service measures are enforced by Ofcom."
+  }
+ },
+ "body_source": {
+  "publisher": "Office of Trade Sanctions Implementation",
+  "title": "Report a suspected breach of trade sanctions",
+  "date": "last updated 27 Jun 2025",
+  "read": "22 Oct 2026"
+ },
+ "factors": {
+  "severity": {
+   "culpability": "Culpability, from none or low, through negligence or recklessness, to intent or significant negligence",
+   "concealment": "Extensive or sophisticated planning, such as efforts to conceal the breach",
+   "harm": "Harm to the purposes of the sanctions regime",
+   "value": "Financial value, where nothing else points to the severity"
+  },
+  "mitigating": {
+   "voluntary_disclosure": "Timely voluntary disclosure by whoever is responsible",
+   "cooperation": "Complying with OTSI's requests for information",
+   "no_previous": "No record of breaching UK sanctions before",
+   "due_diligence": "Good customer due diligence and compliance systems, for the business's size and exposure",
+   "remediation": "Steps taken to deal with the causes of the breach"
+  },
+  "aggravating": {
+   "ignored_warning": "Not responding to earlier warning letters",
+   "poor_cooperation": "Poor compliance with the investigation",
+   "withholding": "Withholding information or obstructing access to it, such as concealing or destroying evidence",
+   "related_requirements": "Not complying with related requirements, such as recordkeeping and licensing conditions",
+   "previous": "A previous breach by the same person or business, allowing for the time since",
+   "inadequate_dd": "Inadequate due diligence",
+   "blaming": "Trying to wrongly blame others"
+  }
+ },
+ "factor_source": {
+  "publisher": "Office of Trade Sanctions Implementation",
+  "title": "How suspected breaches of trade sanctions are assessed by the Office of Trade Sanctions Implementation (OTSI)",
+  "date": "last updated 31 Jul 2025",
+  "read": "22 Oct 2026"
+ },
+ "order_rule": [
+  {
+   "band": 1,
+   "rule": "A party's registration number is on the list"
+  },
+  {
+   "band": 2,
+   "rule": "Radar goods, and a party in a declaration case marked check first, or a close match to a listed number"
+  },
+  {
+   "band": 3,
+   "rule": "Radar goods to a radar corridor or through a country named for enhanced due diligence"
+  },
+  {
+   "band": 4,
+   "rule": "Everything else"
+  }
+ ],
+ "order_note": "This tool's rule, set out here; OTSI publishes no triage scoring [Certain]. Within a band, oldest first. A person decides.",
+ "outcomes": [
+  [
+   "assess",
+   "Assess further: it is OTSI's to assess"
+  ],
+  [
+   "pass_hmrc",
+   "Pass to HMRC: it involves UK customs"
+  ],
+  [
+   "pass_other",
+   "Pass to another body: OFSI, HM Treasury or Ofcom"
+  ],
+  [
+   "ask",
+   "Ask the reporter for more information"
+  ],
+  [
+   "close",
+   "Close: the report gives nothing to assess"
+  ]
+ ],
+ "limits": [
+  "The goods table reads a few dozen phrases. Words it does not hold point to no code, and a person reads the description [Certain].",
+  "A registration number is matched exactly or at one character apart. A real list check also needs names, aliases, addresses and owners, which these synthetic reports do not hold [Certain].",
+  "Which body handles a report follows what the report says it is about. A report can touch several bodies, and OTSI passes on what is outside its powers [Certain].",
+  "The factors are our reading of what each report states, in the terms of OTSI's guidance [Likely]. OTSI weighs them only once it has assessed a report."
+ ]
+}

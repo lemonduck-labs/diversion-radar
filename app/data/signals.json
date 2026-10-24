@@ -1,0 +1,3690 @@
+[
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kyrgyz Republic",
+  "iso2": "KG",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 44270,
+    "base_usd": 338741,
+    "ratio": 0.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 33393,
+    "base_usd": 339640,
+    "ratio": 0.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Armenia",
+  "iso2": "AM",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "lead",
+   "trailing12_gbp": 8012904,
+   "baseline_gbp": 2452582,
+   "ratio": 3.3,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 56706810,
+    "base_usd": 3735582,
+    "ratio": 15.2,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-04",
+    "usd": 79292508,
+    "base_usd": 3691187,
+    "ratio": 21.5,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 258790,
+    "base_usd": 88105,
+    "ratio": 2.9,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-04",
+    "usd": 268282,
+    "base_usd": 87563,
+    "ratio": 3.1,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Kazakhstan",
+  "iso2": "KZ",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": null,
+    "base_usd": null,
+    "ratio": null,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 89102,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Georgia",
+  "iso2": "GE",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2023,
+    "usd": 989630,
+    "base_usd": 1201567,
+    "ratio": 0.8,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": null
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "lead",
+   "trailing12_gbp": 799499,
+   "baseline_gbp": 181674,
+   "ratio": 4.4,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2023,
+    "usd": 159819,
+    "base_usd": 67930,
+    "ratio": 2.4,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": null
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "lead",
+   "trailing12_gbp": 329283,
+   "baseline_gbp": 159598,
+   "ratio": 2.1,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2023,
+    "usd": 373627,
+    "base_usd": 139732,
+    "ratio": 2.7,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": null
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2023,
+    "usd": 124993683,
+    "base_usd": 8155989,
+    "ratio": 15.3,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": null
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2023,
+    "usd": 63198,
+    "base_usd": 177871,
+    "ratio": 0.4,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   },
+   "monthly": null
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "United Arab Emirates",
+  "iso2": "AE",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 58795,
+    "base_usd": 22316,
+    "ratio": 2.6,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 58795,
+    "base_usd": 22316,
+    "ratio": 2.6,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   }
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 1220353,
+   "baseline_gbp": 185477,
+   "ratio": 6.6,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 38863,
+    "base_usd": 679,
+    "ratio": 57.2,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 38863,
+    "base_usd": 679,
+    "ratio": 57.2,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   }
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 519,
+    "base_usd": 1355,
+    "ratio": 0.4,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 519,
+    "base_usd": 1355,
+    "ratio": 0.4,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 3374887,
+    "base_usd": 18241,
+    "ratio": 185.0,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 3374887,
+    "base_usd": 18241,
+    "ratio": 185.0,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 2866678,
+    "base_usd": 160508,
+    "ratio": 17.9,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 2866678,
+    "base_usd": 160508,
+    "ratio": 17.9,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 24886,
+    "base_usd": 310400,
+    "ratio": 0.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 24886,
+    "base_usd": 310400,
+    "ratio": 0.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 414030,
+   "baseline_gbp": 72293,
+   "ratio": 5.7,
+   "months_with_exports": 11
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 8,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 8,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   }
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 1388,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 0,
+    "base_usd": 1388,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Turkey",
+  "iso2": "TR",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 549,
+    "base_usd": 289738,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2025-12",
+    "usd": 549,
+    "base_usd": 289738,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 677642,
+   "baseline_gbp": 47624,
+   "ratio": 14.2,
+   "months_with_exports": 10
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2024,
+    "usd": 48036,
+    "base_usd": 4778,
+    "ratio": 10.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 2,
+    "base_usd": 4778,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Uzbekistan",
+  "iso2": "UZ",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 15,
+    "base_usd": 1104,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 0,
+    "base_usd": 736,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Azerbaijan",
+  "iso2": "AZ",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Tajikistan",
+  "iso2": "TJ",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 22647400,
+    "base_usd": 26060947,
+    "ratio": 0.9,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2024-12",
+    "usd": 39368258,
+    "base_usd": 26060947,
+    "ratio": 1.5,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 4744376,
+    "base_usd": 8336086,
+    "ratio": 0.6,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2024-12",
+    "usd": 10170290,
+    "base_usd": 8336086,
+    "ratio": 1.2,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 4574072,
+    "base_usd": 1231608,
+    "ratio": 3.7,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2024-12",
+    "usd": 8424646,
+    "base_usd": 1231608,
+    "ratio": 6.8,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 35116600,
+   "baseline_gbp": 11555791,
+   "ratio": 3.0,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 21591523,
+    "base_usd": 17637567,
+    "ratio": 1.2,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2024-12",
+    "usd": 18631802,
+    "base_usd": 17637567,
+    "ratio": 1.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 706123679,
+    "base_usd": 918239936,
+    "ratio": 0.8,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2024-12",
+    "usd": 892641253,
+    "base_usd": 918239936,
+    "ratio": 1.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 44896470,
+    "base_usd": 44575907,
+    "ratio": 1.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2024-12",
+    "usd": 42919354,
+    "base_usd": 44575907,
+    "ratio": 1.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "lead",
+   "trailing12_gbp": 985276,
+   "baseline_gbp": 265712,
+   "ratio": 3.7,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 3033535,
+    "base_usd": 479208,
+    "ratio": 6.3,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2024-12",
+    "usd": 2879340,
+    "base_usd": 479208,
+    "ratio": 6.0,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 9202544,
+    "base_usd": 3141908,
+    "ratio": 2.9,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2024-12",
+    "usd": 12596090,
+    "base_usd": 3141908,
+    "ratio": 4.0,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "China",
+  "iso2": "CN",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 108304020,
+    "base_usd": 104637316,
+    "ratio": 1.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 117541875,
+    "base_usd": 104753251,
+    "ratio": 1.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 142887382,
+   "baseline_gbp": 4946443,
+   "ratio": 28.9,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 9929671,
+    "base_usd": 7561359,
+    "ratio": 1.3,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 11322592,
+    "base_usd": 7560345,
+    "ratio": 1.5,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 4421010,
+    "base_usd": 2990715,
+    "ratio": 1.5,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 3754650,
+    "base_usd": 2976194,
+    "ratio": 1.3,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 58907421,
+    "base_usd": 49810497,
+    "ratio": 1.2,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 53517721,
+    "base_usd": 49866260,
+    "ratio": 1.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 76692350,
+    "base_usd": 306364942,
+    "ratio": 0.3,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 64914801,
+    "base_usd": 307265192,
+    "ratio": 0.2,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 1855575,
+   "baseline_gbp": 808359,
+   "ratio": 2.3,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 216413,
+    "base_usd": 1796885,
+    "ratio": 0.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 1790529,
+    "base_usd": 1797792,
+    "ratio": 1.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 2068040,
+   "baseline_gbp": 945719,
+   "ratio": 2.2,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 464358,
+    "base_usd": 931321,
+    "ratio": 0.5,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 596041,
+    "base_usd": 931353,
+    "ratio": 0.6,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 2320101,
+    "base_usd": 2686985,
+    "ratio": 0.9,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 1365192,
+    "base_usd": 2684712,
+    "ratio": 0.5,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Hong Kong",
+  "iso2": "HK",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 407031,
+    "base_usd": 266333,
+    "ratio": 1.5,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 1884257,
+    "base_usd": 267124,
+    "ratio": 7.1,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Macao",
+  "iso2": "MO",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "lead",
+   "trailing12_gbp": 5778576,
+   "baseline_gbp": 2309080,
+   "ratio": 2.5,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 700531,
+    "base_usd": 226708,
+    "ratio": 3.1,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 312258,
+    "base_usd": 227453,
+    "ratio": 1.4,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 1230188,
+   "baseline_gbp": 272032,
+   "ratio": 4.5,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 46908,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 573404,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 398386,
+    "base_usd": 33141,
+    "ratio": 12.0,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 96007,
+    "base_usd": 33425,
+    "ratio": 2.9,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   }
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "lead",
+   "trailing12_gbp": 205032237,
+   "baseline_gbp": 15431422,
+   "ratio": 13.3,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 1122963,
+    "base_usd": 211404,
+    "ratio": 5.3,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 12263544,
+    "base_usd": 213387,
+    "ratio": 57.5,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 6943604,
+   "baseline_gbp": 2730717,
+   "ratio": 2.5,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 1225516,
+    "base_usd": 1089455,
+    "ratio": 1.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 491484,
+    "base_usd": 1085526,
+    "ratio": 0.5,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 1179,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "India",
+  "iso2": "IN",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 272,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2026-07",
+    "usd": 502,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   }
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 545333,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 545000,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 31702764,
+   "baseline_gbp": 1704710,
+   "ratio": 18.6,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 1000,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 1000,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 659189,
+   "baseline_gbp": 157332,
+   "ratio": 4.2,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 6000,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 6000,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 6969471,
+   "baseline_gbp": 2683470,
+   "ratio": 2.6,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 449333,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 449333,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 50818426,
+   "baseline_gbp": 15944189,
+   "ratio": 3.2,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 138000,
+    "base_usd": 21391667,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 667000,
+    "base_usd": 21391333,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 18333,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 18333,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Israel",
+  "iso2": "IL",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 8333,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 8333,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 480553,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 487217,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 23980,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 24106,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 440027,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 440746,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 21992924,
+   "baseline_gbp": 3588535,
+   "ratio": 6.1,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 208764,
+    "base_usd": 2150466,
+    "ratio": 0.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 228,
+    "base_usd": 2138878,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 0,
+    "base_usd": 2029,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 0,
+    "base_usd": 2029,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Malaysia",
+  "iso2": "MY",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 15278,
+    "base_usd": 3452,
+    "ratio": 4.4,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2026-08",
+    "usd": 4246,
+    "base_usd": 3452,
+    "ratio": 1.2,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Serbia",
+  "iso2": "RS",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 236609,
+    "base_usd": 14616,
+    "ratio": 16.2,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-05",
+    "usd": 236609,
+    "base_usd": 14616,
+    "ratio": 16.2,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2025,
+    "usd": 118306,
+    "base_usd": 905839,
+    "ratio": 0.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2026-05",
+    "usd": 2165,
+    "base_usd": 905839,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor and under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "lead",
+   "trailing12_gbp": 16813390,
+   "baseline_gbp": 4291943,
+   "ratio": 3.9,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 4760607,
+    "base_usd": 262543,
+    "ratio": 18.1,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-05",
+    "usd": 5235033,
+    "base_usd": 262543,
+    "ratio": 19.9,
+    "baseline_zero": false,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": true,
+   "annual": {
+    "year": 2025,
+    "usd": 1240811,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": true,
+    "why_not": null
+   },
+   "monthly": {
+    "to": "2026-05",
+    "usd": 592731,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": true,
+    "why_not": null
+   }
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Thailand",
+  "iso2": "TH",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "854231",
+  "description": "Electronic integrated circuits: processors and controllers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "not flagged"
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2023,
+    "usd": 22532,
+    "base_usd": 3190,
+    "ratio": 7.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   },
+   "monthly": {
+    "to": "2023-12",
+    "usd": 22532,
+    "base_usd": 3190,
+    "ratio": 7.1,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under the $100,000 floor"
+   }
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "854232",
+  "description": "Electronic integrated circuits: memories",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "854233",
+  "description": "Electronic integrated circuits: amplifiers",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "854239",
+  "description": "Electronic integrated circuits: other",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "851762",
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 3070771,
+   "baseline_gbp": 1044109,
+   "ratio": 2.9,
+   "months_with_exports": 12
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2023,
+    "usd": 545284,
+    "base_usd": 66342951,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   },
+   "monthly": {
+    "to": "2023-12",
+    "usd": 545284,
+    "base_usd": 66342951,
+    "ratio": 0.0,
+    "baseline_zero": false,
+    "passes": false,
+    "why_not": "under 2x the 2019-21 average"
+   }
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "852691",
+  "description": "Radio navigational aid apparatus",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": true,
+   "status": "watch",
+   "trailing12_gbp": 415991,
+   "baseline_gbp": 150587,
+   "ratio": 2.8,
+   "months_with_exports": 11
+  },
+  "onward": {
+   "shown": true,
+   "signal": false,
+   "annual": {
+    "year": 2023,
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   },
+   "monthly": {
+    "to": "2023-12",
+    "usd": 0,
+    "base_usd": 0,
+    "ratio": null,
+    "baseline_zero": true,
+    "passes": false,
+    "why_not": "no exports reported"
+   }
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "853221",
+  "description": "Fixed capacitors: tantalum",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "853224",
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ },
+ {
+  "country": "Vietnam",
+  "iso2": "VN",
+  "code": "8548",
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "uk_data_to": "2026-08",
+  "uk": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  },
+  "onward": {
+   "shown": false,
+   "status": "not shown (display rule)"
+  }
+ }
+]

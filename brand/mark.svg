@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Diversion Radar">
+  <rect width="32" height="32" rx="7" fill="#0f2140"/>
+  <g fill="none" stroke="#7fa6e0" stroke-width="1.6" stroke-linecap="round">
+    <path d="M7 18a7 7 0 0 1 7 7" opacity=".6"/>
+    <path d="M7 11.5a13.5 13.5 0 0 1 13.5 13.5" opacity=".42"/>
+    <path d="M7 5a20 20 0 0 1 20 20" opacity=".26"/>
+  </g>
+  <path d="M7 25 L13 19 H18.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18.5 19 L22.6 12.6" fill="none" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="23.6" cy="11" r="4.2" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity=".5"/>
+  <circle cx="23.6" cy="11" r="2.2" fill="#a78bfa"/>
+  <circle cx="7" cy="25" r="1.9" fill="#ffffff"/>
+</svg>

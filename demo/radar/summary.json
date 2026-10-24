@@ -1,0 +1,22 @@
+[
+ {
+  "run": "2026-10",
+  "run_label": "October 2026",
+  "uk_data_to": "August 2026",
+  "rule": "run2",
+  "variant": "run3",
+  "series": 162,
+  "corridors": 18,
+  "codes": 9,
+  "leads": 9,
+  "leads_shown": 7,
+  "leads_held": 2,
+  "watch": 26,
+  "watch_shown": 16,
+  "watch_held": 10,
+  "ever_lead": 35,
+  "display_min_gbp": 250000,
+  "display_min_months": 6,
+  "monthly_corridors": 16
+ }
+]

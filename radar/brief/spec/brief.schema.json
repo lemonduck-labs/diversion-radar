@@ -1,0 +1,89 @@
+{
+ "title": "radar-brief/1",
+ "description": "An analyst brief drafted from one context file (JSON Schema draft 2020-12). Every free-text field is a claim that cites the ids of the context items it rests on. The screen (spec/screen_rules.json) checks what a schema cannot: figures, wording, citations, confidence and the fixed lines.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["schema", "series", "run", "headline", "what_rose", "why_it_may_be_ordinary", "linked_cases",
+              "questions_to_check", "limits", "house_line", "ogl_line"],
+ "properties": {
+  "schema": {"const": "radar-brief/1"},
+  "series": {"type": "string", "minLength": 1, "maxLength": 80,
+             "description": "The context's series, for example 'Kazakhstan 851762'."},
+  "run": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$", "description": "The context's run, YYYY-MM."},
+  "headline": {"$ref": "#/$defs/claim",
+               "properties": {"text": {"maxLength": 200}},
+               "description": "Neutral, a lead and not a finding; it must say 'not a finding'."},
+  "what_rose": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["uk", "onward"],
+   "properties": {
+    "uk": {"$ref": "#/$defs/claims", "description": "What rose in the UK figures."},
+    "onward": {"$ref": "#/$defs/claims", "description": "What the onward figures show, passed or not."}
+   }
+  },
+  "why_it_may_be_ordinary": {"$ref": "#/$defs/claims",
+                             "description": "Why the rise may be ordinary trade, from the context's limits."},
+  "linked_cases": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["case_ids", "note"],
+   "properties": {
+    "case_ids": {"type": "array", "maxItems": 12, "uniqueItems": true,
+                 "items": {"type": "string", "pattern": "^[A-Z]{2}-[0-9]{2}$"}},
+    "note": {"$ref": "#/$defs/claim",
+             "description": "What the cases summary says: how the cases link, and that they named no UK goods or UK party. Never the case outcomes."}
+   }
+  },
+  "questions_to_check": {
+   "type": "array",
+   "minItems": 3,
+   "maxItems": 8,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["red_flag", "question"],
+    "properties": {
+     "red_flag": {"$ref": "#/$defs/id"},
+     "question": {"type": "string", "minLength": 1, "maxLength": 300,
+                  "description": "The red flag's question, word for word."},
+     "why_here": {"$ref": "#/$defs/claim"}
+    }
+   }
+  },
+  "limits": {"type": "array", "minItems": 1, "maxItems": 20, "uniqueItems": true,
+             "items": {"$ref": "#/$defs/id"},
+             "description": "Ids of the context limits that apply; the page shows their text from the context."},
+  "responds_to_review": {
+   "type": "array", "minItems": 1, "maxItems": 5,
+   "description": "One answer per reviewer note in the prompt's review notes: what this draft changed because of it, or why it could not. Left out when there are no notes.",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["note", "change"],
+    "properties": {
+     "note": {"type": "string", "pattern": "^review-[1-5]$"},
+     "change": {"$ref": "#/$defs/claim"}
+    }
+   }
+  },
+  "house_line": {"type": "string", "description": "Exactly: A rise in exports is a lead, not evidence of a breach."},
+  "ogl_line": {"type": "string",
+               "description": "Exactly: Contains public sector information licensed under the Open Government Licence v3.0."}
+ },
+ "$defs": {
+  "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,79}$"},
+  "confidence": {"enum": ["Certain", "Likely", "Guessing"]},
+  "claim": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["text", "confidence", "cites"],
+   "properties": {
+    "text": {"type": "string", "minLength": 1, "maxLength": 400},
+    "confidence": {"$ref": "#/$defs/confidence"},
+    "cites": {"type": "array", "minItems": 1, "maxItems": 12, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}}
+   }
+  },
+  "claims": {"type": "array", "minItems": 1, "maxItems": 6, "items": {"$ref": "#/$defs/claim"}}
+ }
+}

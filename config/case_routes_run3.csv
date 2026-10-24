@@ -1,0 +1,9 @@
+case_id,hmrc_country_id,codes,reference_date,basis
+US-01,740,854231;854232;854233;854239,2023-10-31,register: Hong Kong named among the transit countries
+US-01,740,853221;853224;8548,2023-10-31,register: capacitors or parts may also have been shipped; Hong Kong named among the transit countries
+US-01,664,854231;854232;854233;854239,2023-10-31,register: India named among the transit countries
+US-01,664,853221;853224;8548,2023-10-31,register: capacitors or parts may also have been shipped; India named among the transit countries
+US-01,720,854231;854232;854233;854239,2023-10-31,register: China named among the transit countries
+US-01,720,853221;853224;8548,2023-10-31,register: capacitors or parts may also have been shipped; China named among the transit countries
+EU-05,740,854231;854239;853224;8548,2024-03-01,register: Hong Kong named among the transit countries
+EU-05,720,854231;854239;853224;8548,2024-03-01,register: China named for the period after February 2022 in a second report

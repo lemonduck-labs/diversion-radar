@@ -1,0 +1,107 @@
+{
+ "title": "radar-brief-context/1",
+ "description": "The facts for one flagged series at one radar run that passes the display rule, as radar/brief/context.py builds them and demo/radar/briefs/<slug>.json ships them (JSON Schema draft 2020-12). A brief may use nothing else.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["schema", "series", "slug", "country", "code", "description", "run", "run_label", "status", "rule",
+              "house_line", "ogl_line", "sources_line", "facts", "cases", "limits", "red_flags"],
+ "properties": {
+  "schema": {"const": "radar-brief-context/1"},
+  "series": {"type": "string", "minLength": 1, "maxLength": 80},
+  "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+  "country": {"type": "string", "minLength": 1},
+  "code": {"type": "string", "pattern": "^[0-9]{4,6}$"},
+  "description": {"type": "string", "minLength": 1},
+  "run": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$"},
+  "run_label": {"type": "string", "minLength": 1},
+  "status": {"enum": ["lead", "watch"]},
+  "rule": {"type": "string"},
+  "house_line": {"const": "A rise in exports is a lead, not evidence of a breach."},
+  "ogl_line": {"const": "Contains public sector information licensed under the Open Government Licence v3.0."},
+  "sources_line": {"type": "string"},
+  "facts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/fact"}},
+  "cases": {"type": "array", "items": {"$ref": "#/$defs/case"}},
+  "limits": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/limit"}},
+  "red_flags": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/red_flag"}}
+ },
+ "$defs": {
+  "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,79}$"},
+  "confidence": {"enum": ["Certain", "Likely", "Guessing"]},
+  "source": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["dataset", "field"],
+   "properties": {"dataset": {"type": "string", "minLength": 1}, "field": {"type": "string", "minLength": 1}}
+  },
+  "fact": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["id", "group", "label", "text", "value", "display", "source", "confidence"],
+   "properties": {
+    "id": {"$ref": "#/$defs/id"},
+    "group": {"enum": ["series", "uk", "display", "onward", "onward_year", "history", "corridor", "rule", "cases"]},
+    "label": {"type": "string", "minLength": 1},
+    "text": {"type": "string", "minLength": 1},
+    "value": {"type": ["number", "string", "boolean", "null"]},
+    "display": {"type": ["string", "null"]},
+    "released": {"type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "source": {"$ref": "#/$defs/source"},
+    "confidence": {"$ref": "#/$defs/confidence"}
+   }
+  },
+  "case": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["id", "case_id", "jurisdiction", "outcome", "basis", "first_public_action", "link", "text", "source",
+                "confidence"],
+   "properties": {
+    "id": {"$ref": "#/$defs/id"},
+    "case_id": {"type": "string", "pattern": "^[A-Z]{2}-[0-9]{2}$"},
+    "jurisdiction": {"type": "string"},
+    "outcome": {"type": "string", "description": "Case-level only; never sentences or other per-person detail."},
+    "basis": {"type": "string"},
+    "first_public_action": {"type": "string"},
+    "link": {"enum": ["route", "heading"]},
+    "text": {"type": "string"},
+    "source": {"$ref": "#/$defs/source"},
+    "confidence": {"$ref": "#/$defs/confidence"}
+   }
+  },
+  "limit": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["id", "label", "text", "source", "confidence"],
+   "properties": {
+    "id": {"$ref": "#/$defs/id"},
+    "label": {"type": "string", "minLength": 1},
+    "text": {"type": "string", "minLength": 1},
+    "source": {"$ref": "#/$defs/source"},
+    "confidence": {"$ref": "#/$defs/confidence"}
+   }
+  },
+  "red_flag": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["id", "question", "why", "applies_to", "tags", "citation", "also_cited", "confidence"],
+   "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "question": {"type": "string", "pattern": "\\?$"},
+    "why": {"type": "string", "minLength": 1},
+    "applies_to": {"type": "string", "minLength": 1},
+    "tags": {"type": "array", "minItems": 1, "uniqueItems": true,
+             "items": {"enum": ["chpl", "corridor", "new_customer", "volume_rise", "end_use", "end_user", "payment",
+                                "routing", "customer_profile", "paperwork"]}},
+    "citation": {"$ref": "#/$defs/citation"},
+    "also_cited": {"type": "array", "items": {"$ref": "#/$defs/citation"}},
+    "confidence": {"$ref": "#/$defs/confidence"}
+   }
+  },
+  "citation": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["publisher", "title", "date"],
+   "properties": {"publisher": {"type": "string", "minLength": 1}, "title": {"type": "string", "minLength": 1},
+                  "date": {"type": "string", "minLength": 1}}
+  }
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "version": "1",
+ "flags": "i",
+ "patterns": [
+  {
+   "name": "override",
+   "source": "\\b(?:ignore|disregard|forget|override|bypass|skip)\\b[^.\\n]{0,40}\\b(?:instructions?|prompts?|rules?|guidelines?|screen|checks?|polic(?:y|ies)|guardrails?)\\b"
+  },
+  {
+   "name": "role",
+   "source": "\\b(?:system|developer)\\s+(?:prompt|message|instructions?)\\b|\\byou\\s+are\\s+now\\b|\\bact\\s+as\\s+(?:an?\\s+)?(?:ai|assistant|agent|model|admin|administrator)\\b|\\bpretend\\s+(?:to\\s+be|you|that)\\b"
+  },
+  {
+   "name": "addressed_to_agent",
+   "source": "\\b(?:note|message|instructions?|reminder)s?\\s+(?:to|for)\\s+(?:the\\s+|any\\s+)?(?:ai|assistants?|agents?|models?|claude|llms?|bots?)\\b|\\b(?:ai|assistants?|agents?|models?|llms?)\\s+(?:reading|processing|summari[sz]ing|handling)\\s+(?:this|these)\\b|\\bif\\s+you\\s+are\\s+an?\\s+(?:ai|assistant|agent|model|llm)\\b"
+  },
+  {
+   "name": "standing_order",
+   "source": "\\b(?:from\\s+now\\s+on|from\\s+this\\s+point|in\\s+(?:all|every)\\s+(?:future|later|subsequent)|for\\s+(?:all|every)\\s+(?:future|later|subsequent))\\b|\\b(?:always|never)\\s+(?:approve|reject|recommend|send|forward|cc|copy|rate|tell|insert|attach|share)\\b"
+  },
+  {
+   "name": "exfiltration",
+   "source": "\\b(?:send|forward|email|e-mail|post|upload|share|copy)\\b[^.\\n]{0,40}\\b(?:to|with)\\b[^.\\n]{0,40}(?:@|https?://|www\\.)|!\\[[^\\]]*\\]\\(\\s*https?://"
+  },
+  {
+   "name": "link",
+   "source": "https?://|\\bwww\\.[a-z0-9-]+\\."
+  },
+  {
+   "name": "markup",
+   "source": "</?\\s*(?:system|user|assistant|instructions?|script|iframe|img)\\b|<!--|={3}\\s*(?:system|user|assistant)\\b|-{3}\\s*prompt\\b|\\[/?(?:inst|sys)\\]"
+  },
+  {
+   "name": "hidden_text",
+   "source": "[​-‏‪-‮⁠-⁤﻿]"
+  },
+  {
+   "name": "encoded",
+   "source": "[A-Za-z0-9+/]{60,}={0,2}"
+  }
+ ],
+ "kinds": [
+  "fact",
+  "case_note",
+  "lesson",
+  "playbook"
+ ],
+ "trust": [
+  "high",
+  "medium",
+  "low"
+ ],
+ "author_kinds": [
+  "person",
+  "agent",
+  "import"
+ ],
+ "reviewed_sources": [
+  "approval:",
+  "review:",
+  "person:"
+ ],
+ "max_text": 2000
+}

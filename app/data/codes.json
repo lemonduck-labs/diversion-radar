@@ -1,0 +1,74 @@
+[
+ {
+  "code": "854231",
+  "tier": 1,
+  "description": "Electronic integrated circuits: processors and controllers",
+  "cn8_from": "85423100",
+  "cn8_to": "85423199",
+  "note": ""
+ },
+ {
+  "code": "854232",
+  "tier": 1,
+  "description": "Electronic integrated circuits: memories",
+  "cn8_from": "85423200",
+  "cn8_to": "85423299",
+  "note": ""
+ },
+ {
+  "code": "854233",
+  "tier": 1,
+  "description": "Electronic integrated circuits: amplifiers",
+  "cn8_from": "85423300",
+  "cn8_to": "85423399",
+  "note": ""
+ },
+ {
+  "code": "854239",
+  "tier": 1,
+  "description": "Electronic integrated circuits: other",
+  "cn8_from": "85423900",
+  "cn8_to": "85423999",
+  "note": ""
+ },
+ {
+  "code": "851762",
+  "tier": 2,
+  "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+  "cn8_from": "85176200",
+  "cn8_to": "85176299",
+  "note": ""
+ },
+ {
+  "code": "852691",
+  "tier": 2,
+  "description": "Radio navigational aid apparatus",
+  "cn8_from": "85269100",
+  "cn8_to": "85269199",
+  "note": ""
+ },
+ {
+  "code": "853221",
+  "tier": 2,
+  "description": "Fixed capacitors: tantalum",
+  "cn8_from": "85322100",
+  "cn8_to": "85322199",
+  "note": ""
+ },
+ {
+  "code": "853224",
+  "tier": 2,
+  "description": "Fixed capacitors: ceramic dielectric, multilayer",
+  "cn8_from": "85322400",
+  "cn8_to": "85322499",
+  "note": ""
+ },
+ {
+  "code": "8548",
+  "tier": 2,
+  "description": "Electrical parts of machinery or apparatus not elsewhere specified",
+  "cn8_from": "85480000",
+  "cn8_to": "85489999",
+  "note": "CHPL lists 8548.00 (HS 2022). Before 2022 this was 8548.10 and 8548.90, so the whole of heading 8548 is used for a consistent series."
+ }
+]

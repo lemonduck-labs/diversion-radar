@@ -1,0 +1,14 @@
+{
+ "schema": "monitor-sources/1",
+ "about": "Lawful public sources the radar's monitoring layer reads, each through its own public pages as a person would read them: never behind a sign-in, through a VPN or under a hidden identity. Each lists the page that sets its terms and what they allow, as read on 22 October 2026, a standing reliability grade (A to F), and how often to read it. fd-core's monitor module checks every item against this file before it is filed.",
+ "sources": [
+  {"id": "otsi-blog", "name": "OTSI blog", "publisher": "Office of Trade Sanctions Implementation (DBT)", "url": "https://otsi.blog.gov.uk/", "language": "en", "kind": "regulator",
+   "terms_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/", "terms_note": "Open Government Licence v3.0 (GOV.UK blogs)", "reliability": "A", "cadence_days": 7, "in_use": true},
+  {"id": "govuk-sanctions", "name": "GOV.UK: UK sanctions on Russia (news and sanctions notices)", "publisher": "Foreign, Commonwealth and Development Office", "url": "https://www.gov.uk/government/news/", "hosts": ["assets.publishing.service.gov.uk"], "language": "en", "kind": "regulator",
+   "terms_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/", "terms_note": "Open Government Licence v3.0 (GOV.UK). Notices name designated persons: items carry no names, only counts, countries of address and kinds of goods", "reliability": "A", "cadence_days": 7, "in_use": true},
+  {"id": "tr-trade-ministry", "name": "Ministry of Trade of Türkiye: monthly foreign trade data", "publisher": "Ministry of Trade, Republic of Türkiye", "url": "https://ticaret.gov.tr/", "language": "tr", "kind": "statistics",
+   "terms_url": "https://ticaret.gov.tr/", "terms_note": "Site footer: all rights reserved; no reuse terms stated. Items keep a short excerpt with the link for internal monitoring; anything shared beyond that needs the publisher's permission [Likely]", "reliability": "B", "cadence_days": 30, "in_use": true},
+  {"id": "kg-stat", "name": "National Statistical Committee of the Kyrgyz Republic: news", "publisher": "National Statistical Committee of the Kyrgyz Republic", "url": "https://www.stat.gov.kg/", "language": "ru", "kind": "statistics",
+   "terms_url": "https://www.stat.gov.kg/ru/ATTRIBUTION-NONCOMMERCIAL-SHAREALIKE-4-INTERNATIONAL/", "terms_note": "Creative Commons BY-NC-SA 4.0 (the licensing page, read 22 Oct 2026): attribution, no commercial use, share-alike, changes stated. The site footer also requires citing the source (Law on Official Statistics, article 30) and carries an all rights reserved notice. Fine for internal monitoring with attribution; a paid deployment or wider sharing needs the committee's permission", "reliability": "B", "cadence_days": 30, "in_use": true}
+ ]
+}

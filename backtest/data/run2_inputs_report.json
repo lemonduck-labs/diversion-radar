@@ -1,0 +1,63 @@
+{
+  "sha256": "a1b148abe84e11f7f8f883f3a0e3858729c3c8654018d4883b0ebac79282fa93",
+  "rows": {
+    "multi": 92,
+    "annual_availability": 92,
+    "monthly_availability": 684,
+    "monthly": 1302,
+    "calls": 612,
+    "annual": 75
+  },
+  "duplicate_availability_rows": {
+    "annual": 0,
+    "monthly": 0
+  },
+  "monthly_datasets_from_2019_not_queried": [],
+  "monthly_rows_outside_calls": 0,
+  "annual_release_dates_compared": 67,
+  "annual_release_dates_differing": [],
+  "monthly_coverage": {
+    "417": {
+      "datasets_from_2019": 88,
+      "first": 201801,
+      "last": 202608,
+      "rows": 171
+    },
+    "51": {
+      "datasets_from_2019": 90,
+      "first": 201801,
+      "last": 202608,
+      "rows": 238
+    },
+    "398": {
+      "datasets_from_2019": 78,
+      "first": 201801,
+      "last": 202604,
+      "rows": 375
+    },
+    "268": {
+      "datasets_from_2019": 92,
+      "first": 201801,
+      "last": 202608,
+      "rows": 6
+    },
+    "792": {
+      "datasets_from_2019": 84,
+      "first": 201801,
+      "last": 202512,
+      "rows": 430
+    },
+    "860": {
+      "datasets_from_2019": 89,
+      "first": 201901,
+      "last": 202607,
+      "rows": 66
+    },
+    "31": {
+      "datasets_from_2019": 91,
+      "first": 201801,
+      "last": 202607,
+      "rows": 16
+    }
+  }
+}

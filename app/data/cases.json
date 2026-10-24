@@ -1,0 +1,38 @@
+[
+ {
+  "case_id": "US-01",
+  "jurisdiction": "United States",
+  "enforcing_body": "US Department of Justice (US Attorney's Office, Eastern District of New York)",
+  "reference": "E.D.N.Y. Docket No. 23-CR-452 (complaint 23-M-956); USAO E.D.N.Y. press releases of 31 Oct 2023 and 9 Jul 2024",
+  "outcome": "guilty pleas",
+  "basis": "official records",
+  "first_public_action": "31 Oct 2023"
+ },
+ {
+  "case_id": "US-02",
+  "jurisdiction": "United States",
+  "enforcing_body": "US Department of Justice (US Attorney's Office, District of Kansas)",
+  "reference": "D. Kan. (case number not found); DOJ press releases of 2 Mar 2023 and 12 Jun 2026",
+  "outcome": "guilty pleas",
+  "basis": "official records",
+  "first_public_action": "2 Mar 2023"
+ },
+ {
+  "case_id": "EU-05",
+  "jurisdiction": "Germany",
+  "enforcing_body": "Higher Regional Court (Oberlandesgericht) Stuttgart, criminal senate",
+  "reference": "Higher Regional Court Stuttgart judgment reported 17 Jul 2024 (case number not found)",
+  "outcome": "convictions at first instance; finality not verified",
+  "basis": "published reports only; no official judgment seen",
+  "first_public_action": "Mar 2024 (as reported)"
+ },
+ {
+  "case_id": "EU-01",
+  "jurisdiction": "Netherlands",
+  "enforcing_body": "Public Prosecution Service (OM); Rotterdam District Court; The Hague Court of Appeal",
+  "reference": "Rotterdam District Court judgments on conviction and confiscation (ECLI not found), reported 11 Nov 2024; The Hague Court of Appeal ruling on confiscation, reported 1 Sep 2026",
+  "outcome": "conviction and confiscation at first instance; confiscation reduced on appeal [Likely]",
+  "basis": "published reports only; no official judgment seen",
+  "first_public_action": "Oct 2024 (earliest dated step found)"
+ }
+]

@@ -1,0 +1,1851 @@
+{
+ "schema": "radar-brief-context/1",
+ "series": "Vietnam 851762",
+ "slug": "vietnam-851762",
+ "country": "Vietnam",
+ "code": "851762",
+ "description": "Machines for the reception, conversion and transmission of voice, images or other data",
+ "run": "2026-10",
+ "run_label": "October 2026",
+ "status": "watch",
+ "rule": "run2",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "ogl_line": "Contains public sector information licensed under the Open Government Licence v3.0.",
+ "sources_line": "UK figures: HMRC overseas trade statistics. Onward figures: UN Comtrade.",
+ "facts": [
+  {
+   "id": "series.country",
+   "group": "series",
+   "label": "Corridor country",
+   "text": "Corridor country: Vietnam.",
+   "value": "Vietnam",
+   "display": null,
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "country"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "series.code",
+   "group": "series",
+   "label": "Goods code",
+   "text": "Goods: HS 851762, machines for the reception, conversion and transmission of voice, images or other data.",
+   "value": "851762",
+   "display": null,
+   "source": {
+    "dataset": "config/codes.csv",
+    "field": "code, description"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "series.chpl_tier",
+   "group": "series",
+   "label": "CHPL tier",
+   "text": "HS 851762 is in Tier 2 of the Common High Priority Items List.",
+   "value": 2,
+   "display": null,
+   "source": {
+    "dataset": "config/codes.csv",
+    "field": "tier"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "series.status",
+   "group": "series",
+   "label": "Status at this run",
+   "text": "Status at the October 2026 run: a watch item, with the UK signal on and the onward signal off.",
+   "value": "watch",
+   "display": null,
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "status, uk_signal, onward_signal"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "uk.data_to",
+   "group": "uk",
+   "label": "UK figures to",
+   "text": "The October 2026 run uses UK figures to Aug 2026, with a 2-month publication lag.",
+   "value": "2026-08",
+   "display": null,
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "uk_data_to"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "uk.trailing12",
+   "group": "uk",
+   "label": "UK exports, 12 months",
+   "text": "UK exports of 851762 to Vietnam over the 12 months to Aug 2026: £3.1m.",
+   "value": 3070771,
+   "display": "£3.1m",
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "uk_trailing12_gbp"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "uk.baseline",
+   "group": "uk",
+   "label": "UK exports, 2019-21 average",
+   "text": "Average UK exports of 851762 to Vietnam a year in 2019-21: £1.0m.",
+   "value": 1044109,
+   "display": "£1.0m",
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "uk_baseline_gbp"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "uk.ratio",
+   "group": "uk",
+   "label": "UK rise",
+   "text": "UK exports over the 12 months to Aug 2026 were 2.9x the 2019-21 average.",
+   "value": 2.9,
+   "display": "2.9x",
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "uk_ratio"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "uk.months",
+   "group": "uk",
+   "label": "Months with UK exports",
+   "text": "UK exports were recorded in 12 of the 12 months to Aug 2026.",
+   "value": 12,
+   "display": null,
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "uk_months_with_exports"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "uk.threshold",
+   "group": "uk",
+   "label": "UK threshold",
+   "text": "The UK threshold for 851762 to Vietnam is £2.1m over 12 months: the larger of 2x the 2019-21 average and that average plus £20,000.",
+   "value": 2088218,
+   "display": "£2.1m",
+   "source": {
+    "dataset": "backtest/asof.py",
+    "field": "UK_RATIO, UK_MIN_EXCESS"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "display.rule",
+   "group": "display",
+   "label": "Display rule",
+   "text": "Shown under the display rule: at least £250,000 of UK exports over the 12 published months to Aug 2026, with exports in at least 6 of them.",
+   "value": true,
+   "display": null,
+   "source": {
+    "dataset": "radar/display.py",
+    "field": "MIN_DISPLAY_GBP, MIN_DISPLAY_MONTHS; displayable()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "onward.check",
+   "group": "onward",
+   "label": "Onward check",
+   "text": "The onward check has not passed: Vietnam's annual figures for 2023 are under 2x the 2019-21 average; the monthly check has not passed either: the 12 months to Dec 2023 are under 2x the 2019-21 average.",
+   "value": "not passed",
+   "display": null,
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "onward_annual, onward_monthly, onward_year, onward_usd, onward_base_usd, monthly_end, monthly_window_usd, monthly_base_usd; reasons from radar/onward.py"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "onward.annual",
+   "group": "onward",
+   "label": "Onward exports, 2023",
+   "text": "Vietnam's reported exports of 851762 to Russia in 2023: $545k, less than 0.1x the 2019-21 average of $66.3m a year (released 15 Apr 2025).",
+   "value": 545284,
+   "display": "$545k",
+   "source": {
+    "dataset": "data/processed/comtrade_annual_run3.csv",
+    "field": "value_usd (reporter to Russia, flow X); onward_ratio"
+   },
+   "confidence": "Certain",
+   "released": "2025-04-15"
+  },
+  {
+   "id": "onward.threshold",
+   "group": "onward",
+   "label": "Annual onward threshold",
+   "text": "The annual onward threshold for 851762 from Vietnam is $132.7m: the larger of 2x the 2019-21 average and $100,000.",
+   "value": 132685902,
+   "display": "$132.7m",
+   "source": {
+    "dataset": "backtest/asof.py",
+    "field": "ONWARD_RATIO, ONWARD_MIN_USD"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "onward.monthly",
+   "group": "onward",
+   "label": "Onward exports, 12 months to Dec 2023",
+   "text": "Vietnam's reported exports of 851762 to Russia over the 12 months to Dec 2023: $545k, less than 0.1x the 2019-21 level of $66.3m a year (Dec 2023 released 15 Apr 2025).",
+   "value": 545284,
+   "display": "$545k",
+   "source": {
+    "dataset": "backtest/data/comtrade_monthly_run3.csv",
+    "field": "value_usd (12 released months); release dates from backtest/data/comtrade_monthly_release_dates_run3.csv"
+   },
+   "confidence": "Certain",
+   "released": "2025-04-15"
+  },
+  {
+   "id": "onward.year.2019",
+   "group": "onward_year",
+   "label": "Onward exports, 2019",
+   "text": "Vietnam's reported exports of 851762 to Russia in 2019: $39.8m (released 26 Jun 2020).",
+   "value": 39820276,
+   "display": "$39.8m",
+   "source": {
+    "dataset": "data/processed/comtrade_annual_run3.csv",
+    "field": "value_usd (reporter to Russia, flow X); first_released from backtest/data/comtrade_release_dates_run3.csv"
+   },
+   "confidence": "Certain",
+   "released": "2020-06-26"
+  },
+  {
+   "id": "onward.year.2020",
+   "group": "onward_year",
+   "label": "Onward exports, 2020",
+   "text": "Vietnam's reported exports of 851762 to Russia in 2020: $49.6m (released 1 Jul 2021).",
+   "value": 49586168,
+   "display": "$49.6m",
+   "source": {
+    "dataset": "data/processed/comtrade_annual_run3.csv",
+    "field": "value_usd (reporter to Russia, flow X); first_released from backtest/data/comtrade_release_dates_run3.csv"
+   },
+   "confidence": "Certain",
+   "released": "2021-07-01"
+  },
+  {
+   "id": "onward.year.2021",
+   "group": "onward_year",
+   "label": "Onward exports, 2021",
+   "text": "Vietnam's reported exports of 851762 to Russia in 2021: $109.6m (released 25 Nov 2022).",
+   "value": 109622408,
+   "display": "$109.6m",
+   "source": {
+    "dataset": "data/processed/comtrade_annual_run3.csv",
+    "field": "value_usd (reporter to Russia, flow X); first_released from backtest/data/comtrade_release_dates_run3.csv"
+   },
+   "confidence": "Certain",
+   "released": "2022-11-25"
+  },
+  {
+   "id": "onward.year.2022",
+   "group": "onward_year",
+   "label": "Onward exports, 2022",
+   "text": "Vietnam's reported exports of 851762 to Russia in 2022: $33.2m (released 12 Nov 2023).",
+   "value": 33249678,
+   "display": "$33.2m",
+   "source": {
+    "dataset": "data/processed/comtrade_annual_run3.csv",
+    "field": "value_usd (reporter to Russia, flow X); first_released from backtest/data/comtrade_release_dates_run3.csv"
+   },
+   "confidence": "Certain",
+   "released": "2023-11-12"
+  },
+  {
+   "id": "onward.year.2023",
+   "group": "onward_year",
+   "label": "Onward exports, 2023",
+   "text": "Vietnam's reported exports of 851762 to Russia in 2023: $545k (released 15 Apr 2025).",
+   "value": 545284,
+   "display": "$545k",
+   "source": {
+    "dataset": "data/processed/comtrade_annual_run3.csv",
+    "field": "value_usd (reporter to Russia, flow X); first_released from backtest/data/comtrade_release_dates_run3.csv"
+   },
+   "confidence": "Certain",
+   "released": "2025-04-15"
+  },
+  {
+   "id": "history.summary",
+   "group": "history",
+   "label": "Screened history",
+   "text": "58 runs drawn under the display rule, the first in Jan 2022 and the latest in Oct 2026; a lead at none of them.",
+   "value": 58,
+   "display": null,
+   "source": {
+    "dataset": "radar/display.py",
+    "field": "screen_runs() over data/processed/hmrc_monthly_run3.csv"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-01",
+   "group": "history",
+   "label": "Run of Jan 2022",
+   "text": "Run of Jan 2022 (UK figures to Nov 2021): UK exports over 12 months £942k; UK signal off; onward signal off; not a lead.",
+   "value": 942425,
+   "display": "£942k",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-02",
+   "group": "history",
+   "label": "Run of Feb 2022",
+   "text": "Run of Feb 2022 (UK figures to Dec 2021): UK exports over 12 months £1.0m; UK signal off; onward signal off; not a lead.",
+   "value": 1048023,
+   "display": "£1.0m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-03",
+   "group": "history",
+   "label": "Run of Mar 2022",
+   "text": "Run of Mar 2022 (UK figures to Jan 2022): UK exports over 12 months £1.2m; UK signal off; onward signal off; not a lead.",
+   "value": 1172394,
+   "display": "£1.2m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-04",
+   "group": "history",
+   "label": "Run of Apr 2022",
+   "text": "Run of Apr 2022 (UK figures to Feb 2022): UK exports over 12 months £1.2m; UK signal off; onward signal off; not a lead.",
+   "value": 1213931,
+   "display": "£1.2m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-05",
+   "group": "history",
+   "label": "Run of May 2022",
+   "text": "Run of May 2022 (UK figures to Mar 2022): UK exports over 12 months £1.3m; UK signal off; onward signal off; not a lead.",
+   "value": 1300718,
+   "display": "£1.3m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-06",
+   "group": "history",
+   "label": "Run of Jun 2022",
+   "text": "Run of Jun 2022 (UK figures to Apr 2022): UK exports over 12 months £1.3m; UK signal off; onward signal off; not a lead.",
+   "value": 1296571,
+   "display": "£1.3m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-07",
+   "group": "history",
+   "label": "Run of Jul 2022",
+   "text": "Run of Jul 2022 (UK figures to May 2022): UK exports over 12 months £1.4m; UK signal off; onward signal off; not a lead.",
+   "value": 1384415,
+   "display": "£1.4m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-08",
+   "group": "history",
+   "label": "Run of Aug 2022",
+   "text": "Run of Aug 2022 (UK figures to Jun 2022): UK exports over 12 months £1.5m; UK signal off; onward signal off; not a lead.",
+   "value": 1503325,
+   "display": "£1.5m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-09",
+   "group": "history",
+   "label": "Run of Sep 2022",
+   "text": "Run of Sep 2022 (UK figures to Jul 2022): UK exports over 12 months £1.5m; UK signal off; onward signal off; not a lead.",
+   "value": 1462010,
+   "display": "£1.5m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-10",
+   "group": "history",
+   "label": "Run of Oct 2022",
+   "text": "Run of Oct 2022 (UK figures to Aug 2022): UK exports over 12 months £1.7m; UK signal off; onward signal off; not a lead.",
+   "value": 1650698,
+   "display": "£1.7m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-11",
+   "group": "history",
+   "label": "Run of Nov 2022",
+   "text": "Run of Nov 2022 (UK figures to Sep 2022): UK exports over 12 months £1.7m; UK signal off; onward signal off; not a lead.",
+   "value": 1654476,
+   "display": "£1.7m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2022-12",
+   "group": "history",
+   "label": "Run of Dec 2022",
+   "text": "Run of Dec 2022 (UK figures to Oct 2022): UK exports over 12 months £1.6m; UK signal off; onward signal off; not a lead.",
+   "value": 1587406,
+   "display": "£1.6m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-01",
+   "group": "history",
+   "label": "Run of Jan 2023",
+   "text": "Run of Jan 2023 (UK figures to Nov 2022): UK exports over 12 months £1.5m; UK signal off; onward signal off; not a lead.",
+   "value": 1477059,
+   "display": "£1.5m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-02",
+   "group": "history",
+   "label": "Run of Feb 2023",
+   "text": "Run of Feb 2023 (UK figures to Dec 2022): UK exports over 12 months £1.4m; UK signal off; onward signal off; not a lead.",
+   "value": 1396882,
+   "display": "£1.4m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-03",
+   "group": "history",
+   "label": "Run of Mar 2023",
+   "text": "Run of Mar 2023 (UK figures to Jan 2023): UK exports over 12 months £1.3m; UK signal off; onward signal off; not a lead.",
+   "value": 1284100,
+   "display": "£1.3m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-04",
+   "group": "history",
+   "label": "Run of Apr 2023",
+   "text": "Run of Apr 2023 (UK figures to Feb 2023): UK exports over 12 months £1.3m; UK signal off; onward signal off; not a lead.",
+   "value": 1251573,
+   "display": "£1.3m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-05",
+   "group": "history",
+   "label": "Run of May 2023",
+   "text": "Run of May 2023 (UK figures to Mar 2023): UK exports over 12 months £1.4m; UK signal off; onward signal off; not a lead.",
+   "value": 1424448,
+   "display": "£1.4m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-06",
+   "group": "history",
+   "label": "Run of Jun 2023",
+   "text": "Run of Jun 2023 (UK figures to Apr 2023): UK exports over 12 months £1.4m; UK signal off; onward signal off; not a lead.",
+   "value": 1369656,
+   "display": "£1.4m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-07",
+   "group": "history",
+   "label": "Run of Jul 2023",
+   "text": "Run of Jul 2023 (UK figures to May 2023): UK exports over 12 months £1.5m; UK signal off; onward signal off; not a lead.",
+   "value": 1475748,
+   "display": "£1.5m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-08",
+   "group": "history",
+   "label": "Run of Aug 2023",
+   "text": "Run of Aug 2023 (UK figures to Jun 2023): UK exports over 12 months £1.4m; UK signal off; onward signal off; not a lead.",
+   "value": 1425242,
+   "display": "£1.4m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-09",
+   "group": "history",
+   "label": "Run of Sep 2023",
+   "text": "Run of Sep 2023 (UK figures to Jul 2023): UK exports over 12 months £1.5m; UK signal off; onward signal off; not a lead.",
+   "value": 1469950,
+   "display": "£1.5m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-10",
+   "group": "history",
+   "label": "Run of Oct 2023",
+   "text": "Run of Oct 2023 (UK figures to Aug 2023): UK exports over 12 months £1.4m; UK signal off; onward signal off; not a lead.",
+   "value": 1365014,
+   "display": "£1.4m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-11",
+   "group": "history",
+   "label": "Run of Nov 2023",
+   "text": "Run of Nov 2023 (UK figures to Sep 2023): UK exports over 12 months £1.4m; UK signal off; onward signal off; not a lead.",
+   "value": 1422911,
+   "display": "£1.4m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2023-12",
+   "group": "history",
+   "label": "Run of Dec 2023",
+   "text": "Run of Dec 2023 (UK figures to Oct 2023): UK exports over 12 months £1.6m; UK signal off; onward signal off; not a lead.",
+   "value": 1606193,
+   "display": "£1.6m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-01",
+   "group": "history",
+   "label": "Run of Jan 2024",
+   "text": "Run of Jan 2024 (UK figures to Nov 2023): UK exports over 12 months £2.6m; UK signal off; onward signal off; not a lead.",
+   "value": 2573033,
+   "display": "£2.6m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-02",
+   "group": "history",
+   "label": "Run of Feb 2024",
+   "text": "Run of Feb 2024 (UK figures to Dec 2023): UK exports over 12 months £2.9m; UK signal off; onward signal off; not a lead.",
+   "value": 2895679,
+   "display": "£2.9m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-03",
+   "group": "history",
+   "label": "Run of Mar 2024",
+   "text": "Run of Mar 2024 (UK figures to Jan 2024): UK exports over 12 months £2.9m; UK signal on; onward signal off; not a lead.",
+   "value": 2937929,
+   "display": "£2.9m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-04",
+   "group": "history",
+   "label": "Run of Apr 2024",
+   "text": "Run of Apr 2024 (UK figures to Feb 2024): UK exports over 12 months £3.0m; UK signal on; onward signal off; not a lead.",
+   "value": 2952820,
+   "display": "£3.0m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-05",
+   "group": "history",
+   "label": "Run of May 2024",
+   "text": "Run of May 2024 (UK figures to Mar 2024): UK exports over 12 months £2.9m; UK signal on; onward signal off; not a lead.",
+   "value": 2880598,
+   "display": "£2.9m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-06",
+   "group": "history",
+   "label": "Run of Jun 2024",
+   "text": "Run of Jun 2024 (UK figures to Apr 2024): UK exports over 12 months £2.9m; UK signal on; onward signal off; not a lead.",
+   "value": 2939631,
+   "display": "£2.9m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-07",
+   "group": "history",
+   "label": "Run of Jul 2024",
+   "text": "Run of Jul 2024 (UK figures to May 2024): UK exports over 12 months £2.8m; UK signal on; onward signal off; not a lead.",
+   "value": 2821937,
+   "display": "£2.8m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-08",
+   "group": "history",
+   "label": "Run of Aug 2024",
+   "text": "Run of Aug 2024 (UK figures to Jun 2024): UK exports over 12 months £2.8m; UK signal on; onward signal off; not a lead.",
+   "value": 2764335,
+   "display": "£2.8m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-09",
+   "group": "history",
+   "label": "Run of Sep 2024",
+   "text": "Run of Sep 2024 (UK figures to Jul 2024): UK exports over 12 months £2.7m; UK signal on; onward signal off; not a lead.",
+   "value": 2739596,
+   "display": "£2.7m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-10",
+   "group": "history",
+   "label": "Run of Oct 2024",
+   "text": "Run of Oct 2024 (UK figures to Aug 2024): UK exports over 12 months £5.0m; UK signal on; onward signal off; not a lead.",
+   "value": 4991695,
+   "display": "£5.0m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-11",
+   "group": "history",
+   "label": "Run of Nov 2024",
+   "text": "Run of Nov 2024 (UK figures to Sep 2024): UK exports over 12 months £5.1m; UK signal on; onward signal off; not a lead.",
+   "value": 5052737,
+   "display": "£5.1m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2024-12",
+   "group": "history",
+   "label": "Run of Dec 2024",
+   "text": "Run of Dec 2024 (UK figures to Oct 2024): UK exports over 12 months £5.8m; UK signal on; onward signal off; not a lead.",
+   "value": 5837270,
+   "display": "£5.8m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-01",
+   "group": "history",
+   "label": "Run of Jan 2025",
+   "text": "Run of Jan 2025 (UK figures to Nov 2024): UK exports over 12 months £5.0m; UK signal on; onward signal off; not a lead.",
+   "value": 5033879,
+   "display": "£5.0m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-02",
+   "group": "history",
+   "label": "Run of Feb 2025",
+   "text": "Run of Feb 2025 (UK figures to Dec 2024): UK exports over 12 months £5.1m; UK signal on; onward signal off; not a lead.",
+   "value": 5130314,
+   "display": "£5.1m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-03",
+   "group": "history",
+   "label": "Run of Mar 2025",
+   "text": "Run of Mar 2025 (UK figures to Jan 2025): UK exports over 12 months £5.1m; UK signal on; onward signal off; not a lead.",
+   "value": 5126906,
+   "display": "£5.1m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-04",
+   "group": "history",
+   "label": "Run of Apr 2025",
+   "text": "Run of Apr 2025 (UK figures to Feb 2025): UK exports over 12 months £5.5m; UK signal on; onward signal off; not a lead.",
+   "value": 5499697,
+   "display": "£5.5m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-05",
+   "group": "history",
+   "label": "Run of May 2025",
+   "text": "Run of May 2025 (UK figures to Mar 2025): UK exports over 12 months £6.1m; UK signal on; onward signal off; not a lead.",
+   "value": 6095305,
+   "display": "£6.1m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-06",
+   "group": "history",
+   "label": "Run of Jun 2025",
+   "text": "Run of Jun 2025 (UK figures to Apr 2025): UK exports over 12 months £6.5m; UK signal on; onward signal off; not a lead.",
+   "value": 6480205,
+   "display": "£6.5m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-07",
+   "group": "history",
+   "label": "Run of Jul 2025",
+   "text": "Run of Jul 2025 (UK figures to May 2025): UK exports over 12 months £6.5m; UK signal on; onward signal off; not a lead.",
+   "value": 6543643,
+   "display": "£6.5m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-08",
+   "group": "history",
+   "label": "Run of Aug 2025",
+   "text": "Run of Aug 2025 (UK figures to Jun 2025): UK exports over 12 months £6.9m; UK signal on; onward signal off; not a lead.",
+   "value": 6916964,
+   "display": "£6.9m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-09",
+   "group": "history",
+   "label": "Run of Sep 2025",
+   "text": "Run of Sep 2025 (UK figures to Jul 2025): UK exports over 12 months £6.9m; UK signal on; onward signal off; not a lead.",
+   "value": 6904517,
+   "display": "£6.9m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-10",
+   "group": "history",
+   "label": "Run of Oct 2025",
+   "text": "Run of Oct 2025 (UK figures to Aug 2025): UK exports over 12 months £5.7m; UK signal on; onward signal off; not a lead.",
+   "value": 5748486,
+   "display": "£5.7m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-11",
+   "group": "history",
+   "label": "Run of Nov 2025",
+   "text": "Run of Nov 2025 (UK figures to Sep 2025): UK exports over 12 months £5.8m; UK signal on; onward signal off; not a lead.",
+   "value": 5819222,
+   "display": "£5.8m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2025-12",
+   "group": "history",
+   "label": "Run of Dec 2025",
+   "text": "Run of Dec 2025 (UK figures to Oct 2025): UK exports over 12 months £5.0m; UK signal on; onward signal off; not a lead.",
+   "value": 5048961,
+   "display": "£5.0m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-01",
+   "group": "history",
+   "label": "Run of Jan 2026",
+   "text": "Run of Jan 2026 (UK figures to Nov 2025): UK exports over 12 months £5.1m; UK signal on; onward signal off; not a lead.",
+   "value": 5070338,
+   "display": "£5.1m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-02",
+   "group": "history",
+   "label": "Run of Feb 2026",
+   "text": "Run of Feb 2026 (UK figures to Dec 2025): UK exports over 12 months £4.8m; UK signal on; onward signal off; not a lead.",
+   "value": 4771655,
+   "display": "£4.8m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-03",
+   "group": "history",
+   "label": "Run of Mar 2026",
+   "text": "Run of Mar 2026 (UK figures to Jan 2026): UK exports over 12 months £4.8m; UK signal on; onward signal off; not a lead.",
+   "value": 4769575,
+   "display": "£4.8m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-04",
+   "group": "history",
+   "label": "Run of Apr 2026",
+   "text": "Run of Apr 2026 (UK figures to Feb 2026): UK exports over 12 months £4.9m; UK signal on; onward signal off; not a lead.",
+   "value": 4913899,
+   "display": "£4.9m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-05",
+   "group": "history",
+   "label": "Run of May 2026",
+   "text": "Run of May 2026 (UK figures to Mar 2026): UK exports over 12 months £4.7m; UK signal on; onward signal off; not a lead.",
+   "value": 4680592,
+   "display": "£4.7m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-06",
+   "group": "history",
+   "label": "Run of Jun 2026",
+   "text": "Run of Jun 2026 (UK figures to Apr 2026): UK exports over 12 months £4.3m; UK signal on; onward signal off; not a lead.",
+   "value": 4327845,
+   "display": "£4.3m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-07",
+   "group": "history",
+   "label": "Run of Jul 2026",
+   "text": "Run of Jul 2026 (UK figures to May 2026): UK exports over 12 months £4.3m; UK signal on; onward signal off; not a lead.",
+   "value": 4273540,
+   "display": "£4.3m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-08",
+   "group": "history",
+   "label": "Run of Aug 2026",
+   "text": "Run of Aug 2026 (UK figures to Jun 2026): UK exports over 12 months £4.1m; UK signal on; onward signal off; not a lead.",
+   "value": 4061743,
+   "display": "£4.1m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-09",
+   "group": "history",
+   "label": "Run of Sep 2026",
+   "text": "Run of Sep 2026 (UK figures to Jul 2026): UK exports over 12 months £4.1m; UK signal on; onward signal off; not a lead.",
+   "value": 4096802,
+   "display": "£4.1m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "history.2026-10",
+   "group": "history",
+   "label": "Run of Oct 2026",
+   "text": "Run of Oct 2026 (UK figures to Aug 2026): UK exports over 12 months £3.1m; UK signal on; onward signal off; not a lead.",
+   "value": 3070771,
+   "display": "£3.1m",
+   "source": {
+    "dataset": "data/processed/hmrc_monthly_run3.csv",
+    "field": "value_gbp, 12-month sum as published at the run; shown by radar/display.py screen_runs()"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "corridor.uk_guidance",
+   "group": "corridor",
+   "label": "UK guidance country list",
+   "text": "Vietnam is among the countries the UK guidance for businesses names for enhanced due diligence (list as updated 12 Mar 2026; the guidance says the list is not exhaustive).",
+   "value": true,
+   "display": null,
+   "source": {
+    "dataset": "radar/brief/redflags.py",
+    "field": "UK_EDD_COUNTRIES"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "rule.uk",
+   "group": "rule",
+   "label": "UK signal",
+   "text": "UK signal: UK exports over the 12 published months at least 2x the 2019-21 average and at least £20,000 above it, for 3 months running.",
+   "value": null,
+   "display": null,
+   "source": {
+    "dataset": "backtest/asof.py",
+    "field": "UK_RATIO, UK_MIN_EXCESS, RUN_MONTHS"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "rule.onward",
+   "group": "rule",
+   "label": "Onward signal",
+   "text": "Onward signal: the corridor's reported exports of the code to Russia at least 2x the 2019-21 average and at least $100,000, on the latest annual figures released by the run or, where monthly figures exist, on the latest 12 released months (the same 2x and $100,000).",
+   "value": null,
+   "display": null,
+   "source": {
+    "dataset": "backtest/asof.py; backtest/monthly.py",
+    "field": "ONWARD_RATIO, ONWARD_MIN_USD; MIN_RATIO, MIN_USD"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "rule.lead",
+   "group": "rule",
+   "label": "Lead and watch",
+   "text": "A lead has the UK and onward signals both on; a watch item has the UK signal on and the onward signal off.",
+   "value": null,
+   "display": null,
+   "source": {
+    "dataset": "scripts/run_live.py",
+    "field": "status"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "cases.summary",
+   "group": "cases",
+   "label": "Linked cases",
+   "text": "No enforcement case in the register links this corridor and code.",
+   "value": 0,
+   "display": null,
+   "source": {
+    "dataset": "backtest/data/cases.csv",
+    "field": "case_id, uk_involvement; radar/display.py route_for()"
+   },
+   "confidence": "Certain"
+  }
+ ],
+ "cases": [],
+ "limits": [
+  {
+   "id": "limit.lead_not_finding",
+   "label": "A lead, not a finding",
+   "text": "The radar flags rises in published trade figures for a person to check. A rise in exports is a lead, not evidence of a breach.",
+   "source": {
+    "dataset": "CLAUDE.md",
+    "field": "house line"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "limit.corridor_totals",
+   "label": "Onward figures are corridor totals",
+   "text": "Onward figures are Vietnam's reported exports of the code to Russia from every origin, not UK goods; they cannot show where the goods came from.",
+   "source": {
+    "dataset": "data/processed/comtrade_annual_run3.csv",
+    "field": "reporter, partner 643, flow X (all origins)"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "limit.onward_age",
+   "label": "Age of the onward figures",
+   "text": "The annual onward figures are for 2023, released on 15 Apr 2025; that year ended 34 months before the October 2026 run. The monthly figures run to Dec 2023.",
+   "source": {
+    "dataset": "backtest/data/comtrade_release_dates_run3.csv",
+    "field": "first_released"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "limit.single_month",
+   "label": "One month can carry the total",
+   "text": "One large month can carry a 12-month total: the display rule needs exports in at least 6 of the 12 months, but one large consignment with smaller sales in five other months still passes.",
+   "source": {
+    "dataset": "radar/display.py",
+    "field": "module notes on MIN_DISPLAY_MONTHS"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "limit.code_breadth",
+   "label": "A broad goods code",
+   "text": "HS 851762 covers a broad group of goods (machines for the reception, conversion and transmission of voice, images or other data); the figures cannot say which goods within it rose, or who traded them.",
+   "source": {
+    "dataset": "config/codes.csv",
+    "field": "code, description"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "limit.revisions",
+   "label": "Revisions",
+   "text": "HMRC and UN Comtrade revise published figures; these are the figures held at this run, and later releases may change them.",
+   "source": {
+    "dataset": "data/SOURCES.md; backtest/data/comtrade_monthly_release_dates_run3.csv",
+    "field": "first_released, last_released"
+   },
+   "confidence": "Likely"
+  },
+  {
+   "id": "limit.one_run",
+   "label": "One run",
+   "text": "This brief is for the October 2026 run only; a series can leave the list at a later run.",
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "status"
+   },
+   "confidence": "Certain"
+  },
+  {
+   "id": "limit.watch",
+   "label": "A watch item",
+   "text": "This is a watch item: the UK signal is on, but the onward check has not passed.",
+   "source": {
+    "dataset": "data/processed/live_2026-10_run3.csv",
+    "field": "status, onward_signal"
+   },
+   "confidence": "Certain"
+  }
+ ],
+ "red_flags": [
+  {
+   "id": "chpl-end-destination",
+   "question": "Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+   "why": "The FCDO's list page says businesses should undertake due diligence to ensure that the end destination of these products is not Russia.",
+   "applies_to": "Exports of goods on the Common High Priority Items List",
+   "tags": [
+    "chpl"
+   ],
+   "citation": {
+    "publisher": "Foreign, Commonwealth & Development Office",
+    "title": "Russia Sanctions – Common High Priority Items List",
+    "date": "30 May 2023, updated 8 Aug 2024"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "transit-edd-country",
+   "question": "Is the destination, or any country the goods pass through, one that the UK guidance names for enhanced due diligence?",
+   "why": "The UK guidance for businesses lists transit via a country for which additional due diligence is suggested, and names countries for enhanced due diligence including Armenia, Kazakhstan, Kyrgyzstan, Türkiye, the UAE and Uzbekistan; it says the list is not exhaustive.",
+   "applies_to": "Shipments to or through corridor countries",
+   "tags": [
+    "corridor",
+    "routing"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "new-customer-dual-use",
+   "question": "Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?",
+   "why": "The UK guidance for businesses lists a new customer whose line of business includes trade in military or dual-use goods and that was incorporated overseas after 24 February 2022.",
+   "applies_to": "New customers",
+   "tags": [
+    "new_customer",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "new-chpl-trader",
+   "question": "Is the customer new to importing or exporting goods on the Common High Priority Items List?",
+   "why": "The G7 industry guidance lists new importers or exporters of Common High Priority List items as a red flag.",
+   "applies_to": "New customers ordering CHPL goods",
+   "tags": [
+    "new_customer",
+    "chpl"
+   ],
+   "citation": {
+    "publisher": "G7 Sub-Working Group on Export Control Enforcement",
+    "title": "Preventing Russian Export Control and Sanctions Evasion: Updated Guidance for Industry",
+    "date": "24 Sep 2024"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "order-volume-rise",
+   "question": "Have an existing customer's orders risen in volume or value beyond its usual pattern, and is there a business reason for the rise?",
+   "why": "The UK guidance for businesses lists anomalous increases in the volume or value of orders placed by existing customers.",
+   "applies_to": "Existing customers",
+   "tags": [
+    "volume_rise",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "chpl-orders-since-2022",
+   "question": "Did the customer start receiving these goods only after 24 February 2022, or receive far more of them since then?",
+   "why": "The 2023 US supplemental alert lists an existing customer that did not receive exports under the nine high priority HS codes before 24 February 2022 but receives them now, and one whose exports under those codes rose significantly after that date.",
+   "applies_to": "Customers for CHPL goods",
+   "tags": [
+    "volume_rise",
+    "chpl",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+    "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+    "date": "19 May 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "small-frequent-shipments",
+   "question": "Are the goods going out in small, frequent shipments to one central location, such as a warehouse in a third country, where they are combined into one shipment?",
+   "why": "The G7 industry guidance lists, among concerning business practices, items that may arrive in small, frequent shipments to a central location, such as a warehouse in a third country, where they are combined into one shipment. It describes the practice as often used for luxury goods; applying it to these goods is our reading.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "routing",
+    "volume_rise"
+   ],
+   "citation": {
+    "publisher": "G7 Sub-Working Group on Export Control Enforcement",
+    "title": "Preventing Russian Export Control and Sanctions Evasion: Updated Guidance for Industry",
+    "date": "24 Sep 2024"
+   },
+   "also_cited": [],
+   "confidence": "Likely"
+  },
+  {
+   "id": "line-of-business",
+   "question": "Do the goods and their capabilities fit the buyer's and the end user's line of business?",
+   "why": "The UK guidance for businesses lists product capabilities that do not fit the buyer's or end user's line of business.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_use",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "end-use-details",
+   "question": "Has the customer given clear details of the end user, the intended end use and its own ownership when asked?",
+   "why": "The 2023 US supplemental alert lists a customer that lacks or refuses to provide details to banks, shippers or third parties, including about end users, intended end use or company ownership.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_use",
+    "end_user",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+    "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+    "date": "19 May 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "end-user-certificate",
+   "question": "Who is the end user, and can an end-user certificate be provided and checked?",
+   "why": "The European Commission's guidance for EU operators asks who the end user is and whether the end-user certificate can be provided.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_user",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "European Commission",
+    "title": "Guidance for EU operators: Implementing enhanced due diligence to shield against Russia sanctions circumvention",
+    "date": "7 Sep 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "civilian-claim-military-links",
+   "question": "Where a civilian end use or end user is stated, does anything link the customer or other parties to military users?",
+   "why": "The UK guidance for businesses lists a civilian end use or end user being claimed while the customer or other parties have military connections.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_use",
+    "end_user"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "destination-clear",
+   "question": "Is the customer open about where the goods will end up and what they are for?",
+   "why": "The UK guidance for businesses lists a customer that tries by any means to obscure the product's ultimate destination and purpose.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_use",
+    "end_user",
+    "routing"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "consignee-uses-goods",
+   "question": "Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?",
+   "why": "The 2023 US supplemental alert lists ultimate consignees that do not typically engage in business consistent with using the goods, such as financial institutions, mail centres or logistics companies.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_user",
+    "routing"
+   ],
+   "citation": {
+    "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+    "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+    "date": "19 May 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "forwarder-as-destination",
+   "question": "Is a freight forwarder named as the final destination of the goods?",
+   "why": "The UK guidance for businesses lists a freight-forwarding firm being listed as the product's final destination.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "end_user",
+    "routing",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "third-country-payer",
+   "question": "Does payment come from the customer itself, or from a party in a third country that is not otherwise part of the deal?",
+   "why": "The UK guidance for businesses lists payments from entities located in third countries that are not otherwise involved in the transaction. The 2022 US alert lists the same where the third country is known to be a potential transshipment point for exports to Russia and Belarus.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment",
+    "corridor"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [
+    {
+     "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+     "title": "FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Increased Vigilance for Potential Russian and Belarusian Export Control Evasion Attempts (FIN-2022-Alert003)",
+     "date": "28 Jun 2022"
+    }
+   ],
+   "confidence": "Certain"
+  },
+  {
+   "id": "payment-route",
+   "question": "Has the customer asked for a non-standard payment route, such as outside SWIFT, through smaller overseas banks or in cryptocurrency, or offered cash for an expensive item?",
+   "why": "The UK guidance for businesses lists requests for non-standard payment routes, and a customer willing to pay cash for an expensive item when the terms of sale would normally require financing.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "price-and-invoices",
+   "question": "Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?",
+   "why": "The UK guidance for businesses lists paying significantly above market rate, and splitting invoices to stay under export control limits.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "split-payments-suppliers",
+   "question": "Is the same end user's foreign bank account making smaller payments to several similar suppliers of dual-use goods?",
+   "why": "The 2023 US supplemental alert lists smaller-volume payments from the same end user's foreign bank account to multiple, similar suppliers of dual-use products.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment"
+   ],
+   "citation": {
+    "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+    "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+    "date": "19 May 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "lc-consignee",
+   "question": "Under a letter of credit, are the goods consigned to the actual end user rather than to the issuing bank?",
+   "why": "The NCA red alert lists purchases under a letter of credit that are consigned to the issuing bank, not to the actual end user.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment",
+    "end_user",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "National Crime Agency (National Economic Crime Centre), with HM Treasury's Office of Financial Sanctions Implementation and the Foreign, Commonwealth & Development Office",
+    "title": "Red Alert: Exporting High Risk Goods",
+    "date": "Dec 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "payment-routing-change",
+   "question": "Has a payment that was scheduled to come from a country of concern been rerouted at the last minute?",
+   "why": "The NCA red alert lists transactions involving a last-minute change in payment routing that was previously scheduled from a country of concern.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment"
+   ],
+   "citation": {
+    "publisher": "National Crime Agency (National Economic Crime Centre), with HM Treasury's Office of Financial Sanctions Implementation and the Foreign, Commonwealth & Development Office",
+    "title": "Red Alert: Exporting High Risk Goods",
+    "date": "Dec 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "route-complex",
+   "question": "Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?",
+   "why": "The UK guidance for businesses lists an unclear transportation route, or a complex route involving multiple third countries.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "routing",
+    "corridor"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "transport-changed",
+   "question": "Has the way these goods are shipped to this customer changed since sanctions were imposed?",
+   "why": "The European Commission's guidance for EU operators asks whether the method of transport or shipping has changed since the imposition of sanctions.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "routing"
+   ],
+   "citation": {
+    "publisher": "European Commission",
+    "title": "Guidance for EU operators: Implementing enhanced due diligence to shield against Russia sanctions circumvention",
+    "date": "7 Sep 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "delivery-vague",
+   "question": "Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?",
+   "why": "The UK guidance for businesses lists vague delivery dates or deliveries planned for remote destinations, and the use of multiple third-country freight forwarders or shippers on a single transaction.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "routing"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "documents-end-user",
+   "question": "Do the supporting documents name the actual end user, and are they complete and consistent?",
+   "why": "The UK guidance for businesses lists supporting documents that do not list the actual end user or are otherwise vague, and false, inaccurate or missing documentation.",
+   "applies_to": "Trade documents",
+   "tags": [
+    "paperwork",
+    "end_user"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "hs-code-check",
+   "question": "Are the goods recorded under the correct HS code on every document?",
+   "why": "The UK guidance for businesses lists goods recorded under a false Harmonised System code that is not subject to sanctions or export controls.",
+   "applies_to": "Trade documents",
+   "tags": [
+    "paperwork",
+    "chpl"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "country-mismatch",
+   "question": "Is the end user in the same country as the party that placed the order, and do the customer's phone numbers carry the destination's country code?",
+   "why": "The UK guidance for businesses lists a stated end user's country that differs from the country that placed the order, and telephone country codes that do not match the destination country.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "web-presence",
+   "question": "Does the customer have a business history and a web presence that fit the order?",
+   "why": "The UK guidance for businesses lists a customer with little to no business background, and transactions involving entities with little to no web presence; the NCA red alert lists the second too.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "new_customer"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [
+    {
+     "publisher": "National Crime Agency (National Economic Crime Centre), with HM Treasury's Office of Financial Sanctions Implementation and the Foreign, Commonwealth & Development Office",
+     "title": "Red Alert: Exporting High Risk Goods",
+     "date": "Dec 2023"
+    }
+   ],
+   "confidence": "Certain"
+  },
+  {
+   "id": "shared-address",
+   "question": "Does the customer share its address with many other businesses dealing in similar goods, or trade from a residential address?",
+   "why": "The UK guidance for businesses lists an address shared with multiple businesses or holding companies dealing in comparable goods, or a residential address.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "ownership-change",
+   "question": "Did the customer's ultimate beneficial ownership change shortly before or after sanctions were imposed?",
+   "why": "The UK guidance for businesses lists a change of ultimate beneficial ownership shortly before or after sanctions were imposed.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "russia-ties",
+   "question": "Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?",
+   "why": "The UK guidance for businesses lists a customer that has business ties to a sanctioned entity or person, or a branch office in Russia.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "end_user"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "sanctions-list-check",
+   "question": "Have the customer and its known directors been checked against the UK Sanctions List?",
+   "why": "The UK guidance for businesses says an initial step with a new customer should be to check whether the entity or any known directors appear on the UK Sanctions List.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "new_customer"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "listed-party-resemblance",
+   "question": "Does the customer's name or address resemble that of a party on a sanctions list?",
+   "why": "The UK guidance for businesses lists a customer or address similar to one of the persons or entities on the UK Sanctions List. The 2023 US supplemental alert lists the same for the parties on a proscribed parties list.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "end_user"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [
+    {
+     "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+     "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+     "date": "19 May 2023"
+    }
+   ],
+   "confidence": "Certain"
+  },
+  {
+   "id": "representative-only",
+   "question": "Can you deal with the customer's managers directly, or does everything go through one representative?",
+   "why": "The UK guidance for businesses lists all communications being routed via a representative who seems to possess general power of attorney.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "indirect-deal",
+   "question": "Does the deal run through intermediaries in a way that makes little economic sense?",
+   "why": "The UK guidance for businesses lists indirect transactions, for example using intermediaries, with no clear economic rationale. The European Commission's questions and answers on due diligence for CHP items list indirect transactions, such as those using intermediaries, that make no or little economic sense.",
+   "applies_to": "Any order",
+   "tags": [
+    "routing",
+    "payment",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [
+    {
+     "publisher": "European Commission",
+     "title": "Enhanced due diligence for operators manufacturing and/or trading with CHP items: frequently asked questions (Article 12gb of Council Regulation 833/2014)",
+     "date": "as of 23 Jul 2025"
+    }
+   ],
+   "confidence": "Certain"
+  },
+  {
+   "id": "no-russia-clause",
+   "question": "Does the contract bar re-export of the goods to Russia?",
+   "why": "The UK guidance for businesses says businesses may consider adding a no export to Russia clause to their contracts.",
+   "applies_to": "Contracts",
+   "tags": [
+    "paperwork",
+    "end_use"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "checks-repeated",
+   "question": "When were the checks on this customer last repeated, and are they recorded in writing?",
+   "why": "The UK guidance for businesses says due diligence should be repeated at intervals even with established trading partners, and that written records of due diligence should be kept.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "sales-rise-destination",
+   "question": "Do the business's own sales figures show a significant rise in exports of this product to this destination, especially where that trade was limited or absent before?",
+   "why": "The UK guidance for businesses lists company sales data showing a significant increase in exports of a specific product, for example semiconductors or machine parts, especially if trade in that product to that destination was previously limited or non-existent.",
+   "applies_to": "Exports to a destination",
+   "tags": [
+    "volume_rise",
+    "corridor"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  }
+ ]
+}

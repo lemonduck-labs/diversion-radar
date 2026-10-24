@@ -1,0 +1,164 @@
+{
+ "notice": "SYNTHETIC RECORDS. Made up by radar/declarations/generate.py from a seed, to show what the radar's restricted layer would do with export declarations. No record is or describes a real declaration, exporter, consignee, forwarder or agent; the ids are made up and look nothing like EORI numbers; there are no names, addresses or postcodes.",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "about": "The restricted layer's detectors: one per pattern, each citing the red flags it implements (radar/brief/spec/redflags.json, where each red flag's official source is cited). A detector puts out questions for a person to check, never findings. Thresholds are ours, set on synthetic data [Guessing].",
+ "red_flags_source": "radar/brief/spec/redflags.json",
+ "scope": {
+  "corridors": {"KG":"Kyrgyz Republic","AM":"Armenia","KZ":"Kazakhstan","GE":"Georgia","AE":"United Arab Emirates","TR":"Turkey","UZ":"Uzbekistan","AZ":"Azerbaijan","TJ":"Tajikistan"},
+  "radar_codes": {"854231":"Electronic integrated circuits: processors and controllers","854232":"Electronic integrated circuits: memories","854233":"Electronic integrated circuits: amplifiers","854239":"Electronic integrated circuits: other","851762":"Machines for the reception, conversion and transmission of voice, images or other data","852691":"Radio navigational aid apparatus","853221":"Fixed capacitors: tantalum","853224":"Fixed capacitors: ceramic dielectric, multilayer","8548":"Electrical parts of machinery or apparatus not elsewhere specified"},
+  "flagged_routes": [
+   {"destination":"AE","code":"854232","status":"lead"},
+   {"destination":"AE","code":"854239","status":"lead"},
+   {"destination":"KZ","code":"851762","status":"lead"},
+   {"destination":"TR","code":"853221","status":"watch"},
+   {"destination":"TR","code":"854232","status":"watch"},
+   {"destination":"UZ","code":"851762","status":"watch"}
+  ],
+  "flagged_routes_source": "routes shown as a lead or a watch item in demo/radar/leads.json when this layer was built (run of October 2026)",
+  "enhanced_due_diligence_countries": {"AM":"Armenia","CN":"China","HK":"Hong Kong","MO":"Macau","IN":"India","IL":"Israel","KZ":"Kazakhstan","KG":"Kyrgyzstan","MY":"Malaysia","RS":"Serbia","TH":"Thailand","TR":"Türkiye","AE":"UAE","UZ":"Uzbekistan","VN":"Vietnam"},
+  "edd_as_of": "12 Mar 2026",
+  "neighbouring_codes": {"85423100":"85429000","85423200":"85429000","85423300":"85429000","85423900":"85429000","85176200":"85177900","85322100":"85322200","85322400":"85322200"},
+  "neighbouring_codes_note": "A neighbouring code is in the same heading and outside the radar's nine; whether it is controlled is not modelled [Certain].",
+  "windows": {"review":["2025-07-01","2026-06-30"],"prior":["2024-07-01","2025-06-30"],"shared_party":["2024-07-01","2026-06-30"],"before_invasion":["2021-01-01","2022-02-23"],"after_invasion":["2022-03-01","2024-02-29"]}
+ },
+ "detectors": [
+  {
+   "id": "D1",
+   "name": "new-corridor-consignee",
+   "title": "New consignee in a corridor buying the radar's goods",
+   "pattern": "G1",
+   "unit": "consignee",
+   "implements": [
+    {"id":"new-chpl-trader","question":"Is the customer new to importing or exporting goods on the Common High Priority Items List?"},
+    {"id":"transit-edd-country","question":"Is the destination, or any country the goods pass through, one that the UK guidance names for enhanced due diligence?"}
+   ],
+   "then_check": [
+    {"id":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"id":"new-customer-dual-use","question":"Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?"},
+    {"id":"sanctions-list-check","question":"Have the customer and its known directors been checked against the UK Sanctions List?"},
+    {"id":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"id":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"}
+   ],
+   "mapping": "new-chpl-trader [Likely]: the declarations show a consignee new to receiving these goods from UK exporters, not new to importing them from anywhere. transit-edd-country [Certain] where the destination is one the UK guidance names; Georgia, Azerbaijan and Tajikistan are not named, so for them the detector cites only new-chpl-trader.",
+   "thresholds": {"window":["2025-07-01","2026-06-30"],"min_value_gbp":50000},
+   "wording": {"question":"Is {consignee} in {country} new to buying goods on the Common High Priority Items List, and what checks show that their end destination is not Russia?","basis":"First seen in a UK export declaration on {first_seen}. In the last 12 months: {value} of the radar's goods in {shipments} shipments from {exporters}."}
+  },
+  {
+   "id": "D2",
+   "name": "route-volume-jump",
+   "title": "An exporter's exports jumping on a route the public radar shows",
+   "pattern": "G2",
+   "unit": "exporter-route",
+   "implements": [
+    {"id":"order-volume-rise","question":"Have an existing customer's orders risen in volume or value beyond its usual pattern, and is there a business reason for the rise?"}
+   ],
+   "then_check": [
+    {"id":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"id":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"id":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"id":"destination-clear","question":"Is the customer open about where the goods will end up and what they are for?"}
+   ],
+   "mapping": "order-volume-rise [Likely]: the guidance speaks of an existing customer's orders; the detector sees one exporter's declared exports on one route and names the consignees behind the rise.",
+   "thresholds": {"window":["2025-07-01","2026-06-30"],"prior":["2024-07-01","2025-06-30"],"min_ratio":3.0,"min_increase_gbp":100000,"min_prior_gbp":10000,"routes":"routes the public radar shows as a lead or a watch item"},
+   "wording": {"question":"Have {exporter}'s exports of {code} ({code_desc}) to {country} risen beyond their usual pattern, and is there a business reason for the rise?","basis":"{value_w} in the last 12 months against {value_p} in the 12 before ({ratio} times), on a route the public radar shows as {status}. {consignees} behind the rise, {new} of them first seen in the last 12 months."}
+  },
+  {
+   "id": "D3",
+   "name": "shared-party",
+   "title": "A consignee or forwarder shared by unrelated exporters",
+   "pattern": "G3",
+   "unit": "consignee or forwarder",
+   "implements": [
+    {"id":"consignee-uses-goods","question":"Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?"},
+    {"id":"shared-address","question":"Does the customer share its address with many other businesses dealing in similar goods, or trade from a residential address?"}
+   ],
+   "then_check": [
+    {"id":"forwarder-as-destination","question":"Is a freight forwarder named as the final destination of the goods?"},
+    {"id":"web-presence","question":"Does the customer have a business history and a web presence that fit the order?"},
+    {"id":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"id":"route-complex","question":"Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?"}
+   ],
+   "mapping": "consignee-uses-goods [Likely]: a consignee supplied by many unrelated exporters may be a forwarder or logistics firm rather than a user of the goods. shared-address [Guessing]: the guidance's indicator is an address shared by many businesses; the declarations' nearest parallel is one party shared by many exporters. A deployment holding the consignee's name and address (DE 3/9) could test the address itself; the synthetic records hold no addresses.",
+   "thresholds": {"period":["2024-07-01","2026-06-30"],"min_exporter_groups":4,"min_consignee_shipments":6,"min_forwarder_share":0.4,"min_forwarder_items":10},
+   "wording": {"question":"Is {party} in {country} a business that would use these goods, rather than a forwarder or logistics firm, and why do exporters in {groups} different ownership groups send it goods on the Common High Priority Items List?","question_forwarder":"Why do exporters in {groups} different ownership groups send goods on the Common High Priority Items List to {countries} through {party}, and is a forwarder named as the final destination on any of these shipments?","basis":"In the last 24 months: {shipments} shipments of the radar's goods from {exporters} in {groups} ownership groups. First seen in a UK export declaration on {first_seen}.","basis_forwarder":"In the last 24 months: {items} goods items of the radar's goods to corridor countries through {party}, {share} of everything declared with it, from {exporters} in {groups} ownership groups. First declared on {first_seen}."}
+  },
+  {
+   "id": "D4",
+   "name": "unit-value",
+   "title": "Declared values per kilogram far out of line for the code",
+   "pattern": "G4",
+   "unit": "exporter, consignee and code",
+   "implements": [
+    {"id":"price-and-invoices","question":"Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?"},
+    {"id":"hs-code-check","question":"Are the goods recorded under the correct HS code on every document?"}
+   ],
+   "then_check": [
+    {"id":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"id":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"}
+   ],
+   "mapping": "price-and-invoices [Likely]: a value per kilogram far above the code's norm is one way a price well above the market shows in declarations. hs-code-check [Likely]: a value per kilogram far from the norm can mean the goods are not what the code describes.",
+   "thresholds": {"min_code_items":30,"robust_z":3.5,"min_outlier_items":3,"scope":"corridor destinations; the norm for each code is taken over every destination"},
+   "wording": {"question":"Why is the declared value per kilogram of {code} ({code_desc}) from {exporter} to {consignee} in {country} {factor} the usual for the code, and are the goods recorded under the correct code and at the market price?","basis":"{outliers} of {items} goods items are more than 3.5 robust deviations from the code's median of {norm} per kg; this pair's median is {pair} per kg."}
+  },
+  {
+   "id": "D5",
+   "name": "code-switch",
+   "title": "A code switching to a neighbouring code outside the radar's nine",
+   "pattern": "G5",
+   "unit": "exporter and consignee",
+   "implements": [
+    {"id":"hs-code-check","question":"Are the goods recorded under the correct HS code on every document?"}
+   ],
+   "then_check": [
+    {"id":"line-of-business","question":"Do the goods and their capabilities fit the buyer's and the end user's line of business?"},
+    {"id":"end-use-details","question":"Has the customer given clear details of the end user, the intended end use and its own ownership when asked?"},
+    {"id":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"}
+   ],
+   "mapping": "hs-code-check [Likely]: the guidance lists goods recorded under a code that is not subject to controls; the detector sees the same flow move to a neighbouring code at a similar value per kilogram. Whether the neighbouring code is controlled is not modelled.",
+   "thresholds": {"min_items_each_code":3,"max_overlap_days":92,"value_per_kg_ratio":[0.5,2.0]},
+   "wording": {"question":"Why did {exporter}'s shipments to {consignee} in {country} move from {code_a} to {code_b} at a similar value per kilogram, and are the goods recorded under the correct code on every document?","basis":"{n_a} goods items under {code_a} ({desc_a}) up to {last_a}; {n_b} under {code_b} ({desc_b}) from {first_b}. Median value per kg {uv_a}, then {uv_b}."}
+  },
+  {
+   "id": "D6",
+   "name": "russia-switch",
+   "title": "Exports to Russia stopping after 24 February 2022 and moving to a corridor",
+   "pattern": "G6",
+   "unit": "exporter",
+   "implements": [
+    {"id":"chpl-orders-since-2022","question":"Did the customer start receiving these goods only after 24 February 2022, or receive far more of them since then?"},
+    {"id":"transit-edd-country","question":"Is the destination, or any country the goods pass through, one that the UK guidance names for enhanced due diligence?"}
+   ],
+   "then_check": [
+    {"id":"transport-changed","question":"Has the way these goods are shipped to this customer changed since sanctions were imposed?"},
+    {"id":"russia-ties","question":"Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?"},
+    {"id":"chpl-end-destination","question":"Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?"},
+    {"id":"end-user-certificate","question":"Who is the end user, and can an end-user certificate be provided and checked?"}
+   ],
+   "mapping": "chpl-orders-since-2022 [Likely]: the indicator is a customer that started receiving these goods only after 24 February 2022; the detector tests that for the consignees that took the place of the exporter's Russia trade. transit-edd-country [Certain] where a destination is one the UK guidance names.",
+   "thresholds": {"before":["2021-01-01","2022-02-23"],"after":["2022-03-01","2024-02-29"],"min_russia_value_gbp":100000,"min_replaced_share":0.5},
+   "wording": {"question":"Did {exporter}'s customers in {countries} start receiving these goods only after 24 February 2022, when its exports of them to Russia stopped, and has the way the goods are shipped changed?","basis":"{ru_value} of the radar's goods to Russia from January 2021 to 23 February 2022; {corr_value} in the two years from March 2022 to {consignees} in {countries} first seen after 24 February 2022. Codes in common: {codes}."}
+  },
+  {
+   "id": "D7",
+   "name": "small-frequent",
+   "title": "Small, frequent shipments to one consignee",
+   "pattern": "G7",
+   "unit": "consignee",
+   "implements": [
+    {"id":"small-frequent-shipments","question":"Are the goods going out in small, frequent shipments to one central location, such as a warehouse in a third country, where they are combined into one shipment?"}
+   ],
+   "then_check": [
+    {"id":"price-and-invoices","question":"Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?"},
+    {"id":"consignee-uses-goods","question":"Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?"},
+    {"id":"delivery-vague","question":"Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?"}
+   ],
+   "mapping": "small-frequent-shipments [Certain]: the indicator names small, frequent shipments to a central location; what counts as small and frequent is ours [Guessing].",
+   "thresholds": {"window":["2025-07-01","2026-06-30"],"min_shipments":20,"max_median_value_gbp":2000,"max_median_net_mass_kg":2.0},
+   "wording": {"question":"Are the goods going to {consignee} in {country} in small, frequent shipments to one central location, and are orders or invoices being split to stay under a limit?","basis":"{shipments} shipments of the radar's goods in the last 12 months, median {value} and {mass} kg, from {exporters}."}
+  }
+ ],
+ "cases": {
+  "grouping": "Signals that share an exporter and destination, or a consignee, go into one case. A case raised by two or more detectors is listed as check first; any other as check. No case carries a score.",
+  "graph": "Each case's parties plus one hop, at most 25 neighbours per party."
+ }
+}

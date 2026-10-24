@@ -1,0 +1,11 @@
+{
+  "schema": "references/1",
+  "note": "Official pages for the workspace's References panel: each publisher's own page, read on the date given. Never a case record. {code} is the file's goods code as 8517.62; {country_poss} is the corridor's name in the possessive.",
+  "references": [
+    {"id": "hmrc", "title": "HMRC trade data: build a table for HS {code}", "by": "HMRC, uktradeinfo", "url": "https://www.uktradeinfo.com/trade-data/", "read": "2026-10-22"},
+    {"id": "comtrade", "title": "UN Comtrade: {country_poss} reported exports to Russia", "by": "United Nations", "url": "https://comtradeplus.un.org/", "read": "2026-10-22"},
+    {"id": "chpl", "title": "Russia sanctions: Common High Priority Items List", "by": "FCDO, updated 8 Aug 2024", "url": "https://www.gov.uk/government/publications/russia-sanctions-common-high-priority-items-list/russia-sanctions-common-high-priority-items-list", "read": "2026-10-21"},
+    {"id": "exporters", "title": "Countering Russian sanctions evasion: guidance for businesses", "by": "DBT and OTSI, updated 12 Mar 2026", "url": "https://www.gov.uk/government/publications/countering-russian-sanctions-evasion-and-circumvention/countering-russian-sanctions-evasion-guidance-for-exporters", "read": "2026-10-21"},
+    {"id": "seuc", "title": "Sanctions End-Use Controls: guidance for businesses", "by": "DBT and OTSI, 22 Apr 2026", "url": "https://www.gov.uk/government/publications/sanctions-end-use-controls-guidance-for-businesses/sanctions-end-use-controls-guidance-for-businesses", "read": "2026-10-22"}
+  ]
+}

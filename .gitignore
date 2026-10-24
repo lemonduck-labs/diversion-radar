@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+# Raw Comtrade responses stay local until its republishing terms are checked
+data/raw/comtrade_*.json
+
+# Local deny list (names that must never appear); never commit it
+config/deny_list.txt
+
+# The built demo site (scripts/build_site.py); never committed, published only by the owner
+site/dist/
+# The walkthrough videos (tests/site/walkthrough.mjs), recorded from a build of the site
+site/media/
+
+# Inspect eval logs (python evals/run.py); kept as CI artefacts, not in git
+evals/logs/
+
+# The hosted build (scripts/build_hosted.py): the Netlify folder, and the drafting function's
+# bundle, which holds the private deny list and fd-core's word lists
+app/dist-hosted/
+supabase/functions/draft-brief/_bundle/
+# Supabase CLI state and local secrets; secrets are set in the dashboard, never in the repo
+supabase/.temp/
+supabase/.branches/
+supabase/.env
+supabase/functions/.env
+# Refused monitoring candidates can hold the text that was refused (a name, say).
+monitor/refused.jsonl

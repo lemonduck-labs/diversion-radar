@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "description": "Browser flows for the radar workspace page, run against a mock of the platform's capabilities.",
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}

@@ -1,0 +1,93 @@
+/* Diversion Radar: navy ink, one action blue, signal violet for a lead and the
+   onward signal behind it.
+   Aldrich for the wordmark, page titles and headline figures (the owner's choice of a squared
+   display face, in place of Carbon, whose licence does not allow embedding); IBM Plex
+   Sans for text, IBM Plex Mono for goods codes and references.
+   All under the SIL Open Font License 1.1 (fonts/OFL.txt). Tokens carry the tool's names and the
+   Dashboard type's (--color-*, --cds-*, --font-anthropic-*), so the dashboard and the workspace
+   read as one product. Edit this file; pages get it through fdcore.brand. */
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 100 700; font-display: swap; src: url("fonts/ibm-plex-sans-latin-wght-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Aldrich"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/aldrich-latin-400-normal.woff2") format("woff2"); }
+/* Repeated :root raises the block above a host's own dark rules (:root:not([data-theme]) and the
+   like), so the palette stays light in the dashboard's host too. */
+html:root:root:root {
+  color-scheme: light;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-serif: "Aldrich", "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-brand: "Aldrich", "IBM Plex Sans", system-ui, sans-serif;
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --panel-2: #edf1f6;
+  --line: #d8dee8;
+  --line-strong: #b3bfce;
+  --fg: #0e1a2b;
+  --fg-2: #2f3d52;
+  --muted: #566378;
+  --accent: #1f4b8f;
+  --accent-hover: #183c74;
+  --accent-fg: #ffffff;
+  --accent-soft: #e3ebf7;
+  --signal: #6a3db8;
+  --signal-soft: #eee6fb;
+  --ok: #2b6944;
+  --ok-soft: #deede3;
+  --warn: #8a3f74;
+  --warn-soft: #f6e6f0;
+  --bad: #962e2a;
+  --bad-soft: #f4e0dd;
+  --info: #2d5390;
+  --info-soft: #e1e8f4;
+  --violet: #2c6c82;
+  --violet-soft: #dfeef3;
+  --chart-1: #1f4b8f;
+  --chart-2: #7048c8;
+  --chart-muted: #b3bfce;
+  --chart-axis: #7d8a9c;
+  --chart-grid: #e4e9f0;
+  --chart-ref: #566378;
+  --chart-shade: rgba(139, 92, 246, 0.14);
+  --shadow: 0 1px 2px rgba(14, 26, 43, 0.06), 0 6px 18px rgba(14, 26, 43, 0.08);
+  --focus: #1f4b8f;
+  --brand-ground: #0f2140;
+  --brand-signal: #a78bfa;
+  --brand-on-ground: #ffffff;
+  --brand-mark: url("mark.svg");
+  --color-bg: #ffffff;
+  --color-panel: #ffffff;
+  --color-panel-2: #edf1f6;
+  --color-fg: #0e1a2b;
+  --color-fg-muted: #566378;
+  --color-border-line: #d8dee8;
+  --color-ok: #2b6944;
+  --color-warn: #6a3db8;
+  --color-bad: #962e2a;
+  --accent-ink: #ffffff;
+  --cds-chart-muted: #b3bfce;
+  --cds-chart-axis: #7d8a9c;
+  --cds-chart-grid: #e4e9f0;
+  --cds-chart-reference: #566378;
+  --cds-surface-popover: #ffffff;
+  --cds-border: #d8dee8;
+  --cds-text-secondary: #566378;
+  --font-anthropic-sans: var(--font-sans);
+  --font-anthropic-serif: var(--font-serif);
+}
+/* One light palette in every theme, the owner's choice (22 Oct 2026): the workspace, the sign-in
+   screen and the dashboard read white whether the viewer's system is light or dark. */
+
+/* The sidebar of fd-core's shell, and its drawer on a phone, on the brand's navy ground while the
+   page stays white (the owner's choice, 22 Oct 2026): its tokens are redefined inside it, so
+   everything there (the counts, the person card, the focus ring) follows. */
+html .fs-side {
+  color-scheme: dark;
+  --panel: #0f2140; --panel-2: #172d52; --bg: #0c1a33;
+  --fg: #ffffff; --fg-2: #d6e0ee; --muted: #9fb2cc;
+  --line: #22385e; --line-strong: #2f4a76;
+  --accent: #ffffff; --accent-soft: #24426f; --focus: #8db4f0;
+  background: #0f2140; color: #ffffff;
+}
+/* The display face has one weight: set it at that weight rather than let the browser fake a bold. */
+html .fs-brand b, html .brand-name, html .portal-mark b { font-weight: 400; letter-spacing: 0.01em; }

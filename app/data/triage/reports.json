@@ -1,0 +1,3526 @@
+{
+ "notice": "SYNTHETIC RECORDS. Made up by radar/triage/generate.py from a seed, to show what the radar would add where reports of a suspected breach of trade sanctions arrive. No report is or describes a real report, person or business; the parties are pseudonymous ids, and there are no names, addresses or contact details. A report is an allegation until a person has assessed it.",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "seed": 20261022,
+ "reports": [
+  {
+   "id": "RPT-SYN-001",
+   "received": "2026-04-10",
+   "channel": "someone_else",
+   "relationship": "employee",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "multilayer ceramic capacitors",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "January to February 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0146"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1482"
+    },
+    {
+     "role": "forwarder",
+     "id": "FWD-0009"
+    }
+   ],
+   "says": [
+    "different_code"
+   ],
+   "documents": [
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853224",
+      "how": "the report's words, “multilayer ceramic capacitors”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Fixed capacitors: ceramic dielectric, multilayer"
+     }
+    ],
+    "routes": [
+     "TR-853224"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-006",
+      "check_order": "check",
+      "parties": [
+       "FWD-0009"
+      ]
+     },
+     {
+      "case": "SYN-CASE-017",
+      "check_order": "check",
+      "parties": [
+       "CON-1482",
+       "EXP-0146",
+       "FWD-0009"
+      ]
+     },
+     {
+      "case": "SYN-CASE-039",
+      "check_order": "check",
+      "parties": [
+       "FWD-0009"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "concealment"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "hs-code-check",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-002",
+   "received": "2026-04-11",
+   "channel": "someone_else",
+   "relationship": "supplier",
+   "anonymous": false,
+   "nexus": "services",
+   "goods": {
+    "words": "satellite navigation modules",
+    "hs_given": null
+   },
+   "service": "brokering the sale",
+   "destination": "TR",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "June to August 2026",
+   "parties": [
+    {
+     "role": "UK service provider",
+     "id": "PTY-9016"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9017",
+     "registration": "SYN-REG-6UBBSA"
+    }
+   ],
+   "says": [
+    "buyer_russia_office",
+    "route_complex"
+   ],
+   "documents": [
+    "bank payment record",
+    "packing list"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "852691",
+      "how": "the report's words, “satellite navigation modules”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Radio navigational aid apparatus"
+     }
+    ],
+    "routes": [
+     "TR-852691"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [
+     {
+      "party": "PTY-9017",
+      "unique_id": "SYN-RUS-0007",
+      "strength": "same number",
+      "registration": "SYN-REG-6UBBSA"
+     }
+    ],
+    "body": {
+     "name": "OTSI",
+     "why": "Providing or procuring sanctioned services, and services ancillary to moving goods outside the UK, go to OTSI."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "russia-ties",
+     "route-complex",
+     "chpl-end-destination",
+     "transit-edd-country",
+     "sanctions-list-check"
+    ],
+    "order": 1,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-003",
+   "received": "2026-04-14",
+   "channel": "someone_else",
+   "relationship": "competitor",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "amplifier chips",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "GE",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "July to August 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0069"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1547",
+     "registration": "SYN-REG-UCN3L6"
+    }
+   ],
+   "says": [
+    "no_checks_made",
+    "route_complex",
+    "split_invoices"
+   ],
+   "documents": [
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854233",
+      "how": "the report's words, “amplifier chips”",
+      "confidence": "Likely",
+      "tier": 1,
+      "description": "Electronic integrated circuits: amplifiers"
+     }
+    ],
+    "routes": [
+     "GE-854233"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-019",
+      "check_order": "check",
+      "parties": [
+       "CON-1547",
+       "EXP-0069"
+      ]
+     }
+    ],
+    "list": [
+     {
+      "party": "CON-1547",
+      "unique_id": "SYN-RUS-0012",
+      "strength": "same number",
+      "registration": "SYN-REG-UCN3L6"
+     }
+    ],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "aggravating",
+      "id": "inadequate_dd"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "sanctions-list-check",
+     "checks-repeated",
+     "route-complex",
+     "price-and-invoices",
+     "chpl-end-destination"
+    ],
+    "order": 1,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-004",
+   "received": "2026-05-06",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "network switches",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "KZ",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "April to June 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0235"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-2219"
+    }
+   ],
+   "says": [
+    "different_code",
+    "forwarder_destination",
+    "route_complex"
+   ],
+   "documents": [
+    "bank payment record",
+    "bill of lading",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "851762",
+      "how": "the report's words, “network switches”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Machines for the reception, conversion and transmission of voice, images or other data"
+     }
+    ],
+    "routes": [
+     "KZ-851762"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-014",
+      "check_order": "check",
+      "parties": [
+       "CON-2219",
+       "EXP-0235"
+      ]
+     },
+     {
+      "case": "SYN-CASE-047",
+      "check_order": "check",
+      "parties": [
+       "CON-2219",
+       "EXP-0235"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "concealment"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "hs-code-check",
+     "forwarder-as-destination",
+     "route-complex",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-005",
+   "received": "2026-05-07",
+   "channel": "someone_else",
+   "relationship": "competitor",
+   "anonymous": false,
+   "nexus": "oil_cap",
+   "goods": null,
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "over £1m",
+   "period": "February to March 2026",
+   "parties": [
+    {
+     "role": "UK service provider",
+     "id": "PTY-9028"
+    }
+   ],
+   "says": [],
+   "documents": [
+    "bill of lading",
+    "end-user statement"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HM Treasury",
+     "why": "The oil price cap is enforced by HM Treasury."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [],
+    "order": 4,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-006",
+   "received": "2026-05-08",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "services",
+   "goods": {
+    "words": "tantalum capacitors",
+    "hs_given": null
+   },
+   "service": "brokering the sale",
+   "destination": "AE",
+   "transit": [],
+   "value_band": "not given",
+   "period": "April to June 2026",
+   "parties": [
+    {
+     "role": "UK service provider",
+     "id": "PTY-9018"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9019"
+    }
+   ],
+   "says": [
+    "buyer_russia_office"
+   ],
+   "documents": [
+    "bill of lading",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853221",
+      "how": "the report's words, “tantalum capacitors”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Fixed capacitors: tantalum"
+     }
+    ],
+    "routes": [
+     "AE-853221"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OTSI",
+     "why": "Providing or procuring sanctioned services, and services ancillary to moving goods outside the UK, go to OTSI."
+    },
+    "factors": [],
+    "red_flags": [
+     "russia-ties",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-007",
+   "received": "2026-05-10",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "programmable logic chips",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "AZ",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "January to March 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0212"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-2790"
+    }
+   ],
+   "says": [
+    "buyer_russia_office",
+    "documents_no_end_user",
+    "forwarder_destination"
+   ],
+   "documents": [
+    "packing list",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854239",
+      "how": "the report's words, “programmable logic chips”",
+      "confidence": "Likely",
+      "tier": 1,
+      "description": "Electronic integrated circuits: other"
+     }
+    ],
+    "routes": [
+     "AZ-854239"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-031",
+      "check_order": "check",
+      "parties": [
+       "CON-2790",
+       "EXP-0212"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "russia-ties",
+     "documents-end-user",
+     "end-use-details",
+     "forwarder-as-destination",
+     "chpl-end-destination"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-008",
+   "received": "2026-05-11",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "integrated circuits",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "KZ",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "February to March 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0273"
+    },
+    {
+     "role": "consignee",
+     "id": "PTY-9030",
+     "registration": "SYN-REG-ZUUT93"
+    }
+   ],
+   "says": [
+    "new_buyer_since_2022"
+   ],
+   "documents": [
+    "commercial invoice",
+    "emails with the buyer",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854231",
+      "how": "the report's words, “integrated circuits”",
+      "confidence": "Guessing",
+      "tier": 1,
+      "description": "Electronic integrated circuits: processors and controllers"
+     },
+     {
+      "code": "854232",
+      "how": "the report's words, “integrated circuits”",
+      "confidence": "Guessing",
+      "tier": 1,
+      "description": "Electronic integrated circuits: memories"
+     },
+     {
+      "code": "854233",
+      "how": "the report's words, “integrated circuits”",
+      "confidence": "Guessing",
+      "tier": 1,
+      "description": "Electronic integrated circuits: amplifiers"
+     },
+     {
+      "code": "854239",
+      "how": "the report's words, “integrated circuits”",
+      "confidence": "Guessing",
+      "tier": 1,
+      "description": "Electronic integrated circuits: other"
+     }
+    ],
+    "routes": [
+     "KZ-854231",
+     "KZ-854232",
+     "KZ-854233",
+     "KZ-854239"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [
+     {
+      "party": "PTY-9030",
+      "unique_id": "SYN-RUS-0023",
+      "strength": "same number",
+      "registration": "SYN-REG-ZUUT93"
+     }
+    ],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "new-customer-dual-use",
+     "chpl-end-destination",
+     "transit-edd-country",
+     "sanctions-list-check"
+    ],
+    "order": 1,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-009",
+   "received": "2026-05-14",
+   "channel": "self",
+   "relationship": "self",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "amplifier chips",
+    "hs_given": "854233"
+   },
+   "service": null,
+   "destination": "GE",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "June to July 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0069"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1547"
+    }
+   ],
+   "says": [
+    "found_in_own_checks",
+    "no_checks_made",
+    "stopped_and_fixed"
+   ],
+   "documents": [
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854233",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 1,
+      "description": "Electronic integrated circuits: amplifiers"
+     }
+    ],
+    "routes": [
+     "GE-854233"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-019",
+      "check_order": "check",
+      "parties": [
+       "CON-1547",
+       "EXP-0069"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "mitigating",
+      "id": "voluntary_disclosure"
+     },
+     {
+      "group": "aggravating",
+      "id": "inadequate_dd"
+     },
+     {
+      "group": "mitigating",
+      "id": "remediation"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "sanctions-list-check",
+     "checks-repeated",
+     "chpl-end-destination"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-010",
+   "received": "2026-05-15",
+   "channel": "someone_else",
+   "relationship": "customer",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "routers",
+    "hs_given": "851762"
+   },
+   "service": null,
+   "destination": "KZ",
+   "transit": [
+    "GE"
+   ],
+   "value_band": "under £100,000",
+   "period": "May to July 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0234"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-2020"
+    }
+   ],
+   "says": [
+    "price_above_market"
+   ],
+   "documents": [
+    "bank payment record",
+    "emails with the buyer",
+    "packing list"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "851762",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 2,
+      "description": "Machines for the reception, conversion and transmission of voice, images or other data"
+     }
+    ],
+    "routes": [
+     "KZ-851762"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-001",
+      "check_order": "check first",
+      "parties": [
+       "CON-2020",
+       "EXP-0234"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "price-and-invoices",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 2,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-011",
+   "received": "2026-05-22",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "outside_uk_goods",
+   "goods": {
+    "words": "satellite navigation modules",
+    "hs_given": "852691"
+   },
+   "service": null,
+   "destination": "KG",
+   "transit": [
+    "HK"
+   ],
+   "value_band": "under £100,000",
+   "period": "May to June 2026",
+   "parties": [
+    {
+     "role": "UK business",
+     "id": "PTY-9001"
+    },
+    {
+     "role": "supplier abroad",
+     "id": "PTY-9002"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9003"
+    }
+   ],
+   "says": [
+    "route_complex",
+    "third_country_payer"
+   ],
+   "documents": [
+    "bank payment record",
+    "bill of lading",
+    "end-user statement"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "852691",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 2,
+      "description": "Radio navigational aid apparatus"
+     }
+    ],
+    "routes": [
+     "KG-852691"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OTSI",
+     "why": "Moving, making available or acquiring sanctioned goods or technology outside the UK goes to OTSI."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "route-complex",
+     "third-country-payer",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-012",
+   "received": "2026-05-23",
+   "channel": "someone_else",
+   "relationship": "customer",
+   "anonymous": false,
+   "nexus": "internet",
+   "goods": null,
+   "service": null,
+   "destination": "AM",
+   "transit": [],
+   "value_band": "not given",
+   "period": "July to August 2026",
+   "parties": [
+    {
+     "role": "UK service provider",
+     "id": "PTY-9029"
+    }
+   ],
+   "says": [],
+   "documents": [
+    "commercial invoice"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "Ofcom",
+     "why": "Internet service measures are enforced by Ofcom."
+    },
+    "factors": [],
+    "red_flags": [],
+    "order": 4,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-013",
+   "received": "2026-05-25",
+   "channel": "someone_else",
+   "relationship": "customer",
+   "anonymous": false,
+   "nexus": "services",
+   "goods": {
+    "words": "electronic spare parts",
+    "hs_given": null
+   },
+   "service": "brokering the sale",
+   "destination": "TR",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "July to August 2026",
+   "parties": [
+    {
+     "role": "UK service provider",
+     "id": "PTY-9020"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9021"
+    }
+   ],
+   "says": [
+    "buyer_russia_office",
+    "route_complex"
+   ],
+   "documents": [
+    "emails with the buyer"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "8548",
+      "how": "the report's words, “electronic spare parts”",
+      "confidence": "Guessing",
+      "tier": 2,
+      "description": "Electrical parts of machinery or apparatus not elsewhere specified"
+     }
+    ],
+    "routes": [
+     "TR-8548"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OTSI",
+     "why": "Providing or procuring sanctioned services, and services ancillary to moving goods outside the UK, go to OTSI."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "russia-ties",
+     "route-complex",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-014",
+   "received": "2026-05-27",
+   "channel": "someone_else",
+   "relationship": "customer",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "flash memory modules",
+    "hs_given": "854232"
+   },
+   "service": null,
+   "destination": "AE",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "January to February 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0268"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1961"
+    }
+   ],
+   "says": [
+    "price_above_market"
+   ],
+   "documents": [
+    "bill of lading"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854232",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 1,
+      "description": "Electronic integrated circuits: memories"
+     }
+    ],
+    "routes": [
+     "AE-854232"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-008",
+      "check_order": "check",
+      "parties": [
+       "CON-1961",
+       "EXP-0268"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "price-and-invoices",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-015",
+   "received": "2026-05-28",
+   "channel": "mandatory_legal",
+   "relationship": "adviser",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "tantalum capacitors",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "UZ",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "April to May 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0112"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-0806"
+    }
+   ],
+   "says": [
+    "orders_rose"
+   ],
+   "documents": [
+    "bill of lading",
+    "commercial invoice",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853221",
+      "how": "the report's words, “tantalum capacitors”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Fixed capacitors: tantalum"
+     }
+    ],
+    "routes": [
+     "UZ-853221"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "order-volume-rise",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-016",
+   "received": "2026-05-31",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "capacitors",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "over £1m",
+   "period": "February to March 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0244"
+    },
+    {
+     "role": "consignee",
+     "id": "PTY-9031"
+    }
+   ],
+   "says": [
+    "documents_no_end_user"
+   ],
+   "documents": [
+    "packing list",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853221",
+      "how": "the report's words, “capacitors”",
+      "confidence": "Guessing",
+      "tier": 2,
+      "description": "Fixed capacitors: tantalum"
+     },
+     {
+      "code": "853224",
+      "how": "the report's words, “capacitors”",
+      "confidence": "Guessing",
+      "tier": 2,
+      "description": "Fixed capacitors: ceramic dielectric, multilayer"
+     }
+    ],
+    "routes": [
+     "TR-853221",
+     "TR-853224"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "documents-end-user",
+     "end-use-details",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-017",
+   "received": "2026-06-01",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "payments",
+   "goods": null,
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "May to June 2026",
+   "parties": [
+    {
+     "role": "payer",
+     "id": "PTY-9026"
+    },
+    {
+     "role": "payee",
+     "id": "PTY-9027"
+    }
+   ],
+   "says": [
+    "split_invoices"
+   ],
+   "documents": [
+    "bank payment record",
+    "end-user statement"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OFSI",
+     "why": "Financial sanctions are reported to the Office of Financial Sanctions Implementation, in addition to any report to OTSI."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "price-and-invoices"
+    ],
+    "order": 4,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-018",
+   "received": "2026-06-03",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "programmable logic chips",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "GE",
+   "transit": [],
+   "value_band": "over £1m",
+   "period": "April to June 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0063"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-0974"
+    },
+    {
+     "role": "forwarder",
+     "id": "FWD-0004"
+    }
+   ],
+   "says": [
+    "new_buyer_since_2022",
+    "route_complex"
+   ],
+   "documents": [
+    "bill of lading",
+    "commercial invoice"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854239",
+      "how": "the report's words, “programmable logic chips”",
+      "confidence": "Likely",
+      "tier": 1,
+      "description": "Electronic integrated circuits: other"
+     }
+    ],
+    "routes": [
+     "GE-854239"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-015",
+      "check_order": "check",
+      "parties": [
+       "CON-0974",
+       "EXP-0063",
+       "FWD-0004"
+      ]
+     },
+     {
+      "case": "SYN-CASE-037",
+      "check_order": "check",
+      "parties": [
+       "FWD-0004"
+      ]
+     },
+     {
+      "case": "SYN-CASE-039",
+      "check_order": "check",
+      "parties": [
+       "FWD-0004"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "new-customer-dual-use",
+     "route-complex",
+     "chpl-end-destination"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-019",
+   "received": "2026-06-09",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "office furniture",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "FR",
+   "transit": [],
+   "value_band": "over £1m",
+   "period": "January to February 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0008"
+    },
+    {
+     "role": "consignee",
+     "id": "PTY-9033"
+    }
+   ],
+   "says": [],
+   "documents": [
+    "bank payment record",
+    "commercial invoice",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": false,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [],
+    "order": 4,
+    "touches_radar": false
+   }
+  },
+  {
+   "id": "RPT-SYN-020",
+   "received": "2026-06-15",
+   "channel": "whistleblower",
+   "relationship": "none",
+   "anonymous": true,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "printed books",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "DE",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "May to June 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0150"
+    },
+    {
+     "role": "consignee",
+     "id": "PTY-9036"
+    }
+   ],
+   "says": [],
+   "documents": [],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": false,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [],
+    "order": 4,
+    "touches_radar": false
+   }
+  },
+  {
+   "id": "RPT-SYN-021",
+   "received": "2026-06-25",
+   "channel": "someone_else",
+   "relationship": "employee",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "tantalum capacitors",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "July to August 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0068"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1645"
+    },
+    {
+     "role": "forwarder",
+     "id": "FWD-0014"
+    }
+   ],
+   "says": [
+    "new_buyer_since_2022"
+   ],
+   "documents": [
+    "commercial invoice"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853221",
+      "how": "the report's words, “tantalum capacitors”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Fixed capacitors: tantalum"
+     }
+    ],
+    "routes": [
+     "TR-853221"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-001",
+      "check_order": "check first",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-005",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-009",
+      "check_order": "check",
+      "parties": [
+       "CON-1645",
+       "EXP-0068",
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-013",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-020",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-021",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-027",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-037",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-038",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-039",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-040",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-041",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     },
+     {
+      "case": "SYN-CASE-045",
+      "check_order": "check",
+      "parties": [
+       "FWD-0014"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "new-customer-dual-use",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 2,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-022",
+   "received": "2026-06-28",
+   "channel": "someone_else",
+   "relationship": "employee",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "electronic spare parts",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "KZ",
+   "transit": [],
+   "value_band": "over £1m",
+   "period": "July to August 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0282"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-0168"
+    }
+   ],
+   "says": [
+    "new_buyer_since_2022"
+   ],
+   "documents": [
+    "bill of lading",
+    "commercial invoice",
+    "end-user statement"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "8548",
+      "how": "the report's words, “electronic spare parts”",
+      "confidence": "Guessing",
+      "tier": 2,
+      "description": "Electrical parts of machinery or apparatus not elsewhere specified"
+     }
+    ],
+    "routes": [
+     "KZ-8548"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "new-customer-dual-use",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-023",
+   "received": "2026-06-29",
+   "channel": "someone_else",
+   "relationship": "competitor",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "industrial pumps",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "US",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "January to March 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0207"
+    },
+    {
+     "role": "consignee",
+     "id": "PTY-9035"
+    }
+   ],
+   "says": [],
+   "documents": [
+    "packing list"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": false,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [],
+    "order": 4,
+    "touches_radar": false
+   }
+  },
+  {
+   "id": "RPT-SYN-024",
+   "received": "2026-07-01",
+   "channel": "someone_else",
+   "relationship": "employee",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "microcontrollers",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "AE",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "March to May 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0067"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1602"
+    }
+   ],
+   "says": [
+    "earlier_warning_letter",
+    "forwarder_destination",
+    "no_checks_made",
+    "third_country_payer"
+   ],
+   "documents": [
+    "emails with the buyer",
+    "end-user statement"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854231",
+      "how": "the report's words, “microcontrollers”",
+      "confidence": "Likely",
+      "tier": 1,
+      "description": "Electronic integrated circuits: processors and controllers"
+     }
+    ],
+    "routes": [
+     "AE-854231"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-016",
+      "check_order": "check",
+      "parties": [
+       "CON-1602",
+       "EXP-0067"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "aggravating",
+      "id": "ignored_warning"
+     },
+     {
+      "group": "aggravating",
+      "id": "inadequate_dd"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "forwarder-as-destination",
+     "sanctions-list-check",
+     "checks-repeated",
+     "third-country-payer",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-025",
+   "received": "2026-07-05",
+   "channel": "referral",
+   "relationship": "public_body",
+   "anonymous": false,
+   "nexus": "outside_uk_goods",
+   "goods": {
+    "words": "amplifier chips",
+    "hs_given": "854233"
+   },
+   "service": null,
+   "destination": "AM",
+   "transit": [
+    "AE"
+   ],
+   "value_band": "not given",
+   "period": "July to September 2026",
+   "parties": [
+    {
+     "role": "UK business",
+     "id": "PTY-9010"
+    },
+    {
+     "role": "supplier abroad",
+     "id": "PTY-9011"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9012"
+    }
+   ],
+   "says": [
+    "buyer_russia_office",
+    "documents_no_end_user"
+   ],
+   "documents": [
+    "bank payment record",
+    "end-user statement",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854233",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 1,
+      "description": "Electronic integrated circuits: amplifiers"
+     }
+    ],
+    "routes": [
+     "AM-854233"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OTSI",
+     "why": "Moving, making available or acquiring sanctioned goods or technology outside the UK goes to OTSI."
+    },
+    "factors": [],
+    "red_flags": [
+     "russia-ties",
+     "documents-end-user",
+     "end-use-details",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-026",
+   "received": "2026-07-22",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "tantalum capacitors",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "KG",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "February to April 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0242"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-2212"
+    }
+   ],
+   "says": [
+    "documents_no_end_user",
+    "earlier_warning_letter",
+    "forwarder_destination"
+   ],
+   "documents": [
+    "bill of lading",
+    "commercial invoice",
+    "end-user statement"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853221",
+      "how": "the report's words, “tantalum capacitors”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Fixed capacitors: tantalum"
+     }
+    ],
+    "routes": [
+     "KG-853221"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-048",
+      "check_order": "check",
+      "parties": [
+       "CON-2212"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "aggravating",
+      "id": "ignored_warning"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "documents-end-user",
+     "end-use-details",
+     "forwarder-as-destination",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-027",
+   "received": "2026-07-23",
+   "channel": "someone_else",
+   "relationship": "customer",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "electronic spare parts",
+    "hs_given": "8548"
+   },
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "over £1m",
+   "period": "February to March 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0036"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-2787"
+    }
+   ],
+   "says": [
+    "new_buyer_since_2022"
+   ],
+   "documents": [
+    "emails with the buyer",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "8548",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 2,
+      "description": "Electrical parts of machinery or apparatus not elsewhere specified"
+     }
+    ],
+    "routes": [
+     "TR-8548"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-030",
+      "check_order": "check",
+      "parties": [
+       "CON-2787",
+       "EXP-0036"
+      ]
+     },
+     {
+      "case": "SYN-CASE-047",
+      "check_order": "check",
+      "parties": [
+       "CON-2787",
+       "EXP-0036"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "new-customer-dual-use",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-028",
+   "received": "2026-07-23",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "agricultural machinery",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "FR",
+   "transit": [],
+   "value_band": "not given",
+   "period": "April to June 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0176"
+    },
+    {
+     "role": "consignee",
+     "id": "PTY-9034"
+    }
+   ],
+   "says": [],
+   "documents": [
+    "bill of lading"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": false,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [],
+    "red_flags": [],
+    "order": 4,
+    "touches_radar": false
+   }
+  },
+  {
+   "id": "RPT-SYN-029",
+   "received": "2026-08-02",
+   "channel": "referral",
+   "relationship": "public_body",
+   "anonymous": false,
+   "nexus": "services",
+   "goods": {
+    "words": "multilayer ceramic capacitors",
+    "hs_given": null
+   },
+   "service": "arranging finance for the deal",
+   "destination": "AM",
+   "transit": [],
+   "value_band": "over £1m",
+   "period": "June to August 2026",
+   "parties": [
+    {
+     "role": "UK service provider",
+     "id": "PTY-9022"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9023"
+    }
+   ],
+   "says": [
+    "route_complex"
+   ],
+   "documents": [
+    "commercial invoice",
+    "emails with the buyer"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853224",
+      "how": "the report's words, “multilayer ceramic capacitors”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Fixed capacitors: ceramic dielectric, multilayer"
+     }
+    ],
+    "routes": [
+     "AM-853224"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OTSI",
+     "why": "Providing or procuring sanctioned services, and services ancillary to moving goods outside the UK, go to OTSI."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "route-complex",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-030",
+   "received": "2026-08-06",
+   "channel": "self",
+   "relationship": "self",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "memory chips",
+    "hs_given": "854232"
+   },
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "March to April 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0121"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1688"
+    }
+   ],
+   "says": [
+    "documents_no_end_user",
+    "found_in_own_checks",
+    "stopped_and_fixed"
+   ],
+   "documents": [
+    "packing list"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854232",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 1,
+      "description": "Electronic integrated circuits: memories"
+     }
+    ],
+    "routes": [
+     "TR-854232"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-005",
+      "check_order": "check",
+      "parties": [
+       "CON-1688",
+       "EXP-0121"
+      ]
+     },
+     {
+      "case": "SYN-CASE-047",
+      "check_order": "check",
+      "parties": [
+       "CON-1688",
+       "EXP-0121"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "mitigating",
+      "id": "voluntary_disclosure"
+     },
+     {
+      "group": "mitigating",
+      "id": "remediation"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "documents-end-user",
+     "end-use-details",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-031",
+   "received": "2026-08-11",
+   "channel": "mandatory_legal",
+   "relationship": "adviser",
+   "anonymous": false,
+   "nexus": "outside_uk_goods",
+   "goods": {
+    "words": "navigation receivers",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "AM",
+   "transit": [
+    "TR"
+   ],
+   "value_band": "under £100,000",
+   "period": "February to April 2026",
+   "parties": [
+    {
+     "role": "UK business",
+     "id": "PTY-9007"
+    },
+    {
+     "role": "supplier abroad",
+     "id": "PTY-9008"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9009"
+    }
+   ],
+   "says": [
+    "third_country_payer"
+   ],
+   "documents": [
+    "commercial invoice",
+    "end-user statement",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "852691",
+      "how": "the report's words, “navigation receivers”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Radio navigational aid apparatus"
+     }
+    ],
+    "routes": [
+     "AM-852691"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OTSI",
+     "why": "Moving, making available or acquiring sanctioned goods or technology outside the UK goes to OTSI."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "third-country-payer",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-032",
+   "received": "2026-08-15",
+   "channel": "someone_else",
+   "relationship": "supplier",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "telecoms kit",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "January to February 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0241"
+    },
+    {
+     "role": "consignee",
+     "id": "PTY-9032"
+    }
+   ],
+   "says": [
+    "new_buyer_since_2022"
+   ],
+   "documents": [
+    "commercial invoice"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "new-customer-dual-use"
+    ],
+    "order": 4,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-033",
+   "received": "2026-08-17",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "outside_uk_goods",
+   "goods": {
+    "words": "amplifier chips",
+    "hs_given": "854233"
+   },
+   "service": null,
+   "destination": "KZ",
+   "transit": [
+    "CN"
+   ],
+   "value_band": "not given",
+   "period": "April to May 2026",
+   "parties": [
+    {
+     "role": "UK business",
+     "id": "PTY-9004"
+    },
+    {
+     "role": "supplier abroad",
+     "id": "PTY-9005",
+     "registration": "SYN-REG-HSQCSA"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9006"
+    }
+   ],
+   "says": [
+    "documents_no_end_user"
+   ],
+   "documents": [
+    "bank payment record",
+    "emails with the buyer"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854233",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 1,
+      "description": "Electronic integrated circuits: amplifiers"
+     }
+    ],
+    "routes": [
+     "KZ-854233"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [
+     {
+      "party": "PTY-9005",
+      "unique_id": "SYN-RUS-0016",
+      "strength": "one character apart",
+      "registration": "SYN-REG-HSQCSA",
+      "listed_number": "SYN-REG-HSQCSU"
+     }
+    ],
+    "body": {
+     "name": "OTSI",
+     "why": "Moving, making available or acquiring sanctioned goods or technology outside the UK goes to OTSI."
+    },
+    "factors": [],
+    "red_flags": [
+     "documents-end-user",
+     "end-use-details",
+     "chpl-end-destination",
+     "transit-edd-country",
+     "listed-party-resemblance"
+    ],
+    "order": 2,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-034",
+   "received": "2026-08-22",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "payments",
+   "goods": null,
+   "service": null,
+   "destination": "AE",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "June to August 2026",
+   "parties": [
+    {
+     "role": "payer",
+     "id": "PTY-9024"
+    },
+    {
+     "role": "payee",
+     "id": "PTY-9025"
+    }
+   ],
+   "says": [
+    "third_country_payer"
+   ],
+   "documents": [
+    "bill of lading",
+    "emails with the buyer"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [],
+    "routes": [],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OFSI",
+     "why": "Financial sanctions are reported to the Office of Financial Sanctions Implementation, in addition to any report to OTSI."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "third-country-payer"
+    ],
+    "order": 4,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-035",
+   "received": "2026-08-26",
+   "channel": "someone_else",
+   "relationship": "supplier",
+   "anonymous": false,
+   "nexus": "outside_uk_goods",
+   "goods": {
+    "words": "multilayer ceramic capacitors",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "GE",
+   "transit": [
+    "AE"
+   ],
+   "value_band": "over £1m",
+   "period": "May to June 2026",
+   "parties": [
+    {
+     "role": "UK business",
+     "id": "PTY-9013"
+    },
+    {
+     "role": "supplier abroad",
+     "id": "PTY-9014"
+    },
+    {
+     "role": "buyer",
+     "id": "PTY-9015"
+    }
+   ],
+   "says": [
+    "buyer_russia_office",
+    "third_country_payer"
+   ],
+   "documents": [
+    "commercial invoice",
+    "emails with the buyer",
+    "end-user statement"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853224",
+      "how": "the report's words, “multilayer ceramic capacitors”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Fixed capacitors: ceramic dielectric, multilayer"
+     }
+    ],
+    "routes": [
+     "GE-853224"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "OTSI",
+     "why": "Moving, making available or acquiring sanctioned goods or technology outside the UK goes to OTSI."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "russia-ties",
+     "third-country-payer",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-036",
+   "received": "2026-08-27",
+   "channel": "whistleblower",
+   "relationship": "none",
+   "anonymous": true,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "routers",
+    "hs_given": "851762"
+   },
+   "service": null,
+   "destination": "UZ",
+   "transit": [
+    "TR"
+   ],
+   "value_band": "under £100,000",
+   "period": "June to July 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0138"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-2766"
+    },
+    {
+     "role": "forwarder",
+     "id": "FWD-0039"
+    }
+   ],
+   "says": [
+    "different_code",
+    "no_checks_made",
+    "price_above_market"
+   ],
+   "documents": [],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "851762",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 2,
+      "description": "Machines for the reception, conversion and transmission of voice, images or other data"
+     }
+    ],
+    "routes": [
+     "UZ-851762"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-007",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-023",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-025",
+      "check_order": "check",
+      "parties": [
+       "CON-2766",
+       "EXP-0138",
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-027",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-029",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-031",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-036",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-037",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-039",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-040",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     },
+     {
+      "case": "SYN-CASE-044",
+      "check_order": "check",
+      "parties": [
+       "FWD-0039"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "concealment"
+     },
+     {
+      "group": "aggravating",
+      "id": "inadequate_dd"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "hs-code-check",
+     "sanctions-list-check",
+     "checks-repeated",
+     "price-and-invoices",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-037",
+   "received": "2026-08-29",
+   "channel": "someone_else",
+   "relationship": "customer",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "tantalum capacitors",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "UZ",
+   "transit": [],
+   "value_band": "not given",
+   "period": "May to July 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0280"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-0806"
+    }
+   ],
+   "says": [
+    "price_above_market"
+   ],
+   "documents": [
+    "commercial invoice",
+    "end-user statement",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853221",
+      "how": "the report's words, “tantalum capacitors”",
+      "confidence": "Likely",
+      "tier": 2,
+      "description": "Fixed capacitors: tantalum"
+     }
+    ],
+    "routes": [
+     "UZ-853221"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [],
+    "red_flags": [
+     "price-and-invoices",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-038",
+   "received": "2026-09-06",
+   "channel": "someone_else",
+   "relationship": "employee",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "microcontrollers",
+    "hs_given": null
+   },
+   "service": null,
+   "destination": "KG",
+   "transit": [
+    "GE"
+   ],
+   "value_band": "over £1m",
+   "period": "June to August 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0101"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1557"
+    }
+   ],
+   "says": [
+    "price_above_market"
+   ],
+   "documents": [
+    "emails with the buyer"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854231",
+      "how": "the report's words, “microcontrollers”",
+      "confidence": "Likely",
+      "tier": 1,
+      "description": "Electronic integrated circuits: processors and controllers"
+     }
+    ],
+    "routes": [
+     "KG-854231"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-002",
+      "check_order": "check first",
+      "parties": [
+       "CON-1557",
+       "EXP-0101"
+      ]
+     },
+     {
+      "case": "SYN-CASE-048",
+      "check_order": "check",
+      "parties": [
+       "CON-1557",
+       "EXP-0101"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "price-and-invoices",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 2,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-039",
+   "received": "2026-09-06",
+   "channel": "someone_else",
+   "relationship": "customer",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "multilayer ceramic capacitors",
+    "hs_given": "853224"
+   },
+   "service": null,
+   "destination": "TR",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "July to August 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0122"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-2774",
+     "registration": "SYN-REG-6NPFZA"
+    },
+    {
+     "role": "forwarder",
+     "id": "FWD-0038"
+    }
+   ],
+   "says": [
+    "earlier_warning_letter",
+    "orders_rose",
+    "route_complex",
+    "split_invoices"
+   ],
+   "documents": [
+    "bill of lading",
+    "packing list",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853224",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 2,
+      "description": "Fixed capacitors: ceramic dielectric, multilayer"
+     }
+    ],
+    "routes": [
+     "TR-853224"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-002",
+      "check_order": "check first",
+      "parties": [
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-006",
+      "check_order": "check",
+      "parties": [
+       "EXP-0122",
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-012",
+      "check_order": "check",
+      "parties": [
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-015",
+      "check_order": "check",
+      "parties": [
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-026",
+      "check_order": "check",
+      "parties": [
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-028",
+      "check_order": "check",
+      "parties": [
+       "CON-2774",
+       "EXP-0122",
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-035",
+      "check_order": "check",
+      "parties": [
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-036",
+      "check_order": "check",
+      "parties": [
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-038",
+      "check_order": "check",
+      "parties": [
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-040",
+      "check_order": "check",
+      "parties": [
+       "FWD-0038"
+      ]
+     },
+     {
+      "case": "SYN-CASE-048",
+      "check_order": "check",
+      "parties": [
+       "CON-2774",
+       "EXP-0122",
+       "FWD-0038"
+      ]
+     }
+    ],
+    "list": [
+     {
+      "party": "CON-2774",
+      "unique_id": "SYN-RUS-0014",
+      "strength": "one character apart",
+      "registration": "SYN-REG-6NPFZA",
+      "listed_number": "SYN-REG-6NPFZL"
+     }
+    ],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "aggravating",
+      "id": "ignored_warning"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "order-volume-rise",
+     "route-complex",
+     "price-and-invoices",
+     "chpl-end-destination",
+     "transit-edd-country",
+     "listed-party-resemblance"
+    ],
+    "order": 2,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-040",
+   "received": "2026-09-07",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "tantalum capacitors",
+    "hs_given": "853221"
+   },
+   "service": null,
+   "destination": "KZ",
+   "transit": [],
+   "value_band": "not given",
+   "period": "February to March 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0238"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-0475"
+    }
+   ],
+   "says": [
+    "buyer_russia_office",
+    "orders_rose"
+   ],
+   "documents": [
+    "bank payment record",
+    "bill of lading",
+    "packing list"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853221",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 2,
+      "description": "Fixed capacitors: tantalum"
+     }
+    ],
+    "routes": [
+     "KZ-853221"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-037",
+      "check_order": "check",
+      "parties": [
+       "CON-0475"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [],
+    "red_flags": [
+     "russia-ties",
+     "order-volume-rise",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-041",
+   "received": "2026-09-09",
+   "channel": "whistleblower",
+   "relationship": "none",
+   "anonymous": true,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "multilayer ceramic capacitors",
+    "hs_given": "853224"
+   },
+   "service": null,
+   "destination": "AE",
+   "transit": [],
+   "value_band": "under £100,000",
+   "period": "January to March 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0263"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1381",
+     "registration": "SYN-REG-AYKSZX"
+    }
+   ],
+   "says": [
+    "buyer_russia_office",
+    "different_code"
+   ],
+   "documents": [],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "853224",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 2,
+      "description": "Fixed capacitors: ceramic dielectric, multilayer"
+     }
+    ],
+    "routes": [
+     "AE-853224"
+    ],
+    "corridor": true,
+    "declaration_cases": [],
+    "list": [
+     {
+      "party": "CON-1381",
+      "unique_id": "SYN-RUS-0006",
+      "strength": "same number",
+      "registration": "SYN-REG-AYKSZX"
+     }
+    ],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "severity",
+      "id": "concealment"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "russia-ties",
+     "hs-code-check",
+     "chpl-end-destination",
+     "transit-edd-country",
+     "sanctions-list-check"
+    ],
+    "order": 1,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-042",
+   "received": "2026-09-12",
+   "channel": "mandatory_financial",
+   "relationship": "bank",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "programmable logic chips",
+    "hs_given": "854239"
+   },
+   "service": null,
+   "destination": "GE",
+   "transit": [],
+   "value_band": "over £1m",
+   "period": "March to April 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0264"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1352"
+    }
+   ],
+   "says": [
+    "no_checks_made"
+   ],
+   "documents": [
+    "end-user statement"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "854239",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 1,
+      "description": "Electronic integrated circuits: other"
+     }
+    ],
+    "routes": [
+     "GE-854239"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-041",
+      "check_order": "check",
+      "parties": [
+       "CON-1352",
+       "EXP-0264"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "aggravating",
+      "id": "inadequate_dd"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "sanctions-list-check",
+     "checks-repeated",
+     "chpl-end-destination"
+    ],
+    "order": 3,
+    "touches_radar": true
+   }
+  },
+  {
+   "id": "RPT-SYN-043",
+   "received": "2026-09-21",
+   "channel": "self",
+   "relationship": "self",
+   "anonymous": false,
+   "nexus": "uk_export",
+   "goods": {
+    "words": "network switches",
+    "hs_given": "851762"
+   },
+   "service": null,
+   "destination": "KG",
+   "transit": [],
+   "value_band": "£100,000 to £1m",
+   "period": "January to February 2026",
+   "parties": [
+    {
+     "role": "exporter",
+     "id": "EXP-0101"
+    },
+    {
+     "role": "consignee",
+     "id": "CON-1557"
+    }
+   ],
+   "says": [
+    "found_in_own_checks",
+    "no_checks_made",
+    "stopped_and_fixed"
+   ],
+   "documents": [
+    "end-user statement",
+    "packing list",
+    "sale contract"
+   ],
+   "synthetic": true,
+   "matched": {
+    "codes": [
+     {
+      "code": "851762",
+      "how": "given in the report",
+      "confidence": "Certain",
+      "tier": 2,
+      "description": "Machines for the reception, conversion and transmission of voice, images or other data"
+     }
+    ],
+    "routes": [
+     "KG-851762"
+    ],
+    "corridor": true,
+    "declaration_cases": [
+     {
+      "case": "SYN-CASE-002",
+      "check_order": "check first",
+      "parties": [
+       "CON-1557",
+       "EXP-0101"
+      ]
+     },
+     {
+      "case": "SYN-CASE-048",
+      "check_order": "check",
+      "parties": [
+       "CON-1557",
+       "EXP-0101"
+      ]
+     }
+    ],
+    "list": [],
+    "body": {
+     "name": "HMRC",
+     "why": "Export controls and trade sanctions involving UK customs, including the export of goods, are for HMRC: reports go to HMRC."
+    },
+    "factors": [
+     {
+      "group": "mitigating",
+      "id": "voluntary_disclosure"
+     },
+     {
+      "group": "aggravating",
+      "id": "inadequate_dd"
+     },
+     {
+      "group": "mitigating",
+      "id": "remediation"
+     },
+     {
+      "group": "severity",
+      "id": "value"
+     }
+    ],
+    "red_flags": [
+     "sanctions-list-check",
+     "checks-repeated",
+     "chpl-end-destination",
+     "transit-edd-country"
+    ],
+    "order": 2,
+    "touches_radar": true
+   }
+  }
+ ]
+}

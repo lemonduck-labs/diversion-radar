@@ -1,0 +1,12 @@
+name,iso2,hmrc_country_id,comtrade_code,role
+Kyrgyz Republic,KG,83,417,corridor
+Armenia,AM,77,51,corridor
+Kazakhstan,KZ,79,398,corridor
+Georgia,GE,76,268,corridor
+United Arab Emirates,AE,647,784,corridor
+Turkey,TR,52,792,corridor
+Uzbekistan,UZ,81,860,corridor
+Azerbaijan,AZ,78,31,corridor
+Tajikistan,TJ,82,762,corridor
+Russia,RU,75,643,target
+United Kingdom,GB,,826,origin

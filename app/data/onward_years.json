@@ -1,0 +1,1066 @@
+[
+ {
+  "series": "India 851762",
+  "year": "2019",
+  "usd": 97142,
+  "threshold_usd": 422808,
+  "first_released": "2020-05-21"
+ },
+ {
+  "series": "India 851762",
+  "year": "2020",
+  "usd": 528465,
+  "threshold_usd": 422808,
+  "first_released": "2021-05-05"
+ },
+ {
+  "series": "India 851762",
+  "year": "2021",
+  "usd": 8606,
+  "threshold_usd": 422808,
+  "first_released": "2022-03-26"
+ },
+ {
+  "series": "India 851762",
+  "year": "2022",
+  "usd": 898879,
+  "threshold_usd": 422808,
+  "first_released": "2023-05-09"
+ },
+ {
+  "series": "India 851762",
+  "year": "2023",
+  "usd": 8895754,
+  "threshold_usd": 422808,
+  "first_released": "2024-05-30"
+ },
+ {
+  "series": "India 851762",
+  "year": "2024",
+  "usd": 13525978,
+  "threshold_usd": 422808,
+  "first_released": "2025-04-25"
+ },
+ {
+  "series": "India 851762",
+  "year": "2025",
+  "usd": 1122963,
+  "threshold_usd": 422808,
+  "first_released": "2026-07-10"
+ },
+ {
+  "series": "Thailand 851762",
+  "year": "2019",
+  "usd": 174701,
+  "threshold_usd": 525087,
+  "first_released": "2020-06-27"
+ },
+ {
+  "series": "Thailand 851762",
+  "year": "2020",
+  "usd": 433821,
+  "threshold_usd": 525087,
+  "first_released": "2021-07-02"
+ },
+ {
+  "series": "Thailand 851762",
+  "year": "2021",
+  "usd": 179109,
+  "threshold_usd": 525087,
+  "first_released": "2022-10-06"
+ },
+ {
+  "series": "Thailand 851762",
+  "year": "2022",
+  "usd": 2155171,
+  "threshold_usd": 525087,
+  "first_released": "2023-10-13"
+ },
+ {
+  "series": "Thailand 851762",
+  "year": "2023",
+  "usd": 1596949,
+  "threshold_usd": 525087,
+  "first_released": "2024-09-25"
+ },
+ {
+  "series": "Thailand 851762",
+  "year": "2024",
+  "usd": 2825995,
+  "threshold_usd": 525087,
+  "first_released": "2025-02-21"
+ },
+ {
+  "series": "Thailand 851762",
+  "year": "2025",
+  "usd": 4760607,
+  "threshold_usd": 525087,
+  "first_released": "2026-08-18"
+ },
+ {
+  "series": "Kazakhstan 851762",
+  "year": "2019",
+  "usd": 6151929,
+  "threshold_usd": 7471165,
+  "first_released": "2020-03-23"
+ },
+ {
+  "series": "Kazakhstan 851762",
+  "year": "2020",
+  "usd": 3122131,
+  "threshold_usd": 7471165,
+  "first_released": "2021-11-22"
+ },
+ {
+  "series": "Kazakhstan 851762",
+  "year": "2021",
+  "usd": 1932687,
+  "threshold_usd": 7471165,
+  "first_released": "2023-05-29"
+ },
+ {
+  "series": "Kazakhstan 851762",
+  "year": "2022",
+  "usd": 39501093,
+  "threshold_usd": 7471165,
+  "first_released": "2023-05-29"
+ },
+ {
+  "series": "Kazakhstan 851762",
+  "year": "2023",
+  "usd": 33602606,
+  "threshold_usd": 7471165,
+  "first_released": "2024-05-09"
+ },
+ {
+  "series": "Kazakhstan 851762",
+  "year": "2024",
+  "usd": 15558946,
+  "threshold_usd": 7471165,
+  "first_released": "2025-10-09"
+ },
+ {
+  "series": "Kazakhstan 851762",
+  "year": "2025",
+  "usd": 56706810,
+  "threshold_usd": 7471165,
+  "first_released": "2026-08-20"
+ },
+ {
+  "series": "India 854231",
+  "year": "2019",
+  "usd": 569126,
+  "threshold_usd": 453416,
+  "first_released": "2020-05-21"
+ },
+ {
+  "series": "India 854231",
+  "year": "2020",
+  "usd": 21342,
+  "threshold_usd": 453416,
+  "first_released": "2021-05-05"
+ },
+ {
+  "series": "India 854231",
+  "year": "2021",
+  "usd": 89656,
+  "threshold_usd": 453416,
+  "first_released": "2022-03-26"
+ },
+ {
+  "series": "India 854231",
+  "year": "2022",
+  "usd": 4396609,
+  "threshold_usd": 453416,
+  "first_released": "2023-05-09"
+ },
+ {
+  "series": "India 854231",
+  "year": "2023",
+  "usd": 5171067,
+  "threshold_usd": 453416,
+  "first_released": "2024-05-30"
+ },
+ {
+  "series": "India 854231",
+  "year": "2024",
+  "usd": 3510481,
+  "threshold_usd": 453416,
+  "first_released": "2025-04-25"
+ },
+ {
+  "series": "India 854231",
+  "year": "2025",
+  "usd": 700531,
+  "threshold_usd": 453416,
+  "first_released": "2026-07-10"
+ },
+ {
+  "series": "China 853221",
+  "year": "2019",
+  "usd": 474205,
+  "threshold_usd": 958417,
+  "first_released": "2020-10-27"
+ },
+ {
+  "series": "China 853221",
+  "year": "2020",
+  "usd": 622558,
+  "threshold_usd": 958417,
+  "first_released": "2021-04-17"
+ },
+ {
+  "series": "China 853221",
+  "year": "2021",
+  "usd": 340862,
+  "threshold_usd": 958417,
+  "first_released": "2022-05-20"
+ },
+ {
+  "series": "China 853221",
+  "year": "2022",
+  "usd": 2562720,
+  "threshold_usd": 958417,
+  "first_released": "2023-04-11"
+ },
+ {
+  "series": "China 853221",
+  "year": "2023",
+  "usd": 6721975,
+  "threshold_usd": 958417,
+  "first_released": "2024-04-07"
+ },
+ {
+  "series": "China 853221",
+  "year": "2024",
+  "usd": 2879340,
+  "threshold_usd": 958417,
+  "first_released": "2025-06-14"
+ },
+ {
+  "series": "China 853221",
+  "year": "2025",
+  "usd": 3033535,
+  "threshold_usd": 958417,
+  "first_released": "2026-09-22"
+ },
+ {
+  "series": "United Arab Emirates 854232",
+  "year": "2019",
+  "usd": 3865,
+  "threshold_usd": 135861,
+  "first_released": "2020-10-28"
+ },
+ {
+  "series": "United Arab Emirates 854232",
+  "year": "2020",
+  "usd": 29483,
+  "threshold_usd": 135861,
+  "first_released": "2021-11-04"
+ },
+ {
+  "series": "United Arab Emirates 854232",
+  "year": "2021",
+  "usd": 170443,
+  "threshold_usd": 135861,
+  "first_released": "2022-07-26"
+ },
+ {
+  "series": "United Arab Emirates 854232",
+  "year": "2022",
+  "usd": 218240,
+  "threshold_usd": 135861,
+  "first_released": "2023-09-19"
+ },
+ {
+  "series": "United Arab Emirates 854232",
+  "year": "2023",
+  "usd": 159819,
+  "threshold_usd": 135861,
+  "first_released": "2024-09-11"
+ },
+ {
+  "series": "United Arab Emirates 854239",
+  "year": "2019",
+  "usd": 186559,
+  "threshold_usd": 279464,
+  "first_released": "2020-10-28"
+ },
+ {
+  "series": "United Arab Emirates 854239",
+  "year": "2020",
+  "usd": 230628,
+  "threshold_usd": 279464,
+  "first_released": "2021-11-04"
+ },
+ {
+  "series": "United Arab Emirates 854239",
+  "year": "2021",
+  "usd": 2009,
+  "threshold_usd": 279464,
+  "first_released": "2022-07-26"
+ },
+ {
+  "series": "United Arab Emirates 854239",
+  "year": "2022",
+  "usd": 2517966,
+  "threshold_usd": 279464,
+  "first_released": "2023-09-19"
+ },
+ {
+  "series": "United Arab Emirates 854239",
+  "year": "2023",
+  "usd": 373627,
+  "threshold_usd": 279464,
+  "first_released": "2024-09-11"
+ },
+ {
+  "series": "Hong Kong 854232",
+  "year": "2019",
+  "usd": 8997015,
+  "threshold_usd": 15122719,
+  "first_released": "2020-02-16"
+ },
+ {
+  "series": "Hong Kong 854232",
+  "year": "2020",
+  "usd": 3435259,
+  "threshold_usd": 15122719,
+  "first_released": "2021-02-15"
+ },
+ {
+  "series": "Hong Kong 854232",
+  "year": "2021",
+  "usd": 10251804,
+  "threshold_usd": 15122719,
+  "first_released": "2022-02-14"
+ },
+ {
+  "series": "Hong Kong 854232",
+  "year": "2022",
+  "usd": 7853352,
+  "threshold_usd": 15122719,
+  "first_released": "2023-03-14"
+ },
+ {
+  "series": "Hong Kong 854232",
+  "year": "2023",
+  "usd": 15752155,
+  "threshold_usd": 15122719,
+  "first_released": "2024-05-22"
+ },
+ {
+  "series": "Hong Kong 854232",
+  "year": "2024",
+  "usd": 3771699,
+  "threshold_usd": 15122719,
+  "first_released": "2025-04-14"
+ },
+ {
+  "series": "Hong Kong 854232",
+  "year": "2025",
+  "usd": 9929671,
+  "threshold_usd": 15122719,
+  "first_released": "2026-05-05"
+ },
+ {
+  "series": "Israel 851762",
+  "year": "2019",
+  "usd": 16881000,
+  "threshold_usd": 42783333,
+  "first_released": "2020-05-15"
+ },
+ {
+  "series": "Israel 851762",
+  "year": "2020",
+  "usd": 20247000,
+  "threshold_usd": 42783333,
+  "first_released": "2021-02-05"
+ },
+ {
+  "series": "Israel 851762",
+  "year": "2021",
+  "usd": 27047000,
+  "threshold_usd": 42783333,
+  "first_released": "2022-05-26"
+ },
+ {
+  "series": "Israel 851762",
+  "year": "2022",
+  "usd": 23490000,
+  "threshold_usd": 42783333,
+  "first_released": "2023-02-23"
+ },
+ {
+  "series": "Israel 851762",
+  "year": "2023",
+  "usd": 6826000,
+  "threshold_usd": 42783333,
+  "first_released": "2024-03-08"
+ },
+ {
+  "series": "Israel 851762",
+  "year": "2024",
+  "usd": 3075000,
+  "threshold_usd": 42783333,
+  "first_released": "2025-02-21"
+ },
+ {
+  "series": "Israel 851762",
+  "year": "2025",
+  "usd": 138000,
+  "threshold_usd": 42783333,
+  "first_released": "2026-05-14"
+ },
+ {
+  "series": "China 854239",
+  "year": "2019",
+  "usd": 13393298,
+  "threshold_usd": 35275135,
+  "first_released": "2020-10-27"
+ },
+ {
+  "series": "China 854239",
+  "year": "2020",
+  "usd": 15687897,
+  "threshold_usd": 35275135,
+  "first_released": "2021-04-17"
+ },
+ {
+  "series": "China 854239",
+  "year": "2021",
+  "usd": 23831507,
+  "threshold_usd": 35275135,
+  "first_released": "2022-05-20"
+ },
+ {
+  "series": "China 854239",
+  "year": "2022",
+  "usd": 75232057,
+  "threshold_usd": 35275135,
+  "first_released": "2023-04-11"
+ },
+ {
+  "series": "China 854239",
+  "year": "2023",
+  "usd": 53616879,
+  "threshold_usd": 35275135,
+  "first_released": "2024-04-07"
+ },
+ {
+  "series": "China 854239",
+  "year": "2024",
+  "usd": 18631802,
+  "threshold_usd": 35275135,
+  "first_released": "2025-06-14"
+ },
+ {
+  "series": "China 854239",
+  "year": "2025",
+  "usd": 21591523,
+  "threshold_usd": 35275135,
+  "first_released": "2026-09-22"
+ },
+ {
+  "series": "Israel 854232",
+  "year": "2019",
+  "usd": 1000,
+  "threshold_usd": 100000,
+  "first_released": "2020-05-15"
+ },
+ {
+  "series": "Israel 854232",
+  "year": "2020",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2021-02-05"
+ },
+ {
+  "series": "Israel 854232",
+  "year": "2021",
+  "usd": 2000,
+  "threshold_usd": 100000,
+  "first_released": "2022-05-26"
+ },
+ {
+  "series": "Israel 854232",
+  "year": "2022",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2023-02-23"
+ },
+ {
+  "series": "Israel 854232",
+  "year": "2023",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2024-03-08"
+ },
+ {
+  "series": "Israel 854232",
+  "year": "2024",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2025-02-21"
+ },
+ {
+  "series": "Israel 854232",
+  "year": "2025",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2026-05-14"
+ },
+ {
+  "series": "Malaysia 851762",
+  "year": "2019",
+  "usd": 1433616,
+  "threshold_usd": 4300931,
+  "first_released": "2020-06-27"
+ },
+ {
+  "series": "Malaysia 851762",
+  "year": "2020",
+  "usd": 1872778,
+  "threshold_usd": 4300931,
+  "first_released": "2021-07-02"
+ },
+ {
+  "series": "Malaysia 851762",
+  "year": "2021",
+  "usd": 3145002,
+  "threshold_usd": 4300931,
+  "first_released": "2022-04-19"
+ },
+ {
+  "series": "Malaysia 851762",
+  "year": "2022",
+  "usd": 579704,
+  "threshold_usd": 4300931,
+  "first_released": "2023-10-08"
+ },
+ {
+  "series": "Malaysia 851762",
+  "year": "2023",
+  "usd": 0,
+  "threshold_usd": 4300931,
+  "first_released": "2024-02-05"
+ },
+ {
+  "series": "Malaysia 851762",
+  "year": "2024",
+  "usd": 135038,
+  "threshold_usd": 4300931,
+  "first_released": "2025-02-28"
+ },
+ {
+  "series": "Malaysia 851762",
+  "year": "2025",
+  "usd": 208764,
+  "threshold_usd": 4300931,
+  "first_released": "2026-03-10"
+ },
+ {
+  "series": "Israel 854239",
+  "year": "2019",
+  "usd": 757000,
+  "threshold_usd": 898667,
+  "first_released": "2020-05-15"
+ },
+ {
+  "series": "Israel 854239",
+  "year": "2020",
+  "usd": 342000,
+  "threshold_usd": 898667,
+  "first_released": "2021-02-05"
+ },
+ {
+  "series": "Israel 854239",
+  "year": "2021",
+  "usd": 249000,
+  "threshold_usd": 898667,
+  "first_released": "2022-05-26"
+ },
+ {
+  "series": "Israel 854239",
+  "year": "2022",
+  "usd": 204000,
+  "threshold_usd": 898667,
+  "first_released": "2023-02-23"
+ },
+ {
+  "series": "Israel 854239",
+  "year": "2023",
+  "usd": 0,
+  "threshold_usd": 898667,
+  "first_released": "2024-03-08"
+ },
+ {
+  "series": "Israel 854239",
+  "year": "2024",
+  "usd": 52000,
+  "threshold_usd": 898667,
+  "first_released": "2025-02-21"
+ },
+ {
+  "series": "Israel 854239",
+  "year": "2025",
+  "usd": 0,
+  "threshold_usd": 898667,
+  "first_released": "2026-05-14"
+ },
+ {
+  "series": "India 852691",
+  "year": "2019",
+  "usd": 1741,
+  "threshold_usd": 2178910,
+  "first_released": "2020-05-21"
+ },
+ {
+  "series": "India 852691",
+  "year": "2020",
+  "usd": 0,
+  "threshold_usd": 2178910,
+  "first_released": "2021-05-05"
+ },
+ {
+  "series": "India 852691",
+  "year": "2021",
+  "usd": 3266624,
+  "threshold_usd": 2178910,
+  "first_released": "2022-03-26"
+ },
+ {
+  "series": "India 852691",
+  "year": "2022",
+  "usd": 12519652,
+  "threshold_usd": 2178910,
+  "first_released": "2023-05-09"
+ },
+ {
+  "series": "India 852691",
+  "year": "2023",
+  "usd": 58032,
+  "threshold_usd": 2178910,
+  "first_released": "2024-05-30"
+ },
+ {
+  "series": "India 852691",
+  "year": "2024",
+  "usd": 64838,
+  "threshold_usd": 2178910,
+  "first_released": "2025-04-25"
+ },
+ {
+  "series": "India 852691",
+  "year": "2025",
+  "usd": 1225516,
+  "threshold_usd": 2178910,
+  "first_released": "2026-07-10"
+ },
+ {
+  "series": "Vietnam 851762",
+  "year": "2019",
+  "usd": 39820276,
+  "threshold_usd": 132685902,
+  "first_released": "2020-06-26"
+ },
+ {
+  "series": "Vietnam 851762",
+  "year": "2020",
+  "usd": 49586168,
+  "threshold_usd": 132685902,
+  "first_released": "2021-07-01"
+ },
+ {
+  "series": "Vietnam 851762",
+  "year": "2021",
+  "usd": 109622408,
+  "threshold_usd": 132685902,
+  "first_released": "2022-11-25"
+ },
+ {
+  "series": "Vietnam 851762",
+  "year": "2022",
+  "usd": 33249678,
+  "threshold_usd": 132685902,
+  "first_released": "2023-11-12"
+ },
+ {
+  "series": "Vietnam 851762",
+  "year": "2023",
+  "usd": 545284,
+  "threshold_usd": 132685902,
+  "first_released": "2025-04-15"
+ },
+ {
+  "series": "Hong Kong 853221",
+  "year": "2019",
+  "usd": 651308,
+  "threshold_usd": 1862642,
+  "first_released": "2020-02-16"
+ },
+ {
+  "series": "Hong Kong 853221",
+  "year": "2020",
+  "usd": 877101,
+  "threshold_usd": 1862642,
+  "first_released": "2021-02-15"
+ },
+ {
+  "series": "Hong Kong 853221",
+  "year": "2021",
+  "usd": 1265554,
+  "threshold_usd": 1862642,
+  "first_released": "2022-02-14"
+ },
+ {
+  "series": "Hong Kong 853221",
+  "year": "2022",
+  "usd": 1559369,
+  "threshold_usd": 1862642,
+  "first_released": "2023-03-14"
+ },
+ {
+  "series": "Hong Kong 853221",
+  "year": "2023",
+  "usd": 1167919,
+  "threshold_usd": 1862642,
+  "first_released": "2024-05-22"
+ },
+ {
+  "series": "Hong Kong 853221",
+  "year": "2024",
+  "usd": 352950,
+  "threshold_usd": 1862642,
+  "first_released": "2025-04-14"
+ },
+ {
+  "series": "Hong Kong 853221",
+  "year": "2025",
+  "usd": 464358,
+  "threshold_usd": 1862642,
+  "first_released": "2026-05-05"
+ },
+ {
+  "series": "Hong Kong 852691",
+  "year": "2019",
+  "usd": 251754,
+  "threshold_usd": 3593770,
+  "first_released": "2020-02-16"
+ },
+ {
+  "series": "Hong Kong 852691",
+  "year": "2020",
+  "usd": 4583149,
+  "threshold_usd": 3593770,
+  "first_released": "2021-02-15"
+ },
+ {
+  "series": "Hong Kong 852691",
+  "year": "2021",
+  "usd": 555751,
+  "threshold_usd": 3593770,
+  "first_released": "2022-02-14"
+ },
+ {
+  "series": "Hong Kong 852691",
+  "year": "2022",
+  "usd": 190917,
+  "threshold_usd": 3593770,
+  "first_released": "2023-03-14"
+ },
+ {
+  "series": "Hong Kong 852691",
+  "year": "2023",
+  "usd": 179298,
+  "threshold_usd": 3593770,
+  "first_released": "2024-05-22"
+ },
+ {
+  "series": "Hong Kong 852691",
+  "year": "2024",
+  "usd": 450330,
+  "threshold_usd": 3593770,
+  "first_released": "2025-04-14"
+ },
+ {
+  "series": "Hong Kong 852691",
+  "year": "2025",
+  "usd": 216413,
+  "threshold_usd": 3593770,
+  "first_released": "2026-05-05"
+ },
+ {
+  "series": "India 854232",
+  "year": "2019",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2020-05-21"
+ },
+ {
+  "series": "India 854232",
+  "year": "2020",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2021-05-05"
+ },
+ {
+  "series": "India 854232",
+  "year": "2021",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2022-03-26"
+ },
+ {
+  "series": "India 854232",
+  "year": "2022",
+  "usd": 83714,
+  "threshold_usd": 100000,
+  "first_released": "2023-05-09"
+ },
+ {
+  "series": "India 854232",
+  "year": "2023",
+  "usd": 828987,
+  "threshold_usd": 100000,
+  "first_released": "2024-05-30"
+ },
+ {
+  "series": "India 854232",
+  "year": "2024",
+  "usd": 1185337,
+  "threshold_usd": 100000,
+  "first_released": "2025-04-25"
+ },
+ {
+  "series": "India 854232",
+  "year": "2025",
+  "usd": 46908,
+  "threshold_usd": 100000,
+  "first_released": "2026-07-10"
+ },
+ {
+  "series": "Turkey 854232",
+  "year": "2019",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2020-05-18"
+ },
+ {
+  "series": "Turkey 854232",
+  "year": "2020",
+  "usd": 2037,
+  "threshold_usd": 100000,
+  "first_released": "2021-08-31"
+ },
+ {
+  "series": "Turkey 854232",
+  "year": "2021",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2022-04-10"
+ },
+ {
+  "series": "Turkey 854232",
+  "year": "2022",
+  "usd": 153510,
+  "threshold_usd": 100000,
+  "first_released": "2023-02-07"
+ },
+ {
+  "series": "Turkey 854232",
+  "year": "2023",
+  "usd": 130695,
+  "threshold_usd": 100000,
+  "first_released": "2024-02-06"
+ },
+ {
+  "series": "Turkey 854232",
+  "year": "2024",
+  "usd": 20,
+  "threshold_usd": 100000,
+  "first_released": "2025-02-16"
+ },
+ {
+  "series": "Turkey 854232",
+  "year": "2025",
+  "usd": 38863,
+  "threshold_usd": 100000,
+  "first_released": "2026-05-13"
+ },
+ {
+  "series": "Uzbekistan 851762",
+  "year": "2019",
+  "usd": 14335,
+  "threshold_usd": 100000,
+  "first_released": "2020-06-15"
+ },
+ {
+  "series": "Uzbekistan 851762",
+  "year": "2020",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2021-02-03"
+ },
+ {
+  "series": "Uzbekistan 851762",
+  "year": "2021",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2022-03-30"
+ },
+ {
+  "series": "Uzbekistan 851762",
+  "year": "2022",
+  "usd": 201604,
+  "threshold_usd": 100000,
+  "first_released": "2023-02-01"
+ },
+ {
+  "series": "Uzbekistan 851762",
+  "year": "2023",
+  "usd": 27437,
+  "threshold_usd": 100000,
+  "first_released": "2024-07-25"
+ },
+ {
+  "series": "Uzbekistan 851762",
+  "year": "2024",
+  "usd": 48036,
+  "threshold_usd": 100000,
+  "first_released": "2025-03-06"
+ },
+ {
+  "series": "Israel 854233",
+  "year": "2019",
+  "usd": 17000,
+  "threshold_usd": 100000,
+  "first_released": "2020-05-15"
+ },
+ {
+  "series": "Israel 854233",
+  "year": "2020",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2021-02-05"
+ },
+ {
+  "series": "Israel 854233",
+  "year": "2021",
+  "usd": 1000,
+  "threshold_usd": 100000,
+  "first_released": "2022-05-26"
+ },
+ {
+  "series": "Israel 854233",
+  "year": "2022",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2023-02-23"
+ },
+ {
+  "series": "Israel 854233",
+  "year": "2023",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2024-03-08"
+ },
+ {
+  "series": "Israel 854233",
+  "year": "2024",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2025-02-21"
+ },
+ {
+  "series": "Israel 854233",
+  "year": "2025",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2026-05-14"
+ },
+ {
+  "series": "Vietnam 852691",
+  "year": "2019",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2020-06-26"
+ },
+ {
+  "series": "Vietnam 852691",
+  "year": "2020",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2021-07-01"
+ },
+ {
+  "series": "Vietnam 852691",
+  "year": "2021",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2022-11-25"
+ },
+ {
+  "series": "Vietnam 852691",
+  "year": "2022",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2023-11-12"
+ },
+ {
+  "series": "Vietnam 852691",
+  "year": "2023",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2025-04-15"
+ },
+ {
+  "series": "Turkey 853221",
+  "year": "2019",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2020-05-18"
+ },
+ {
+  "series": "Turkey 853221",
+  "year": "2020",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2021-08-31"
+ },
+ {
+  "series": "Turkey 853221",
+  "year": "2021",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2022-04-10"
+ },
+ {
+  "series": "Turkey 853221",
+  "year": "2022",
+  "usd": 232913,
+  "threshold_usd": 100000,
+  "first_released": "2023-02-07"
+ },
+ {
+  "series": "Turkey 853221",
+  "year": "2023",
+  "usd": 131589,
+  "threshold_usd": 100000,
+  "first_released": "2024-02-06"
+ },
+ {
+  "series": "Turkey 853221",
+  "year": "2024",
+  "usd": 0,
+  "threshold_usd": 100000,
+  "first_released": "2025-02-16"
+ },
+ {
+  "series": "Turkey 853221",
+  "year": "2025",
+  "usd": 8,
+  "threshold_usd": 100000,
+  "first_released": "2026-05-13"
+ }
+]

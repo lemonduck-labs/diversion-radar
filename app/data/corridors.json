@@ -1,0 +1,179 @@
+[
+ {
+  "corridors": [
+   {
+    "name": "Kyrgyz Republic",
+    "iso2": "KG",
+    "aliases": [
+     "Kirghizia",
+     "Kyrgyz Republic",
+     "Kyrgyzstan"
+    ]
+   },
+   {
+    "name": "Armenia",
+    "iso2": "AM",
+    "aliases": [
+     "Armenia"
+    ]
+   },
+   {
+    "name": "Kazakhstan",
+    "iso2": "KZ",
+    "aliases": [
+     "Kazakhstan",
+     "Kazakstan"
+    ]
+   },
+   {
+    "name": "Georgia",
+    "iso2": "GE",
+    "aliases": [
+     "Georgia"
+    ]
+   },
+   {
+    "name": "United Arab Emirates",
+    "iso2": "AE",
+    "aliases": [
+     "Abu Dhabi",
+     "Dubai",
+     "Emirates",
+     "Sharjah",
+     "U.A.E.",
+     "UAE",
+     "United Arab Emirates"
+    ]
+   },
+   {
+    "name": "Turkey",
+    "iso2": "TR",
+    "aliases": [
+     "Turkey",
+     "Turkiye",
+     "Türkiye"
+    ]
+   },
+   {
+    "name": "Uzbekistan",
+    "iso2": "UZ",
+    "aliases": [
+     "Uzbekistan"
+    ]
+   },
+   {
+    "name": "Azerbaijan",
+    "iso2": "AZ",
+    "aliases": [
+     "Azerbaijan"
+    ]
+   },
+   {
+    "name": "Tajikistan",
+    "iso2": "TJ",
+    "aliases": [
+     "Tajikistan"
+    ]
+   },
+   {
+    "name": "China",
+    "iso2": "CN",
+    "aliases": [
+     "China",
+     "China, People's Republic of",
+     "Mainland China",
+     "P.R. China",
+     "P.R.C.",
+     "PRC",
+     "People's Republic of China",
+     "Peoples Republic of China"
+    ]
+   },
+   {
+    "name": "Hong Kong",
+    "iso2": "HK",
+    "aliases": [
+     "China, Hong Kong SAR",
+     "HKSAR",
+     "Hong Kong",
+     "Hong Kong SAR",
+     "Hong Kong SAR, China",
+     "Hong Kong, China",
+     "Hongkong"
+    ]
+   },
+   {
+    "name": "Macao",
+    "iso2": "MO",
+    "aliases": [
+     "China, Macao SAR",
+     "Macao",
+     "Macao SAR",
+     "Macao SAR, China",
+     "Macau",
+     "Macau SAR"
+    ]
+   },
+   {
+    "name": "India",
+    "iso2": "IN",
+    "aliases": [
+     "India"
+    ]
+   },
+   {
+    "name": "Israel",
+    "iso2": "IL",
+    "aliases": [
+     "Israel"
+    ]
+   },
+   {
+    "name": "Malaysia",
+    "iso2": "MY",
+    "aliases": [
+     "Malaysia"
+    ]
+   },
+   {
+    "name": "Serbia",
+    "iso2": "RS",
+    "aliases": [
+     "Republic of Serbia",
+     "Serbia"
+    ]
+   },
+   {
+    "name": "Thailand",
+    "iso2": "TH",
+    "aliases": [
+     "Thailand"
+    ]
+   },
+   {
+    "name": "Vietnam",
+    "iso2": "VN",
+    "aliases": [
+     "Socialist Republic of Viet Nam",
+     "Viet Nam",
+     "Vietnam"
+    ]
+   }
+  ],
+  "stop": [
+   {
+    "iso2": "RU",
+    "aliases": [
+     "Russia",
+     "Russian Federation"
+    ]
+   },
+   {
+    "iso2": "BY",
+    "aliases": [
+     "Belarus"
+    ]
+   }
+  ]
+ }
+]

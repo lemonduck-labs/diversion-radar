@@ -1,0 +1,2 @@
+# Copy to config/deny_list.txt (gitignored) and add one name per line. Never commit names.
+# One name per line: people or firms that must never appear in any output.

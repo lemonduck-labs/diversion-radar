@@ -1,0 +1,95 @@
+[
+ {
+  "id": "mon-8fe20f2f6aab",
+  "source": "govuk-sanctions",
+  "url": "https://www.gov.uk/government/news/new-uk-sanctions-hit-the-money-oil-and-supply-chains-fuelling-russias-war",
+  "published": "2026-10-08",
+  "retrieved_at": "2026-10-22T15:10:00+00:00",
+  "language": "en",
+  "title_original": "New UK sanctions hit the money, oil and supply chains fuelling Russia's war",
+  "excerpt_original": "The movement of these items is global, with individuals and entities cloaking illicit trade with Russia through third countries.",
+  "title": "38 new designations, including suppliers of goods for Russia's military",
+  "summary": "The package includes Russia-based importers of machine tools and electronics, and five crypto exchanges and payment platforms, three of them linked to Kyrgyzstan. The announcement points to trade routed through third countries, the pattern the radar looks for in published flows.",
+  "translated_by": "not translated",
+  "tags": {
+   "corridors": [
+    "KG"
+   ],
+   "topics": [
+    "designations"
+   ]
+  },
+  "grade_proposed": "A2",
+  "excerpt_sha256": "b2f6d5e527e2774e724a1424827ba9615871b712586bdb2f77c2067f53abc8db",
+  "grade_words": "A2: completely reliable source; probably true"
+ },
+ {
+  "id": "mon-76ddb41d45cb",
+  "source": "govuk-sanctions",
+  "url": "https://assets.publishing.service.gov.uk/media/6ac767c6e8ef5609e7c93369/Sanctions_Notice__Russia__8_October_2026.pdf",
+  "published": "2026-10-08",
+  "retrieved_at": "2026-10-22T15:12:00+00:00",
+  "language": "en",
+  "title_original": "Sanctions Notice: 8 October 2026",
+  "excerpt_original": "On 8 October 2026 the Foreign, Commonwealth and Development Office updated the UK Sanctions List on GOV.UK",
+  "title": "Sanctions notice of 8 October 2026: 38 additions under the Russia regulations",
+  "summary": "38 designations added and 2 varied under the Russia regulations. Entities added give addresses in Russia, China, Kyrgyzstan, Canada, Turkey and Thailand; one entry cites electrical goods on the Common High Priority Items List. Names are on the notice, not here.",
+  "translated_by": "not translated",
+  "tags": {
+   "corridors": [
+    "CN",
+    "KG",
+    "TR",
+    "TH"
+   ],
+   "topics": [
+    "designations"
+   ]
+  },
+  "grade_proposed": "A2",
+  "excerpt_sha256": "307660674de7217f32b654030792d0296e91683a828b2558f6fa41679c61dcd1",
+  "grade_words": "A2: completely reliable source; probably true"
+ },
+ {
+  "id": "mon-e5c15cd8495e",
+  "source": "otsi-blog",
+  "url": "https://otsi.blog.gov.uk/2026/08/28/otsi-blog-post-annual-review-2025-2026/",
+  "published": "2026-08-28",
+  "retrieved_at": "2026-10-22T15:05:00+00:00",
+  "language": "en",
+  "title_original": "OTSI Blog post – Annual Review 2025-2026",
+  "excerpt_original": "The Office of Trade Sanctions Implementation (OTSI) has published its Annual Review for 2025-26.",
+  "title": "OTSI's annual review for 2025-26 is out",
+  "summary": "OTSI has published its annual review for 2025-26 [Certain]. The post lists the year's work, including further developing intelligence-led casework, the kind of work the radar's leads are built to feed [Likely].",
+  "translated_by": "not translated",
+  "tags": {
+   "topics": [
+    "enforcement"
+   ]
+  },
+  "grade_proposed": "A2",
+  "excerpt_sha256": "ac5c3a42f2f1398e6321681162dad3beea573c2d33c70e4852f3c1271f646790",
+  "grade_words": "A2: completely reliable source; probably true"
+ },
+ {
+  "id": "mon-a4f17c2db98b",
+  "source": "otsi-blog",
+  "url": "https://otsi.blog.gov.uk/2026/04/09/expanding-otsis-licensing-remit/",
+  "published": "2026-04-09",
+  "retrieved_at": "2026-10-22T15:05:00+00:00",
+  "language": "en",
+  "title_original": "Expanding OTSI’s Licensing Remit",
+  "excerpt_original": "The Office of Trade Sanctions Implementation (OTSI) will soon be expanding its licensing role.",
+  "title": "OTSI takes on licensing of sanctioned goods from 27 April 2026",
+  "summary": "From 27 April 2026 OTSI also licenses sanctioned goods and associated ancillary services for export to sanctioned destinations, alongside the standalone services it already licensed. Goods also under strategic export controls stay with the Export Control Joint Unit, the post says.",
+  "translated_by": "not translated",
+  "tags": {
+   "topics": [
+    "licensing"
+   ]
+  },
+  "grade_proposed": "A2",
+  "excerpt_sha256": "9b2cd8f857e4821aa033a66b886bbe572613318dab1e25d4d49e7458600c6fbc",
+  "grade_words": "A2: completely reliable source; probably true"
+ }
+]

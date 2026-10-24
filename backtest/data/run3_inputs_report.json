@@ -1,0 +1,536 @@
+{
+  "hmrc_sha256": "e6dc508b61956d39c27f994d6e7886fa5644ca20c57fe96091703f7dfcda5842",
+  "comtrade_sha256": "73db5d9be0ded10201625b42740e55eaa8b03f684348cce2604e468448480ed1",
+  "hmrc": {
+    "rows": 7589,
+    "first_month": 201601,
+    "last_month": 202608,
+    "series_with_no_exports": [
+      "743,853221",
+      "743,853224",
+      "743,854233"
+    ]
+  },
+  "availability_rows": {
+    "annual": 290,
+    "monthly": 1750
+  },
+  "availability_not_original": {
+    "annual": 0,
+    "monthly": 0
+  },
+  "duplicate_availability_rows": {
+    "annual": 0,
+    "monthly": 0
+  },
+  "monthly_check_new_corridors": [
+    156,
+    344,
+    376,
+    446,
+    458,
+    688,
+    699,
+    704,
+    764
+  ],
+  "monthly_queried_corridor_months": 770,
+  "calls": {
+    "comtrade": 124,
+    "hmrc": 81
+  },
+  "coverage": {
+    "China": {
+      "hmrc_months": 1150,
+      "hmrc_codes_with_exports": 9,
+      "annual_years_exports_to_russia": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "monthly_check": true,
+      "monthly_first": 201001,
+      "monthly_last": 202412,
+      "monthly_datasets_from_2019": 72,
+      "monthly_rows": 646
+    },
+    "Hong Kong": {
+      "hmrc_months": 1150,
+      "hmrc_codes_with_exports": 9,
+      "annual_years_exports_to_russia": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "monthly_check": true,
+      "monthly_first": 201001,
+      "monthly_last": 202607,
+      "monthly_datasets_from_2019": 91,
+      "monthly_rows": 767
+    },
+    "Macao": {
+      "hmrc_months": 118,
+      "hmrc_codes_with_exports": 6,
+      "annual_years_exports_to_russia": [
+        2023,
+        2024
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "monthly_check": true,
+      "monthly_first": 200001,
+      "monthly_last": 202607,
+      "monthly_datasets_from_2019": 91,
+      "monthly_rows": 1
+    },
+    "India": {
+      "hmrc_months": 1067,
+      "hmrc_codes_with_exports": 9,
+      "annual_years_exports_to_russia": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "monthly_check": true,
+      "monthly_first": 201101,
+      "monthly_last": 202607,
+      "monthly_datasets_from_2019": 91,
+      "monthly_rows": 314
+    },
+    "Israel": {
+      "hmrc_months": 1094,
+      "hmrc_codes_with_exports": 9,
+      "annual_years_exports_to_russia": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "monthly_check": true,
+      "monthly_first": 201001,
+      "monthly_last": 202608,
+      "monthly_datasets_from_2019": 92,
+      "monthly_rows": 182
+    },
+    "Malaysia": {
+      "hmrc_months": 1026,
+      "hmrc_codes_with_exports": 9,
+      "annual_years_exports_to_russia": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "monthly_check": true,
+      "monthly_first": 201001,
+      "monthly_last": 202608,
+      "monthly_datasets_from_2019": 92,
+      "monthly_rows": 129
+    },
+    "Serbia": {
+      "hmrc_months": 577,
+      "hmrc_codes_with_exports": 9,
+      "annual_years_exports_to_russia": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "monthly_check": true,
+      "monthly_first": 201001,
+      "monthly_last": 202608,
+      "monthly_datasets_from_2019": 92,
+      "monthly_rows": 73
+    },
+    "Thailand": {
+      "hmrc_months": 905,
+      "hmrc_codes_with_exports": 9,
+      "annual_years_exports_to_russia": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "monthly_check": true,
+      "monthly_first": 201001,
+      "monthly_last": 202605,
+      "monthly_datasets_from_2019": 89,
+      "monthly_rows": 279
+    },
+    "Vietnam": {
+      "hmrc_months": 502,
+      "hmrc_codes_with_exports": 9,
+      "annual_years_exports_to_russia": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "annual_years_imports_from_uk": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "annual_years_released": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "monthly_check": true,
+      "monthly_first": 201501,
+      "monthly_last": 202312,
+      "monthly_datasets_from_2019": 60,
+      "monthly_rows": 133
+    }
+  },
+  "tables": {
+    "hmrc_monthly_run3.csv": {
+      "extends": "hmrc_monthly_2016_2026.csv",
+      "run2_rows": 3647,
+      "new_rows": 7589,
+      "sha256": "7ef203aae600db7c4a3d0f2a80944a19fb1117581a7ad9a7e10a393f565e676e"
+    },
+    "comtrade_annual_run3.csv": {
+      "extends": "comtrade_annual_phase1.csv",
+      "run2_rows": 575,
+      "new_rows": 799,
+      "sha256": "c56c74fca2ee3382eabe3f806d87af81e8ce51fc4c12039489748a4d6bca212a"
+    },
+    "comtrade_release_dates_run3.csv": {
+      "extends": "comtrade_release_dates.csv",
+      "run2_rows": 67,
+      "new_rows": 70,
+      "sha256": "cc89049583d91cd47a4ab17cc3e74dc48f20714abbd7d22ed60eef9ac0847eec"
+    },
+    "comtrade_monthly_run3.csv": {
+      "extends": "comtrade_monthly_run2.csv",
+      "run2_rows": 1302,
+      "new_rows": 2524,
+      "sha256": "a298df68fed5a78a9dab9908a8d8f579e3390fc90e86a6e76f9f7ca051a96e9d"
+    },
+    "comtrade_monthly_release_dates_run3.csv": {
+      "extends": "comtrade_monthly_release_dates.csv",
+      "run2_rows": 684,
+      "new_rows": 878,
+      "sha256": "c0d4ded56cb57518b5c1dcd9a2941632775223f5039b91f6cfa8f3047d1ab9eb"
+    }
+  },
+  "original_rows": {
+    "hmrc_monthly_run3.csv": {
+      "header_same": true,
+      "original_rows_same": true,
+      "original_rows": 3647,
+      "countries_in_run2_table": [
+        52,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        647
+      ],
+      "new_countries": [
+        98,
+        624,
+        664,
+        680,
+        690,
+        701,
+        720,
+        740,
+        743
+      ]
+    },
+    "comtrade_annual_run3.csv": {
+      "header_same": true,
+      "original_rows_same": true,
+      "original_rows": 575,
+      "countries_in_run2_table": [
+        31,
+        51,
+        268,
+        398,
+        417,
+        762,
+        784,
+        792,
+        860
+      ],
+      "new_countries": [
+        156,
+        344,
+        376,
+        446,
+        458,
+        688,
+        699,
+        704,
+        764
+      ]
+    },
+    "comtrade_release_dates_run3.csv": {
+      "header_same": true,
+      "original_rows_same": true,
+      "original_rows": 67,
+      "countries_in_run2_table": [
+        31,
+        51,
+        268,
+        398,
+        417,
+        762,
+        784,
+        792,
+        860
+      ],
+      "new_countries": [
+        156,
+        344,
+        376,
+        446,
+        458,
+        688,
+        699,
+        704,
+        764
+      ]
+    },
+    "comtrade_monthly_run3.csv": {
+      "header_same": true,
+      "original_rows_same": true,
+      "original_rows": 1302,
+      "countries_in_run2_table": [
+        31,
+        51,
+        268,
+        398,
+        417,
+        792,
+        860
+      ],
+      "new_countries": [
+        156,
+        344,
+        376,
+        446,
+        458,
+        688,
+        699,
+        704,
+        764
+      ]
+    },
+    "comtrade_monthly_release_dates_run3.csv": {
+      "header_same": true,
+      "original_rows_same": true,
+      "original_rows": 684,
+      "countries_in_run2_table": [
+        31,
+        51,
+        268,
+        398,
+        417,
+        792,
+        860
+      ],
+      "new_countries": [
+        156,
+        344,
+        376,
+        446,
+        458,
+        688,
+        699,
+        704,
+        764
+      ]
+    },
+    "hmrc_monthly_run3.csv against hmrc_monthly_phase1.csv, from 2019": {
+      "original_rows_same": true,
+      "original_rows": 2763
+    }
+  },
+  "run2_tables_unchanged": true,
+  "run2_sha256": {
+    "hmrc_monthly_2016_2026": "e141231ca5592460156fbcec415287cbf5dad2d375a6ee33add60ad3b7268ec5",
+    "hmrc_monthly_phase1": "942706af5f37b617b9eda7e25f073f28cb6069d9fcf7b6a4268015512f98770b",
+    "comtrade_annual_phase1": "bfdce40bdf2d8bac53adc80b7d4339063e06d5b9bc5a8e87ce367fa3eaeefe7d",
+    "comtrade_release_dates": "5728cace1b288df63affe0060639bdca525bda42d25387867cd97eb45e6de325",
+    "comtrade_monthly_run2": "fa9f2acf6e55d9b4d5c3565629cc8735c7670775890ae2e64903dc7f7976b4a2",
+    "comtrade_monthly_release_dates": "0b0debae00cf0a98d613f8ddee4e08371d1cbd46fabc07d9ee0722816048b02b",
+    "countries": "0d8c90b204ea586668a33a8950f3a13140f51e585abd0b822c79b9a18bb5f5df"
+  }
+}

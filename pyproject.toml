@@ -1,0 +1,25 @@
+[project]
+name = "diversion-radar"
+version = "0.1.0"
+description = "Leads for trade sanctions intelligence from official trade statistics"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "pandas>=2.2",
+    "duckdb>=1.0",
+    "matplotlib>=3.8",
+    "jsonschema>=4.18",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["radar", "radar.brief", "radar.declarations"]
+
+[tool.setuptools.package-data]
+"radar.brief" = ["spec/*.json", "spec/*.md", "README.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

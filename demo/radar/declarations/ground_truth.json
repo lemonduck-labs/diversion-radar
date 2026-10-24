@@ -1,0 +1,519 @@
+{
+ "notice": "SYNTHETIC RECORDS. Made up by radar/declarations/generate.py from a seed, to show what the radar's restricted layer would do with export declarations. No record is or describes a real declaration, exporter, consignee, forwarder or agent; the ids are made up and look nothing like EORI numbers; there are no names, addresses or postcodes.",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "seed": 20261021,
+ "about": "What the generator put into the synthetic world. Injected patterns are built to match a red-flag indicator; look-alikes are ordinary trade built to resemble one. A near miss is an injection built to sit just outside a detector's thresholds. Units are what a detector fires on: C: a consignee, F: a forwarder, E: an exporter, R: an exporter on a route, P: an exporter, consignee and code, S: an exporter and consignee moving between two codes.",
+ "patterns": {
+  "G1": {"detector":"D1","about":"A new consignee in a corridor buying goods on the Common High Priority Items List"},
+  "G2": {"detector":"D2","about":"One exporter's exports to a corridor jumping on a route the public radar shows"},
+  "G3": {"detector":"D3","about":"One consignee or forwarder shared by unrelated exporters"},
+  "G4": {"detector":"D4","about":"Declared values per kilogram far out of line for the code"},
+  "G5": {"detector":"D5","about":"A code switching to a neighbouring code outside the radar's nine"},
+  "G6": {"detector":"D6","about":"Shipments to Russia stopping after 24 February 2022 and moving to a corridor"},
+  "G7": {"detector":"D7","about":"Small, frequent shipments to one consignee"}
+ },
+ "lookalikes": {
+  "L1": {"detector":"D1","about":"An ordinary new distributor in a corridor taking on a product line"},
+  "L2": {"detector":"D2","about":"Ordinary growth on a route the public radar shows, from a new contract"},
+  "L3": {"detector":"D3","about":"An established distributor or a forwarder specialising in corridor routes"},
+  "L4": {"detector":"D4","about":"A premium product line with a value per kilogram well above the code's norm"},
+  "L5": {"detector":"D5","about":"A product moving to another code after a reclassification"},
+  "L6": {"detector":"D6","about":"An exporter that lost its Russia customers and found new customers in a corridor"},
+  "L7": {"detector":"D7","about":"A spare-parts subscription with small monthly shipments"}
+ },
+ "records": [
+  {
+   "id": "G1-1",
+   "pattern": "G1",
+   "kind": "injected",
+   "detector": "D1",
+   "about": "A consignee in Kazakhstan, first seen in the review window, buying the radar's goods",
+   "units": {"D1":["C:CON-2765"]},
+   "entities": {"exporters":["EXP-0100"],"consignees":["CON-2765"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G1-2",
+   "pattern": "G1",
+   "kind": "injected",
+   "detector": "D1",
+   "about": "A consignee in the Kyrgyz Republic, first seen in the review window, buying the radar's goods",
+   "units": {"D1":["C:CON-2773"]},
+   "entities": {"exporters":["EXP-0048","EXP-0220"],"consignees":["CON-2773"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G1-3",
+   "pattern": "G1",
+   "kind": "injected",
+   "detector": "D1",
+   "about": "A consignee in Armenia, first seen in the review window, buying the radar's goods",
+   "units": {"D1":["C:CON-2777"]},
+   "entities": {"exporters":["EXP-0099"],"consignees":["CON-2777"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G1-4",
+   "pattern": "G1",
+   "kind": "injected",
+   "detector": "D1",
+   "about": "A consignee in the United Arab Emirates, first seen in the review window, buying the radar's goods",
+   "units": {"D1":["C:CON-2767"]},
+   "entities": {"exporters":["EXP-0098","EXP-0257"],"consignees":["CON-2767"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G1-5",
+   "pattern": "G1",
+   "kind": "injected",
+   "detector": "D1",
+   "about": "A consignee in Uzbekistan, first seen in the review window, buying the radar's goods",
+   "units": {"D1":["C:CON-2766"]},
+   "entities": {"exporters":["EXP-0138"],"consignees":["CON-2766"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G1-6",
+   "pattern": "G1",
+   "kind": "injected",
+   "detector": "D1",
+   "about": "A consignee in Georgia, first seen in the review window, buying the radar's goods",
+   "units": {"D1":["C:CON-2782"]},
+   "entities": {"exporters":["EXP-0079"],"consignees":["CON-2782"],"forwarders":[]},
+   "near_miss": "built to stay under D1's floor of 50,000 pounds in the window"
+  },
+  {
+   "id": "G2-1",
+   "pattern": "G2",
+   "kind": "injected",
+   "detector": "D2",
+   "about": "One exporter's exports of 851762 to Kazakhstan jumping in the review window",
+   "units": {"D2":["R:EXP-0234|KZ|851762"],"D1":["C:CON-2817"]},
+   "entities": {"exporters":["EXP-0234"],"consignees":["CON-1916","CON-2020","CON-2817"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G2-2",
+   "pattern": "G2",
+   "kind": "injected",
+   "detector": "D2",
+   "about": "One exporter's exports of 854232 to the United Arab Emirates jumping in the review window",
+   "units": {"D2":["R:EXP-0268|AE|854232"]},
+   "entities": {"exporters":["EXP-0268"],"consignees":["CON-1961","CON-2016"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G2-3",
+   "pattern": "G2",
+   "kind": "injected",
+   "detector": "D2",
+   "about": "One exporter's exports of 853221 to Turkey jumping in the review window",
+   "units": {"D2":["R:EXP-0080|TR|853221"]},
+   "entities": {"exporters":["EXP-0080"],"consignees":["CON-2041","CON-2053"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G3-1",
+   "pattern": "G3",
+   "kind": "injected",
+   "detector": "D3",
+   "about": "A consignee in the United Arab Emirates receiving the radar's goods from 6 unrelated exporters",
+   "units": {"D3":["C:CON-2458"]},
+   "entities": {"exporters":["EXP-0024","EXP-0043","EXP-0081","EXP-0171","EXP-0210","EXP-0249"],"consignees":["CON-2458"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G3-2",
+   "pattern": "G3",
+   "kind": "injected",
+   "detector": "D3",
+   "about": "A consignee in Turkey receiving the radar's goods from 5 unrelated exporters",
+   "units": {"D3":["C:CON-2500"]},
+   "entities": {"exporters":["EXP-0049","EXP-0082","EXP-0120","EXP-0187","EXP-0209"],"consignees":["CON-2500"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G3-3",
+   "pattern": "G3",
+   "kind": "injected",
+   "detector": "D3",
+   "about": "A small forwarder that seven unrelated exporters use for the radar's goods to corridor countries",
+   "units": {"D3":["F:FWD-0007"]},
+   "entities": {"exporters":["EXP-0023","EXP-0078","EXP-0091","EXP-0125","EXP-0160","EXP-0203","EXP-0221"],"consignees":["CON-2422","CON-2442","CON-2472","CON-2475","CON-2493","CON-2525","CON-2572"],"forwarders":["FWD-0007"]},
+   "near_miss": null
+  },
+  {
+   "id": "G4-1",
+   "pattern": "G4",
+   "kind": "injected",
+   "detector": "D4",
+   "about": "Shipments of 85423200 to the United Arab Emirates at about 10 times the code's value per kilogram",
+   "units": {"D4":["P:EXP-0193|CON-1957|85423200"]},
+   "entities": {"exporters":["EXP-0193"],"consignees":["CON-1957"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G4-2",
+   "pattern": "G4",
+   "kind": "injected",
+   "detector": "D4",
+   "about": "Shipments of 85176200 to Kazakhstan at about 10% of the code's value per kilogram",
+   "units": {"D4":["P:EXP-0235|CON-2219|85176200"]},
+   "entities": {"exporters":["EXP-0235"],"consignees":["CON-2219"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G4-3",
+   "pattern": "G4",
+   "kind": "injected",
+   "detector": "D4",
+   "about": "Shipments of 85322100 to Turkey at about 9 times the code's value per kilogram",
+   "units": {"D4":["P:EXP-0068|CON-1645|85322100"]},
+   "entities": {"exporters":["EXP-0068"],"consignees":["CON-1645"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G4-4",
+   "pattern": "G4",
+   "kind": "injected",
+   "detector": "D4",
+   "about": "Shipments of 85423900 to Armenia at about 12% of the code's value per kilogram",
+   "units": {"D4":["P:EXP-0020|CON-2140|85423900"]},
+   "entities": {"exporters":["EXP-0020"],"consignees":["CON-2140"],"forwarders":[]},
+   "near_miss": "built with only two shipments out of line, under D4's minimum of three"
+  },
+  {
+   "id": "G5-1",
+   "pattern": "G5",
+   "kind": "injected",
+   "detector": "D5",
+   "about": "Shipments to the United Arab Emirates moving from 85423100 to 85429000 at the same value per kilogram",
+   "units": {"D5":["S:EXP-0067|CON-1602|85423100|85429000"]},
+   "entities": {"exporters":["EXP-0067"],"consignees":["CON-1602"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G5-2",
+   "pattern": "G5",
+   "kind": "injected",
+   "detector": "D5",
+   "about": "Shipments to Kazakhstan moving from 85176200 to 85177900 at the same value per kilogram",
+   "units": {"D5":["S:EXP-0168|CON-1734|85176200|85177900"]},
+   "entities": {"exporters":["EXP-0168"],"consignees":["CON-1734"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G5-3",
+   "pattern": "G5",
+   "kind": "injected",
+   "detector": "D5",
+   "about": "Shipments to Turkey moving from 85322400 to 85322200 at the same value per kilogram",
+   "units": {"D5":["S:EXP-0146|CON-1482|85322400|85322200"]},
+   "entities": {"exporters":["EXP-0146"],"consignees":["CON-1482"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G6-1",
+   "pattern": "G6",
+   "kind": "injected",
+   "detector": "D6",
+   "about": "Shipments to Russia stopping by 24 February 2022 and moving to a consignee in Kazakhstan",
+   "units": {"D6":["E:EXP-0094"]},
+   "entities": {"exporters":["EXP-0094"],"consignees":["CON-0155","CON-0174","CON-1505"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G6-2",
+   "pattern": "G6",
+   "kind": "injected",
+   "detector": "D6",
+   "about": "Shipments to Russia stopping by 24 February 2022 and moving to a consignee in the Kyrgyz Republic",
+   "units": {"D6":["E:EXP-0101"],"D7":["C:CON-1557"]},
+   "entities": {"exporters":["EXP-0101"],"consignees":["CON-0132","CON-0224","CON-1557"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G6-3",
+   "pattern": "G6",
+   "kind": "injected",
+   "detector": "D6",
+   "about": "Shipments to Russia stopping by 24 February 2022 and moving to a consignee in Armenia",
+   "units": {"D6":["E:EXP-0097"]},
+   "entities": {"exporters":["EXP-0097"],"consignees":["CON-0133","CON-0187","CON-1571"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G6-4",
+   "pattern": "G6",
+   "kind": "injected",
+   "detector": "D6",
+   "about": "Shipments to Russia stopping by 24 February 2022 and moving to a consignee in Turkey",
+   "units": {"D6":["E:EXP-0093"]},
+   "entities": {"exporters":["EXP-0093"],"consignees":["CON-0123","CON-0207","CON-0736"],"forwarders":[]},
+   "near_miss": "built so the Russia volume moves to a consignee first seen before 2022, which D6 does not count"
+  },
+  {
+   "id": "G7-1",
+   "pattern": "G7",
+   "kind": "injected",
+   "detector": "D7",
+   "about": "Small, frequent shipments of the radar's goods to a consignee in the Kyrgyz Republic",
+   "units": {"D7":["C:CON-2305"]},
+   "entities": {"exporters":["EXP-0042"],"consignees":["CON-2305"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G7-2",
+   "pattern": "G7",
+   "kind": "injected",
+   "detector": "D7",
+   "about": "Small, frequent shipments of the radar's goods to a consignee in Armenia",
+   "units": {"D7":["C:CON-2227"]},
+   "entities": {"exporters":["EXP-0037","EXP-0202"],"consignees":["CON-2227"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "G7-3",
+   "pattern": "G7",
+   "kind": "injected",
+   "detector": "D7",
+   "about": "Small, frequent shipments of the radar's goods to a consignee in Kazakhstan",
+   "units": {"D7":["C:CON-2448"]},
+   "entities": {"exporters":["EXP-0155"],"consignees":["CON-2448"],"forwarders":[]},
+   "near_miss": "built with the shipments spread over 21 months, so fewer than 20 fall in the window"
+  },
+  {
+   "id": "L1-1",
+   "pattern": "L1",
+   "kind": "look-alike",
+   "detector": "D1",
+   "about": "An ordinary new distributor in Turkey",
+   "units": {"D1":["C:CON-2787"]},
+   "entities": {"exporters":["EXP-0036"],"consignees":["CON-2787"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L1-2",
+   "pattern": "L1",
+   "kind": "look-alike",
+   "detector": "D1",
+   "about": "An ordinary new distributor in the United Arab Emirates",
+   "units": {"D1":["C:CON-2798"]},
+   "entities": {"exporters":["EXP-0245"],"consignees":["CON-2798"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L1-3",
+   "pattern": "L1",
+   "kind": "look-alike",
+   "detector": "D1",
+   "about": "An ordinary new distributor in Kazakhstan",
+   "units": {"D1":["C:CON-2795"]},
+   "entities": {"exporters":["EXP-0145"],"consignees":["CON-2795"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L1-4",
+   "pattern": "L1",
+   "kind": "look-alike",
+   "detector": "D1",
+   "about": "An ordinary new distributor in Azerbaijan",
+   "units": {"D1":["C:CON-2790"]},
+   "entities": {"exporters":["EXP-0212"],"consignees":["CON-2790"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L2-1",
+   "pattern": "L2",
+   "kind": "look-alike",
+   "detector": "D2",
+   "about": "Ordinary growth of 854239 to the United Arab Emirates from a new contract",
+   "units": {"D2":["R:EXP-0003|AE|854239"]},
+   "entities": {"exporters":["EXP-0003"],"consignees":["CON-1546"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L2-2",
+   "pattern": "L2",
+   "kind": "look-alike",
+   "detector": "D2",
+   "about": "Ordinary growth of 854232 to Turkey from a new contract",
+   "units": {"D2":["R:EXP-0122|TR|854232"]},
+   "entities": {"exporters":["EXP-0122"],"consignees":["CON-1555"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L2-3",
+   "pattern": "L2",
+   "kind": "look-alike",
+   "detector": "D2",
+   "about": "Ordinary growth of 851762 to Uzbekistan from a new contract",
+   "units": {"D2":["R:EXP-0186|UZ|851762"]},
+   "entities": {"exporters":["EXP-0186"],"consignees":["CON-1560"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L3-1",
+   "pattern": "L3",
+   "kind": "look-alike",
+   "detector": "D3",
+   "about": "An established distributor in the United Arab Emirates with several unrelated suppliers since 2021",
+   "units": {"D3":["C:CON-0537"]},
+   "entities": {"exporters":["EXP-0011","EXP-0064","EXP-0132","EXP-0213"],"consignees":["CON-0537"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L3-2",
+   "pattern": "L3",
+   "kind": "look-alike",
+   "detector": "D3",
+   "about": "An established distributor in Turkey with several unrelated suppliers since 2021",
+   "units": {"D3":["C:CON-0166"]},
+   "entities": {"exporters":["EXP-0002","EXP-0131","EXP-0165","EXP-0229","EXP-0232"],"consignees":["CON-0166"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L3-3",
+   "pattern": "L3",
+   "kind": "look-alike",
+   "detector": "D3",
+   "about": "An established distributor in Kazakhstan with several unrelated suppliers since 2021",
+   "units": {"D3":["C:CON-0475"]},
+   "entities": {"exporters":["EXP-0012","EXP-0053","EXP-0086","EXP-0144","EXP-0208"],"consignees":["CON-0475"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L3-4",
+   "pattern": "L3",
+   "kind": "look-alike",
+   "detector": "D3",
+   "about": "A forwarder specialising in corridor routes",
+   "units": {"D3":["F:FWD-0033"]},
+   "entities": {"exporters":[],"consignees":[],"forwarders":["FWD-0033"]},
+   "near_miss": null
+  },
+  {
+   "id": "L3-5",
+   "pattern": "L3",
+   "kind": "look-alike",
+   "detector": "D3",
+   "about": "A forwarder specialising in corridor routes",
+   "units": {"D3":["F:FWD-0038"]},
+   "entities": {"exporters":[],"consignees":[],"forwarders":["FWD-0038"]},
+   "near_miss": null
+  },
+  {
+   "id": "L4-1",
+   "pattern": "L4",
+   "kind": "look-alike",
+   "detector": "D4",
+   "about": "A premium product line of 85423100 to Turkey",
+   "units": {"D4":["P:EXP-0133|CON-0763|85423100"]},
+   "entities": {"exporters":["EXP-0133"],"consignees":["CON-0763"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L4-2",
+   "pattern": "L4",
+   "kind": "look-alike",
+   "detector": "D4",
+   "about": "A premium product line of 85423300 to the United Arab Emirates",
+   "units": {"D4":["P:EXP-0070|CON-0808|85423300"]},
+   "entities": {"exporters":["EXP-0070"],"consignees":["CON-0808"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L4-3",
+   "pattern": "L4",
+   "kind": "look-alike",
+   "detector": "D4",
+   "about": "A premium product line of 85269100 to Georgia",
+   "units": {"D4":["P:EXP-0149|CON-0782|85269100"]},
+   "entities": {"exporters":["EXP-0149"],"consignees":["CON-0782"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L5-1",
+   "pattern": "L5",
+   "kind": "look-alike",
+   "detector": "D5",
+   "about": "A product to Georgia moving from 85423900 to 85429000 after a reclassification",
+   "units": {"D5":["S:EXP-0063|CON-0974|85423900|85429000"]},
+   "entities": {"exporters":["EXP-0063"],"consignees":["CON-0974"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L5-2",
+   "pattern": "L5",
+   "kind": "look-alike",
+   "detector": "D5",
+   "about": "A product to Turkey moving from 85423100 to 85429000 after a reclassification, at a much lower value per kilogram",
+   "units": {"D5":["S:EXP-0116|CON-0941|85423100|85429000"]},
+   "entities": {"exporters":["EXP-0116"],"consignees":["CON-0941"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L6-1",
+   "pattern": "L6",
+   "kind": "look-alike",
+   "detector": "D6",
+   "about": "An exporter that lost its Russia customer and found an ordinary new customer in Turkey",
+   "units": {"D6":["E:EXP-0115"]},
+   "entities": {"exporters":["EXP-0115"],"consignees":["CON-0156","CON-1541"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L6-2",
+   "pattern": "L6",
+   "kind": "look-alike",
+   "detector": "D6",
+   "about": "An exporter that lost its Russia customer and found an ordinary new customer in the United Arab Emirates",
+   "units": {"D6":["E:EXP-0114"]},
+   "entities": {"exporters":["EXP-0114"],"consignees":["CON-0157","CON-1542"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L6-3",
+   "pattern": "L6",
+   "kind": "look-alike",
+   "detector": "D6",
+   "about": "An exporter that lost its Russia customer and found an ordinary new customer in Georgia",
+   "units": {"D6":["E:EXP-0069"]},
+   "entities": {"exporters":["EXP-0069"],"consignees":["CON-0197","CON-1547"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L7-1",
+   "pattern": "L7",
+   "kind": "look-alike",
+   "detector": "D7",
+   "about": "A spare-parts subscription to a consignee in Turkey",
+   "units": {"D7":["C:CON-1365"]},
+   "entities": {"exporters":["EXP-0021"],"consignees":["CON-1365"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L7-2",
+   "pattern": "L7",
+   "kind": "look-alike",
+   "detector": "D7",
+   "about": "A spare-parts subscription to a consignee in the United Arab Emirates",
+   "units": {"D7":["C:CON-1366"]},
+   "entities": {"exporters":["EXP-0051"],"consignees":["CON-1366"],"forwarders":[]},
+   "near_miss": null
+  },
+  {
+   "id": "L7-3",
+   "pattern": "L7",
+   "kind": "look-alike",
+   "detector": "D7",
+   "about": "A spare-parts subscription to a consignee in Georgia",
+   "units": {"D7":["C:CON-1352"]},
+   "entities": {"exporters":["EXP-0264"],"consignees":["CON-1352"],"forwarders":[]},
+   "near_miss": null
+  }
+ ],
+ "world": {
+  "forwarder_tiers": {"FWD-0001":"mid","FWD-0002":"small","FWD-0003":"mid","FWD-0004":"mid","FWD-0005":"mid","FWD-0006":"mid","FWD-0007":"small","FWD-0008":"small","FWD-0009":"mid","FWD-0010":"small","FWD-0011":"small","FWD-0012":"mid","FWD-0013":"mid","FWD-0014":"hub","FWD-0015":"small","FWD-0016":"mid","FWD-0017":"small","FWD-0018":"small","FWD-0019":"small","FWD-0020":"mid","FWD-0021":"mid","FWD-0022":"mid","FWD-0023":"small","FWD-0024":"mid","FWD-0025":"mid","FWD-0026":"mid","FWD-0027":"small","FWD-0028":"hub","FWD-0029":"small","FWD-0030":"small","FWD-0031":"mid","FWD-0032":"mid","FWD-0033":"specialist","FWD-0034":"small","FWD-0035":"small","FWD-0036":"small","FWD-0037":"small","FWD-0038":"specialist","FWD-0039":"hub","FWD-0040":"mid"}
+ }
+}

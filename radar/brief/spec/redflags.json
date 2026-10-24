@@ -1,0 +1,697 @@
+{
+ "schema": "radar-redflags/1",
+ "title": "Questions to check on a radar lead",
+ "note": "Each item is a question for an analyst to check, never an accusation. Confidence: [Certain] means the cited guidance lists the indicator or step the question asks about; the wording of the question is ours. The tags are our own grouping [Likely]. Ids are stable: store checklist ticks against them. Generated from radar/brief/redflags.py; do not edit by hand.",
+ "licence": "Contains public sector information licensed under the Open Government Licence v3.0.",
+ "house_line": "A rise in exports is a lead, not evidence of a breach.",
+ "tags": {
+  "chpl": "any goods on the Common High Priority Items List",
+  "corridor": "the destination is a known transshipment corridor",
+  "new_customer": "a new customer",
+  "volume_rise": "orders or exports have risen",
+  "end_use": "what the goods are for",
+  "end_user": "who ends up with the goods",
+  "payment": "how the goods are paid for",
+  "routing": "how and where the goods travel",
+  "customer_profile": "who the customer is",
+  "paperwork": "contracts and trade documents"
+ },
+ "tags_confidence": "Likely",
+ "uk_enhanced_due_diligence_countries": {
+  "names": [
+   "Armenia",
+   "China (including Hong Kong and Macau)",
+   "India",
+   "Israel",
+   "Kazakhstan",
+   "Kyrgyzstan",
+   "Malaysia",
+   "Serbia",
+   "Thailand",
+   "Türkiye",
+   "UAE",
+   "Uzbekistan",
+   "Vietnam"
+  ],
+  "as_of": "12 Mar 2026",
+  "note": "Named in the UK guidance for businesses as 'including but not limited to'; not exhaustive.",
+  "citation": {
+   "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+   "title": "Countering Russian sanctions evasion - guidance for businesses",
+   "date": "7 Jan 2025, updated 12 Mar 2026"
+  },
+  "confidence": "Certain"
+ },
+ "items": [
+  {
+   "id": "chpl-end-destination",
+   "question": "Do the goods fall within the Common High Priority Items List, and what checks show that their end destination is not Russia?",
+   "why": "The FCDO's list page says businesses should undertake due diligence to ensure that the end destination of these products is not Russia.",
+   "applies_to": "Exports of goods on the Common High Priority Items List",
+   "tags": [
+    "chpl"
+   ],
+   "citation": {
+    "publisher": "Foreign, Commonwealth & Development Office",
+    "title": "Russia Sanctions – Common High Priority Items List",
+    "date": "30 May 2023, updated 8 Aug 2024"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "transit-edd-country",
+   "question": "Is the destination, or any country the goods pass through, one that the UK guidance names for enhanced due diligence?",
+   "why": "The UK guidance for businesses lists transit via a country for which additional due diligence is suggested, and names countries for enhanced due diligence including Armenia, Kazakhstan, Kyrgyzstan, Türkiye, the UAE and Uzbekistan; it says the list is not exhaustive.",
+   "applies_to": "Shipments to or through corridor countries",
+   "tags": [
+    "corridor",
+    "routing"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "new-customer-dual-use",
+   "question": "Is the customer new, and was it incorporated outside the UK after 24 February 2022 with a line of business in military or dual-use goods?",
+   "why": "The UK guidance for businesses lists a new customer whose line of business includes trade in military or dual-use goods and that was incorporated overseas after 24 February 2022.",
+   "applies_to": "New customers",
+   "tags": [
+    "new_customer",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "new-chpl-trader",
+   "question": "Is the customer new to importing or exporting goods on the Common High Priority Items List?",
+   "why": "The G7 industry guidance lists new importers or exporters of Common High Priority List items as a red flag.",
+   "applies_to": "New customers ordering CHPL goods",
+   "tags": [
+    "new_customer",
+    "chpl"
+   ],
+   "citation": {
+    "publisher": "G7 Sub-Working Group on Export Control Enforcement",
+    "title": "Preventing Russian Export Control and Sanctions Evasion: Updated Guidance for Industry",
+    "date": "24 Sep 2024"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "order-volume-rise",
+   "question": "Have an existing customer's orders risen in volume or value beyond its usual pattern, and is there a business reason for the rise?",
+   "why": "The UK guidance for businesses lists anomalous increases in the volume or value of orders placed by existing customers.",
+   "applies_to": "Existing customers",
+   "tags": [
+    "volume_rise",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "chpl-orders-since-2022",
+   "question": "Did the customer start receiving these goods only after 24 February 2022, or receive far more of them since then?",
+   "why": "The 2023 US supplemental alert lists an existing customer that did not receive exports under the nine high priority HS codes before 24 February 2022 but receives them now, and one whose exports under those codes rose significantly after that date.",
+   "applies_to": "Customers for CHPL goods",
+   "tags": [
+    "volume_rise",
+    "chpl",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+    "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+    "date": "19 May 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "small-frequent-shipments",
+   "question": "Are the goods going out in small, frequent shipments to one central location, such as a warehouse in a third country, where they are combined into one shipment?",
+   "why": "The G7 industry guidance lists, among concerning business practices, items that may arrive in small, frequent shipments to a central location, such as a warehouse in a third country, where they are combined into one shipment. It describes the practice as often used for luxury goods; applying it to these goods is our reading.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "routing",
+    "volume_rise"
+   ],
+   "citation": {
+    "publisher": "G7 Sub-Working Group on Export Control Enforcement",
+    "title": "Preventing Russian Export Control and Sanctions Evasion: Updated Guidance for Industry",
+    "date": "24 Sep 2024"
+   },
+   "also_cited": [],
+   "confidence": "Likely"
+  },
+  {
+   "id": "line-of-business",
+   "question": "Do the goods and their capabilities fit the buyer's and the end user's line of business?",
+   "why": "The UK guidance for businesses lists product capabilities that do not fit the buyer's or end user's line of business.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_use",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "end-use-details",
+   "question": "Has the customer given clear details of the end user, the intended end use and its own ownership when asked?",
+   "why": "The 2023 US supplemental alert lists a customer that lacks or refuses to provide details to banks, shippers or third parties, including about end users, intended end use or company ownership.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_use",
+    "end_user",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+    "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+    "date": "19 May 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "end-user-certificate",
+   "question": "Who is the end user, and can an end-user certificate be provided and checked?",
+   "why": "The European Commission's guidance for EU operators asks who the end user is and whether the end-user certificate can be provided.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_user",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "European Commission",
+    "title": "Guidance for EU operators: Implementing enhanced due diligence to shield against Russia sanctions circumvention",
+    "date": "7 Sep 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "civilian-claim-military-links",
+   "question": "Where a civilian end use or end user is stated, does anything link the customer or other parties to military users?",
+   "why": "The UK guidance for businesses lists a civilian end use or end user being claimed while the customer or other parties have military connections.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_use",
+    "end_user"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "destination-clear",
+   "question": "Is the customer open about where the goods will end up and what they are for?",
+   "why": "The UK guidance for businesses lists a customer that tries by any means to obscure the product's ultimate destination and purpose.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_use",
+    "end_user",
+    "routing"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "consignee-uses-goods",
+   "question": "Is the consignee a business that would use the goods, rather than a bank, a mail centre or a logistics firm?",
+   "why": "The 2023 US supplemental alert lists ultimate consignees that do not typically engage in business consistent with using the goods, such as financial institutions, mail centres or logistics companies.",
+   "applies_to": "Any order",
+   "tags": [
+    "end_user",
+    "routing"
+   ],
+   "citation": {
+    "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+    "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+    "date": "19 May 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "forwarder-as-destination",
+   "question": "Is a freight forwarder named as the final destination of the goods?",
+   "why": "The UK guidance for businesses lists a freight-forwarding firm being listed as the product's final destination.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "end_user",
+    "routing",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "third-country-payer",
+   "question": "Does payment come from the customer itself, or from a party in a third country that is not otherwise part of the deal?",
+   "why": "The UK guidance for businesses lists payments from entities located in third countries that are not otherwise involved in the transaction. The 2022 US alert lists the same where the third country is known to be a potential transshipment point for exports to Russia and Belarus.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment",
+    "corridor"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [
+    {
+     "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+     "title": "FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Increased Vigilance for Potential Russian and Belarusian Export Control Evasion Attempts (FIN-2022-Alert003)",
+     "date": "28 Jun 2022"
+    }
+   ],
+   "confidence": "Certain"
+  },
+  {
+   "id": "payment-route",
+   "question": "Has the customer asked for a non-standard payment route, such as outside SWIFT, through smaller overseas banks or in cryptocurrency, or offered cash for an expensive item?",
+   "why": "The UK guidance for businesses lists requests for non-standard payment routes, and a customer willing to pay cash for an expensive item when the terms of sale would normally require financing.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "price-and-invoices",
+   "question": "Is the customer paying well above the market price, or are invoices split so that each stays under a control limit?",
+   "why": "The UK guidance for businesses lists paying significantly above market rate, and splitting invoices to stay under export control limits.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "split-payments-suppliers",
+   "question": "Is the same end user's foreign bank account making smaller payments to several similar suppliers of dual-use goods?",
+   "why": "The 2023 US supplemental alert lists smaller-volume payments from the same end user's foreign bank account to multiple, similar suppliers of dual-use products.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment"
+   ],
+   "citation": {
+    "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+    "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+    "date": "19 May 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "lc-consignee",
+   "question": "Under a letter of credit, are the goods consigned to the actual end user rather than to the issuing bank?",
+   "why": "The NCA red alert lists purchases under a letter of credit that are consigned to the issuing bank, not to the actual end user.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment",
+    "end_user",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "National Crime Agency (National Economic Crime Centre), with HM Treasury's Office of Financial Sanctions Implementation and the Foreign, Commonwealth & Development Office",
+    "title": "Red Alert: Exporting High Risk Goods",
+    "date": "Dec 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "payment-routing-change",
+   "question": "Has a payment that was scheduled to come from a country of concern been rerouted at the last minute?",
+   "why": "The NCA red alert lists transactions involving a last-minute change in payment routing that was previously scheduled from a country of concern.",
+   "applies_to": "Payments",
+   "tags": [
+    "payment"
+   ],
+   "citation": {
+    "publisher": "National Crime Agency (National Economic Crime Centre), with HM Treasury's Office of Financial Sanctions Implementation and the Foreign, Commonwealth & Development Office",
+    "title": "Red Alert: Exporting High Risk Goods",
+    "date": "Dec 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "route-complex",
+   "question": "Is the shipping route clear and usual for these goods and this destination, or complex and through several third countries?",
+   "why": "The UK guidance for businesses lists an unclear transportation route, or a complex route involving multiple third countries.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "routing",
+    "corridor"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "transport-changed",
+   "question": "Has the way these goods are shipped to this customer changed since sanctions were imposed?",
+   "why": "The European Commission's guidance for EU operators asks whether the method of transport or shipping has changed since the imposition of sanctions.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "routing"
+   ],
+   "citation": {
+    "publisher": "European Commission",
+    "title": "Guidance for EU operators: Implementing enhanced due diligence to shield against Russia sanctions circumvention",
+    "date": "7 Sep 2023"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "delivery-vague",
+   "question": "Are delivery dates or destinations vague, or are several third-country freight forwarders used on one transaction?",
+   "why": "The UK guidance for businesses lists vague delivery dates or deliveries planned for remote destinations, and the use of multiple third-country freight forwarders or shippers on a single transaction.",
+   "applies_to": "Shipping and delivery",
+   "tags": [
+    "routing"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "documents-end-user",
+   "question": "Do the supporting documents name the actual end user, and are they complete and consistent?",
+   "why": "The UK guidance for businesses lists supporting documents that do not list the actual end user or are otherwise vague, and false, inaccurate or missing documentation.",
+   "applies_to": "Trade documents",
+   "tags": [
+    "paperwork",
+    "end_user"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "hs-code-check",
+   "question": "Are the goods recorded under the correct HS code on every document?",
+   "why": "The UK guidance for businesses lists goods recorded under a false Harmonised System code that is not subject to sanctions or export controls.",
+   "applies_to": "Trade documents",
+   "tags": [
+    "paperwork",
+    "chpl"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "country-mismatch",
+   "question": "Is the end user in the same country as the party that placed the order, and do the customer's phone numbers carry the destination's country code?",
+   "why": "The UK guidance for businesses lists a stated end user's country that differs from the country that placed the order, and telephone country codes that do not match the destination country.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "web-presence",
+   "question": "Does the customer have a business history and a web presence that fit the order?",
+   "why": "The UK guidance for businesses lists a customer with little to no business background, and transactions involving entities with little to no web presence; the NCA red alert lists the second too.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "new_customer"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [
+    {
+     "publisher": "National Crime Agency (National Economic Crime Centre), with HM Treasury's Office of Financial Sanctions Implementation and the Foreign, Commonwealth & Development Office",
+     "title": "Red Alert: Exporting High Risk Goods",
+     "date": "Dec 2023"
+    }
+   ],
+   "confidence": "Certain"
+  },
+  {
+   "id": "shared-address",
+   "question": "Does the customer share its address with many other businesses dealing in similar goods, or trade from a residential address?",
+   "why": "The UK guidance for businesses lists an address shared with multiple businesses or holding companies dealing in comparable goods, or a residential address.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "ownership-change",
+   "question": "Did the customer's ultimate beneficial ownership change shortly before or after sanctions were imposed?",
+   "why": "The UK guidance for businesses lists a change of ultimate beneficial ownership shortly before or after sanctions were imposed.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "russia-ties",
+   "question": "Does the customer have business ties to a sanctioned person or entity, or a branch office in Russia?",
+   "why": "The UK guidance for businesses lists a customer that has business ties to a sanctioned entity or person, or a branch office in Russia.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "end_user"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "sanctions-list-check",
+   "question": "Have the customer and its known directors been checked against the UK Sanctions List?",
+   "why": "The UK guidance for businesses says an initial step with a new customer should be to check whether the entity or any known directors appear on the UK Sanctions List.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "new_customer"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "listed-party-resemblance",
+   "question": "Does the customer's name or address resemble that of a party on a sanctions list?",
+   "why": "The UK guidance for businesses lists a customer or address similar to one of the persons or entities on the UK Sanctions List. The 2023 US supplemental alert lists the same for the parties on a proscribed parties list.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "end_user"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [
+    {
+     "publisher": "US Treasury Financial Crimes Enforcement Network (FinCEN) and US Department of Commerce Bureau of Industry and Security (BIS)",
+     "title": "Supplemental Alert: FinCEN and the U.S. Department of Commerce's Bureau of Industry and Security Urge Continued Vigilance for Potential Russian Export Control Evasion Attempts (FIN-2023-Alert004)",
+     "date": "19 May 2023"
+    }
+   ],
+   "confidence": "Certain"
+  },
+  {
+   "id": "representative-only",
+   "question": "Can you deal with the customer's managers directly, or does everything go through one representative?",
+   "why": "The UK guidance for businesses lists all communications being routed via a representative who seems to possess general power of attorney.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "indirect-deal",
+   "question": "Does the deal run through intermediaries in a way that makes little economic sense?",
+   "why": "The UK guidance for businesses lists indirect transactions, for example using intermediaries, with no clear economic rationale. The European Commission's questions and answers on due diligence for CHP items list indirect transactions, such as those using intermediaries, that make no or little economic sense.",
+   "applies_to": "Any order",
+   "tags": [
+    "routing",
+    "payment",
+    "customer_profile"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [
+    {
+     "publisher": "European Commission",
+     "title": "Enhanced due diligence for operators manufacturing and/or trading with CHP items: frequently asked questions (Article 12gb of Council Regulation 833/2014)",
+     "date": "as of 23 Jul 2025"
+    }
+   ],
+   "confidence": "Certain"
+  },
+  {
+   "id": "no-russia-clause",
+   "question": "Does the contract bar re-export of the goods to Russia?",
+   "why": "The UK guidance for businesses says businesses may consider adding a no export to Russia clause to their contracts.",
+   "applies_to": "Contracts",
+   "tags": [
+    "paperwork",
+    "end_use"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "checks-repeated",
+   "question": "When were the checks on this customer last repeated, and are they recorded in writing?",
+   "why": "The UK guidance for businesses says due diligence should be repeated at intervals even with established trading partners, and that written records of due diligence should be kept.",
+   "applies_to": "Customer checks",
+   "tags": [
+    "customer_profile",
+    "paperwork"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  },
+  {
+   "id": "sales-rise-destination",
+   "question": "Do the business's own sales figures show a significant rise in exports of this product to this destination, especially where that trade was limited or absent before?",
+   "why": "The UK guidance for businesses lists company sales data showing a significant increase in exports of a specific product, for example semiconductors or machine parts, especially if trade in that product to that destination was previously limited or non-existent.",
+   "applies_to": "Exports to a destination",
+   "tags": [
+    "volume_rise",
+    "corridor"
+   ],
+   "citation": {
+    "publisher": "Department for Business and Trade and Office of Trade Sanctions Implementation",
+    "title": "Countering Russian sanctions evasion - guidance for businesses",
+    "date": "7 Jan 2025, updated 12 Mar 2026"
+   },
+   "also_cited": [],
+   "confidence": "Certain"
+  }
+ ]
+}
