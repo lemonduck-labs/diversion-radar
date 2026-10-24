@@ -2,8 +2,9 @@
 
 Four demos as static pages, for a link that opens on a phone with no sign-in: Diversion Radar's
 dashboard and analyst workspace, and Move forward's market picture and planner. Built by
-`scripts/build_site.py` into `site/dist/` (not in git). **Nothing is deployed.** Publishing is
-the owner's decision, and each step that publishes is listed below for the owner to take.
+`scripts/build_site.py` into `site/dist/` (not in git). **Published on 24 October 2026**, at the
+owner's yes (decision log), through Netlify Drop, with every served file checked against the
+build and the live `X-Robots-Tag: noindex, nofollow` header confirmed on the pages. Publishing stays the owner's decision; the steps are listed below.
 
 A rise in exports is a lead, not evidence of a breach.
 
@@ -45,7 +46,8 @@ the template, as drafting with Claude needs the page inside Claude.
   so a held-back lead looks like any other series not shown; and the two backtest tests under
   the rule are listed by id only, with no case, route, codes or result.
 - Not indexed by search engines by default: `X-Robots-Tag: noindex, nofollow` on every path and
-  a robots meta tag on every page. Remove both in `scripts/build_site.py` and `site/index.html`
+  a robots meta tag on every page. `robots.txt` allows crawling, because a crawler it turns away
+  never sees the noindex, and a page linked from elsewhere can then still be listed. Remove both in `scripts/build_site.py` and `site/index.html`
   if the owner wants it found.
 
 ## Build and check
@@ -97,11 +99,13 @@ python scripts/build_site.py --clean --media site/media     # the site again, wi
 Before anything is published:
 
 1. `/review`, then `/ship`, on the built site: the fact-checker and the guardrails-reviewer
-   agents read every page and dataset (CLAUDE.md). The repos stay private either way.
+   agents read every page and dataset (CLAUDE.md). The working repos stay private; this public copy is made
+   separately (`PUBLIC.md`).
 2. The owner's own pre-publication checks, kept outside the repo.
 3. `python scripts/build_site.py --clean`, so `site.json` names committed code only.
 
-Then, on Netlify [Likely: Netlify's interface as of October 2026, not run here]:
+Then, on Netlify (run on 24 October 2026: a new project, then the built site uploaded as one zip
+on the project's Deploys page):
 
 1. Create a site by dragging `site/dist` onto the deploy area of the Netlify dashboard (Sites,
    then "Deploy manually"), or with the CLI at a pinned version (27.11.2, as in ta-market's

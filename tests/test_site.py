@@ -36,7 +36,7 @@ def test_the_site_builds_and_passes_its_checks(built):
         assert (built / rel).exists(), rel
     assert not (built / "ta" / "data" / "synthetic_caseload.json").exists()
     assert "{{" not in (built / "index.html").read_text(encoding="utf-8")
-    assert (built / "robots.txt").read_text(encoding="utf-8") == "User-agent: *\nDisallow: /\n"
+    assert (built / "robots.txt").read_text(encoding="utf-8") == "User-agent: *\nAllow: /\n"
 
 
 def test_every_page_has_a_policy_that_allows_only_its_own_scripts(built):

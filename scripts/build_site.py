@@ -624,8 +624,10 @@ def build(radar: Path, ta: Path, fdcore: Path, clean: bool, media_dir: Path | No
     for rel, data in media_files.items():
         put(rel, data)
     put("404.html", NOT_FOUND.encode("utf-8"))
-    # Kept out of search: every page also says noindex, in its head and in _headers.
-    put("robots.txt", b"User-agent: *\nDisallow: /\n")
+    # Kept out of search by noindex, in every page's head and in _headers. Crawling stays allowed:
+    # a crawler that robots.txt turns away never sees the noindex, and a page linked from elsewhere
+    # can then still be listed (Google Search Central, "Block Search indexing with noindex").
+    put("robots.txt", b"User-agent: *\nAllow: /\n")
     for name in ("assets/site.css", "assets/dash.js", "assets/icon.svg", D3_LICENSE):
         put(name, (SITE / name).read_bytes(), "diversion-radar", f"site/{name}")
     put("favicon.ico", (SITE / "assets" / "favicon.ico").read_bytes(), "diversion-radar", "site/assets/favicon.ico")

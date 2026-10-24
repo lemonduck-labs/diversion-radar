@@ -29,10 +29,10 @@ The participant brings nothing and types or uploads nothing from their work.
 
 ## 2. Before the session (for the owner)
 
-**The link.** The demo site's workspace page: `<demo site address>/workspace/`. Nothing to
-install, no sign-in. Open the workspace itself, not the site's front page, so the session starts
-on the inbox. The site is not published yet (`site/README.md` lists the steps): put the address
-here once it is. Until then, an in-person session can run from a local copy on your own laptop:
+**The link.** The demo site's workspace page: `https://lemonduck-labs.netlify.app/workspace/`.
+Nothing to install, no sign-in. Open the workspace itself, not the site's front page, so the
+session starts on the inbox. The site was published on 24 October 2026 (`site/README.md`). An
+in-person session can also run from a local copy on your own laptop:
 build the site (`python scripts/build_site.py`, with ta-market beside this repo; add `--clean`
 for the copy you publish), serve it with `python -m http.server 8000 --directory site/dist`, and
 open `http://localhost:8000/workspace/` on the same laptop.

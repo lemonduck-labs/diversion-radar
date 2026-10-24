@@ -1,6 +1,6 @@
 # 10. A static demo site with no AI calls and no sign-in
 
-Date: 21 October 2026. Status: Accepted (a default, open to the owner; nothing is deployed).
+Date: 21 October 2026. Status: Accepted (a default, open to the owner; published on 24 October 2026).
 
 ## Context
 
@@ -16,8 +16,8 @@ needed a copy that does not depend on claude.ai (`site/README.md`).
 - A Content-Security-Policy per page that allows only the site's own files and the page's
   inline scripts by SHA-256.
 - No AI calls, no sign-in, noindex, no byline.
-- Nothing is deployed; publishing waits for `/review`, `/ship` and the owner's yes (decision log
-  line 46).
+- Published on 24 October 2026, after the independent reviews and at the owner's yes (decision
+  log, 24 Oct 2026).
 
 ## Options ruled out
 

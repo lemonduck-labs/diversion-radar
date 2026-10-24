@@ -255,5 +255,6 @@ pre-registered (B1.1), and any further analysis gets a new run number.
   records both tools' adoption of the two defences as unmeasured and says any measurement is to
   be registered, with predictions, before it runs; none is written yet, so what they add is not
   measured (fd-core `research/POISONING_LOG.md` lines 94-132) [Certain].
-- **Deployment.** Nothing is deployed; the site's checks run on the build, not on a deployed
-  site.
+- **Deployment.** The site was published on 24 October 2026. Its checks run on the build; the
+  deployed copy was checked once, file by file against the build and for its headers, on the day
+  it went live.

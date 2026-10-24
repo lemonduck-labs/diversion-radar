@@ -24,8 +24,8 @@ with the annual check alone. Four cases is a small test, and not a blind one [Li
 **Watch.** Captioned walkthroughs of the dashboard (1:53) and the analyst workspace (5:02), on the
 demo site at `/videos/radar.mp4` and `/videos/workspace.mp4`. The site (`site/`, built by
 `scripts/build_site.py`) runs both as static pages, with no sign-in and no AI calls, beside the
-market picture and the Move forward planner of the Move forward build (ta-market); it is not published yet
-(`site/README.md`).
+market picture and the Move forward planner of the Move forward build (ta-market); it was published on
+24 October 2026, with search engines asked not to index it (`site/README.md`).
 
 **Brand and guide.** The dashboard and the workspace share one look, kept in `brand/`: navy ink,
 an action blue, violet for a lead and the onward signal behind it, Aldrich for the wordmark, titles
